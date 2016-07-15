@@ -14,5 +14,5 @@ In advance of the September DesignShop, all participants were requested to post 
 
 The topic papers submitted were:
 
-* [Identity as Linked Data on Immutable Ledgers](identity-as-linked-data-on-immutable-ledgers.md) by Tim Daubenschuetz @timdaub \<tim.daubenschuetz@gmail.com, tim@bigchaindb.com\> and Trent McConaghy @trentmc0 \<gtrent@gmail.com, trent@bigchaindb.com\>
+* [Identity as Linked Data on Immutable Ledgers](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-as-linked-data-on-immutable-ledgers.md) by Tim Daubenschuetz @timdaub \<tim.daubenschuetz@gmail.com, tim@bigchaindb.com\> and Trent McConaghy @trentmc0 \<gtrent@gmail.com, trent@bigchaindb.com\>
 * [EU General Data Protection Regulation & Self-Sovereign Identifier(s)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/EU%20General%20Data%20Protection%20Regulation%20%26%20Self-Sovereign%20Identifier(s)) by David Robert \<david.robert@aeternam.eu\>
