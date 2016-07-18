@@ -114,3 +114,7 @@ consolidate its posts, by posting a tiny URL of the complete event list
 along with a hash of the list’s contents. Interested verification
 services may follow all these links and expand them into a database of
 identities and their authorizations and ratings.
+
+Disclaimer
+==========
+The author has not done a thorough literature search, is not an expert in cryptography, and does not know whether or not these ideas are original.
