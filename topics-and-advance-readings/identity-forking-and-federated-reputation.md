@@ -14,7 +14,7 @@ not be bearer instruments. An attestation must be issued in a way so
 that it is useless to anyone but the person to whom it was originally
 issued.
 
-This proposal provides a mechanism to issue attestations and spawn new
+This proposal provides a "forking" mechanism to issue attestations and spawn new
 identities from parent identities, in a way that attestations can be
 attributed to the spawned identity individually.
 
@@ -29,16 +29,16 @@ finest level of activities that she wishes to be evaluated as a unit.
 Identity forking
 ================
 
-Attestation
------------
+Attestation with identity forking
+---------------------------------
 
-To confer an attestation upon Alice, Bob does the following:
+To confer an attestation upon Alice that she can present separately from her other credentials, Bob does the following:
 
 1.  Generates a new keypair, called Carol
 
-2.  Generates a multisig Diana = (Alice, Carol)
+2.  Generates a 2-of-2 multisig Diana = (Alice, Carol)
 
-3.  Signs a mesage conferring the credential upon Diana
+3.  Signs a mesage conferring the attestation upon Diana
 
 4.  Sends the signed message to Alice
 
@@ -48,17 +48,18 @@ Verification
 ------------
 
 To verify that Elizabeth has the attestation addressed to Diana, Frank
-may require Elizabeth to sign her messages from a multisig of the form
+may require Elizabeth to sign her messages from a 2-of-2 multisig of the form
 (Diana, Elizabeth).
 
 Completeness of a reputation chain
 ==================================
 
-Attestations are examples of positive credentials, or successes. An
-example of a positive credential is a diploma, which proves that someone
-graduated from a certain college with a certain degree. Reputation is a
-concept that mixes positive and negative credentials, or successes and
-failures. Generally, people have an incentive not to report all the
+Reputation is a concept that mixes positive and negative attestations,
+or successes and failures. 
+An example of a positive attestation is a diploma, which certifies that someone
+graduated from a certain college with a certain degree.  
+Typically, people are happy to present positive attestations on demand,
+but they do not have an incentive to report all the
 times they failed.
 
 Publication to a blockchain allows an identity to establish the
@@ -66,7 +67,7 @@ completeness of a series of actions whose ratings are being reported.
 
 Each identity in our framework is identified by a globally unique string
 and possesses a public/private keypair. An <span>*identity*</span>
-refers simply to this set of credentials. A principal may utilize many
+refers simply to this set of attributes. A principal may utilize many
 different identities, with or without links or attestations among them.
 The principals generate at least one identity for participating in each
 group of activities whose reputation they may want to reveal separately.
