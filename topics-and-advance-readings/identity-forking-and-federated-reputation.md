@@ -1,7 +1,6 @@
 # Identity Forking and Federated Reputation
 
-By Christopher Malon, Group Ring, Inc.
-
+By Christopher Malon, Group Ring, Inc. (https://groupring.net)
 
 Motivation
 ==========
@@ -63,7 +62,7 @@ For Bob to confer an attestation upon Alice that she can present separately from
 
 5. Bob signs a message conferring the attestation upon Diana, and sends it to Alice.
 
-Note that Bob cannot simply use one of Alice&apos;s derived keypairs, per BIP 32 [3], for this purpose, because derived keys are recognizable based on knowledge of an ancestor public key.
+Note that Bob cannot simply issue the attestation to one of Alice&apos;s derived keypairs, per BIP 32 [3], in lieu of this procedure, because derived keys are recognizable based on knowledge of an ancestor public key.
 
 Verification
 ------------
