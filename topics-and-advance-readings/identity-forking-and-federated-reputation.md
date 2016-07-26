@@ -29,7 +29,7 @@ finest level of activities that she wishes to be evaluated as a unit.
 Composite keys
 ==============
 
-As implemented in Bitcoin&amp;s P2SH protocol, an M-of-N multisig address
+As implemented in Bitcoin&apos;s P2SH protocol, an M-of-N multisig address
 is implemented by a script address.  When payment using the script address
 is verified, the script is revealed, including the addresses of the
 participating public keys.
@@ -55,7 +55,7 @@ For Bob to confer an attestation upon Alice that she can present separately from
 
 1. Alice generates an additional keypair, called Carol.
 
-2. Alice sends her own public key and Carol&amp;s to Bob.
+2. Alice sends her own public key and Carol&apos;s to Bob.
 
 3. Bob decides that he wants to confer the attestation upon Alice, usually based on some prior knowledge of Alice.
 
@@ -63,7 +63,7 @@ For Bob to confer an attestation upon Alice that she can present separately from
 
 5. Bob signs a message conferring the attestation upon Diana, and sends it to Alice.
 
-Note that Bob cannot simply use one of Alice&amp;s derived keypairs, per BIP 32 [3], for this purpose, because derived keys are recognizable based on knowledge of an ancestor public key.
+Note that Bob cannot simply use one of Alice&apos;s derived keypairs, per BIP 32 [3], for this purpose, because derived keys are recognizable based on knowledge of an ancestor public key.
 
 Verification
 ------------
