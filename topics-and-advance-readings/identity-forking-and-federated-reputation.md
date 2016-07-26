@@ -26,30 +26,51 @@ identity’s actions, which could easily become public knowledge. A
 principal retains control only by spawning subidentities up to the
 finest level of activities that she wishes to be evaluated as a unit.
 
+Composite keys
+==============
+
+As implemented in Bitcoin&amp;s P2SH protocol, an M-of-N multisig address
+is implemented by a script address.  When payment using the script address
+is verified, the script is revealed, including the addresses of the
+participating public keys.
+
+However, some public key cryptosystems have a property that enables a
+composite signature scheme in which the participating keys can remain private.
+For example, in an elliptic curve digital signature algorithm (ECDSA) [1],
+a finite field F, an elliptic curve E with points taking cordinates in F,
+and a base point G on the curve E are fixed.  In Bitcoin, E, F, and G
+are defined by the standard secp256k1 [2].
+Private keys are integers x from 1 to n-1, where n is the order of the point G,
+and the corresponding public key is the scalar multiple Q = xG.
+Thus, if Q = xG and R = yG are two public keys, Q+R is a public key
+with private key x+y.
+
 Identity forking
 ================
 
 Attestation with identity forking
 ---------------------------------
 
-To confer an attestation upon Alice that she can present separately from her other credentials, Bob does the following:
+For Bob to confer an attestation upon Alice that she can present separately from her other credentials,
 
-1.  Generates a new keypair, called Carol
+1. Alice generates an additional keypair, called Carol.
 
-2.  Generates a 2-of-2 multisig Diana = (Alice, Carol)
+2. Alice sends her own public key and Carol&amp;s to Bob.
 
-3.  Signs a mesage conferring the attestation upon Diana
+3. Bob decides that he wants to confer the attestation upon Alice, usually based on some prior knowledge of Alice.
 
-4.  Sends the signed message to Alice
+4. Bob computes the public key Diana = Alice + Carol.
 
-5.  Sends Carol’s public and private keys to Alice
+5. Bob signs a message conferring the attestation upon Diana, and sends it to Alice.
+
+Note that Bob cannot simply use one of Alice&amp;s derived keypairs, per BIP 32 [3], for this purpose, because derived keys are recognizable based on knowledge of an ancestor public key.
 
 Verification
 ------------
 
 To verify that Elizabeth has the attestation addressed to Diana, Frank
-may require Elizabeth to sign her messages from a 2-of-2 multisig of the form
-(Diana, Elizabeth).
+may require Elizabeth to sign her messages using the composite key
+Diana + Elizabeth = (Alice + Carol) + Elizabeth.
 
 Completeness of a reputation chain
 ==================================
@@ -116,6 +137,9 @@ along with a hash of the list’s contents. Interested verification
 services may follow all these links and expand them into a database of
 identities and their authorizations and ratings.
 
-Disclaimer
-==========
-The author has not done a thorough literature search, is not an expert in cryptography, and does not know whether or not these ideas are original.
+Bibliography
+============
+[1] https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm
+[2] http://www.secg.org/sec2-v2.pdf
+[3] https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+
