@@ -140,6 +140,8 @@ identities and their authorizations and ratings.
 Bibliography
 ============
 [1] https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm
+
 [2] http://www.secg.org/sec2-v2.pdf
+
 [3] https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
 
