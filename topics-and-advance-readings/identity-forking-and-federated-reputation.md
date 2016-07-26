@@ -50,7 +50,7 @@ Identity forking
 Attestation with identity forking
 ---------------------------------
 
-For Bob to confer an attestation upon Alice that she can present separately from her other credentials,
+For Bob to confer an attestation upon Alice that she can present separately from her other attestations,
 
 1. Alice generates an additional keypair, called Carol.
 
@@ -112,7 +112,7 @@ the rater.
 In order to receive ratings for an action X, Elizabeth:
 
 1.  Publishes an <span>*authorization*</span> to be rated on X to a
-    blockchain, The authorization establishes that the ratee identity
+    blockchain. The authorization establishes that the ratee identity
     took the action being rated, and designates where the ratings should
     come from. The authorization specifies: the <span>*action
     identifier*</span> (X); the <span>*ratee*</span> (Elizabeth); the
