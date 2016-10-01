@@ -1,4 +1,4 @@
-Distributed Identity, Distributed Self
+# Distributed Identity, Distributed Self
 
 Topic Paper for Web of Trust Working Group 
 October 2016
@@ -15,12 +15,12 @@ self-experience characteristic of activity that does not depend on self-objectif
 
 These scientific observations lead to three major questions proposed for consideration by the Web-of-Trust Working Group: 
 
-1.	How can a distributed, network-based understanding of identity contribute to innovations in a decentralized web-of-trust? 
+  1. How can a distributed, network-based understanding of identity contribute to innovations in a decentralized web-of-trust? 
 
-2.	Identity is operationalized tactically in different ways based on what the identity-bearing individual is doing, whether that 
+  2. Identity is operationalized tactically in different ways based on what the identity-bearing individual is doing, whether that 
 is self-recognition, self-description, employing identity as a tool to achieve specific aims, or simply prereflectively “being a 
 self.” Each modality of identity triggers network pathways differently. Could a Web-of-Trust facilitate the creation of multiple
 identity inflections on the basis of user intentions? 
 
-3.	Unlike the human brain, the internet and blockchain are network infrastructures shared by countless users. How could 
+  3. Unlike the human brain, the internet and blockchain are network infrastructures shared by countless users. How could 
 these “shared minds” facilitate forms of individual network identity? 
