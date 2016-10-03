@@ -270,4 +270,4 @@ An XDI inner root is described using a JSON object key with a value that is a JS
 ACKNOWLEDGEMENTS
 ================
 
-Thank you to the JSON-LD spec editors and contributors for their impressive work on a simple JSON-based serialization of RDF graphs. Thank you to the OASIS XDI Technical Committee for leadership and valuable feedback on the JXD (formerly JSON-XD) format.
+Thank you to the JSON-LD spec editors and contributors for their impressive work on a simple JSON-based serialization of RDF graphs. Thank you to the OASIS XDI Technical Committee for leadership and valuable feedback on the JXD (formerly JSON-XD) format. Thank you to Evernym for supporting JXD development work.
