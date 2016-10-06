@@ -1,6 +1,6 @@
 # Blockchain Extensions for Linked Data Signatures
 
-***by Manu Sporny, Harlan Wood, Noah Thorp, Christopher Allen, and Dave Longley***
+***by Manu Sporny, Harlan Wood, Noah Thorp, Wayne Vaughn, Christopher Allen, and Dave Longley***
 
 *A White Paper from Rebooting the Web of Trust III*
 
