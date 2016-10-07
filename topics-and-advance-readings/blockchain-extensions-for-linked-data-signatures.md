@@ -99,19 +99,19 @@ Included is an example of a Proof of Publication style Linked Data signature:
         "domain": "example.org",
         "nonce": "2bbgh3dgjg2302d-d2b3gi423d42",
         "merklePublicationProof": {
-          "type": "PoP2016",
-          "ledger": "bitcoin",
-          "transactionId": "7ea0cef...ab781a7c28",
-          "merkleRoot": "80ab86989...c31a6c14",
-          "proof": [{
-            "merkleParent": "f51cd07057a813...d8451b567",
-            "merkleLeftSibling": "247911c6a...d636863ae45",
-            "merkleRightSibling": "93ca67aea710...0b917299"
-          }, {
-            "merkleParent": "e6a881dd0af...684681bca",
-            "merkleLeftSibling": "44c66b40237...e0fb9272",
-            "merkleRightSibling": "93ca696fb9...66427399"
-          ]
+          "@context": "https://w3id.org/chainpoint/v2",
+          "type": "ChainpointSHA256v2",
+          "targetHash": "bdf8c9b...cb8e85ef2",
+          "merkleRoot": "51296f46...6581a7a",
+          "proof": [
+            { "left": "bdf8c9b...e85ef2" },
+            { "left": "cb0dbbed...2e49faf" },
+            { "right": "cb0dbb...2e49faf" }
+          ],
+          "anchors": [{
+            "type": "BTCOpReturn",
+            "sourceId": "f3be82...fadee"
+          }]
         },
         "signatureValue": "OGQzNGVkMz...ODIyOWM32NjI="
     }
