@@ -57,8 +57,10 @@ specification defining the following parameters:
  - signatureAlgorithm - http://w3id.org/security#secp256k1 defined in
    [SEC2v2](http://www.secg.org/sec2-v2.pdf)
 
-There are a few open questions that need to be discussed at Rebooting Web of Trust:
+There are a few open questions that need to be discussed at Rebooting
+Web of Trust:
 
+ - Is the nonce necessary or optional?
  - Are developers aware that the Universale RDF Dataset Normalization Algorithm
    is executed when performing the digital signature?
  - Are developers comfortable with using a JSON-LD context with their data? Are
@@ -70,6 +72,22 @@ There are a few open questions that need to be discussed at Rebooting Web of Tru
    be dereferenceable outside of the Bitcoin Blockchain?
  - Is the Security Vocabulary the best place to put the secp256k1 signature
    algorithm term?
+ - The pubkey is embedded with the signature — since the pubkey for
+   ECDSA sig is the same as for a schnorr sig, should we explicitly separate
+   them? Otherwise you have to understand how to parse composite signature
+   format (I think it is a byte plus pubkey plus sig) if you wish to
+   correlate any public keys.
+ - If we separate out the pubkey from signature, how will that work
+   with multisig? With smart signatures?
+ - There is no standard for sharing bitcoin pub keys — it has been suggested,
+   but never implemented that it should be a base58 prefix of 4,but in fact,
+   most Bitcoin ASCII armored signatures use base64.
+ - Another issue is that base58 is unique to Bitcoin, and there are no
+   international standards for it.
+ - What schema.org info do we need to define (applies to chainpoint as well).
+ - Should the creator really be the pub key hash, or the pub key, or point
+   to a verified claim or DID? If to the later, what field can the pubkey be
+   put in?
 
 ## Blockchain Anchoring
 
@@ -81,7 +99,9 @@ it’s possible to verify that the data existed at a specific time.
 
 Merkle trees are often used to store and hash the data, enabling large volumes
 of data to be stored into blockchains like the Bitcoin blockchain. These
-mechanisms, such as [Chainpoint](http://www.chainpoint.org/), are currently in
+mechanisms, such as [Chainpoint](http://www.chainpoint.org/) and
+[OpenTimestamps](https://petertodd.org//2016/opentimestamps-announcement),
+are currently in
 the experimental standardization phase. It is possible to merge approaches like
 Chainpoint with Linked Data Signatures. The Linked Data Signatures
 [Proof of Publication](https://web-payments.org/specs/source/pop2016/)
@@ -126,6 +146,21 @@ of Trust:
    signatures on blockchain receipts redundant?
  - Is there interest in integrating Chainpoint 2.0 style receipts into the
    signature block for Linked Data Signatures?
+ - Do we need to more explicit the separation the data format for the message
+   vs how the merkle root is stored? Like DIDs, there will be multiple methods
+   for storing the merkle root — but the data format once you have a canonical
+   message can be in common for all.
+ - The merkle tree for Chainpoint itself is fairly basic, Peter Todd’s open
+   timestamps uses a more sophisticated merkle tree. Should we do a
+   Chainpoint 3.0?
+ - Specific to open-timestamps on Bitcoin, it uses a different method to
+   store the merkle tree root that may be more acceptable long-term than
+   op_return.
+ - Open-timestamp offers some additional services — should we start defining
+   APIs?
+ - Peter Todd has had some success to with open-timestamps and PGP for use
+   with Github commit signatures. Should we try to get this to be a standard
+   as well?
 
 ## JSON Normalized Clear Text Signatures
 
