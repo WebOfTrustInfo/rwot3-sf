@@ -53,7 +53,7 @@ security, privacy, and performance principles:
    particular action must be available when it is needed.
  - **Provenance** - Asserts that the the chronology of ownership, custody, or
    location of a piece of information can be traced throughout time.
- - **Pseudonymity **- Asserts that interactions do not expose an entity’s true
+ - **Pseudonymity** - Asserts that interactions do not expose an entity’s true
    name or legal identity.
  - **Selective Disclosure** - A situation where an entity may disclose
    information to one or more selected entities without disclosing that
@@ -201,7 +201,6 @@ The list of features above provide hints at potential areas of standardization:
      - Multi-signature support
      - Endorsement signature support
    - JSON Normalization
-   -
 
 ## Fit for Purpose Blockchains
 
