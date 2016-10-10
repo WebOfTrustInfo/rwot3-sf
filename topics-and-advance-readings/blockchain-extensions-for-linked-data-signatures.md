@@ -6,7 +6,7 @@
 
 ## Introduction
 
-The term [Linked Data](https://en.wikipedia.org/wiki/Linked_data%20Linked%20Data)
+The term [Linked Data](https://en.wikipedia.org/wiki/Linked_data)
 is used to describe a recommended best practice for exposing, sharing, and
 connecting information on the Web using standards, such as URLs, to identify
 things and their properties. When information is presented as Linked Data,
