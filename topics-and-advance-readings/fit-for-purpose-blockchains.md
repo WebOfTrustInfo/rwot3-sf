@@ -178,15 +178,15 @@ standardization:
 The list of features above provide hints at potential areas of standardization:
 
  - Communication Protocols
-   -  Ledger Create/Write/Read HTTP API
+   - Ledger Create/Write/Read HTTP API
  - Consensus Algorithms
    - Proof of Work
    - Proof of Stake
    - Stellar
    - Hashgraph
  - Key Management
-   - On Chain
-   - Off Chain
+   - Rotation
+   - On/Off Chain
    - Delegation and Recovery
  - Blockchain Anchoring and Linking
    - Chainpoint
@@ -195,6 +195,7 @@ The list of features above provide hints at potential areas of standardization:
    - Merkle Tree expression format
    - Hashchain expression format
  - Digital Signatures
+   - Smart Signatures
    - Base58 Encoding
    - Linked Data Signature Extensions
      - secp256k1 support
