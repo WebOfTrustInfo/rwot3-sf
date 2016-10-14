@@ -21,3 +21,4 @@ The topic papers submitted were:
 * [Distributed Identity, Distributed Self](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/DistributedIdentityDistributedSelf.md) by Natalie Smolenski \<nsmolenski@learningmachine.com\>
 * [Blockchain Extensions for Linked Data Signatures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) by the Signature Super Friends
 * [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar
+* [Taxonomy of Identity Interaction Types](https://github.com/Identitywoman/Writing/blob/master/Taxonomy-of-Identity-Interaction-Types.md) by Kaliya Young
