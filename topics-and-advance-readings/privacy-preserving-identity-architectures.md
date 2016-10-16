@@ -1,6 +1,7 @@
 # Privacy Preserving Web Identity Architectures
 
-***by Dave Longley, Manu Sporny, Christopher Allen, and Drummond Reed***
+***by Anonymous (no, not that Anonymous, the other one)***
+_-- Dave Longley, Manu Sporny, Christopher Allen, and Drummond Reed_
 
 *A White Paper from Rebooting the Web of Trust III*
 
@@ -88,26 +89,26 @@ desired service.
 
 The benefits of this approach include:
 
-  * There is no way for domain A or domain B to correlate the identifier 
+  * There is no way for domain A or domain B to correlate the identifier
     with anything other than the information it already knows.
-  * Domain B does not directly learn about the user’s decision to share 
+  * Domain B does not directly learn about the user’s decision to share
     information with domain A.
-  * Users that do not understand the complexities of correlating identifiers 
+  * Users that do not understand the complexities of correlating identifiers
     cannot harm themselves.
   * Revocation is privacy preserving and can be implemented via short timeouts.
 
 The drawbacks of this approach include:
-  * Domain B must have highly available infrastructure in order to ensure 
+  * Domain B must have highly available infrastructure in order to ensure
     that you can get access to domain A.
-  * Domain A is dependent upon domain B implementing highly available 
+  * Domain A is dependent upon domain B implementing highly available
     infrastructure in order to authenticate and service its users.
-  * The user does not get to use the claims made about them by domain B 
-    independently of (without interaction with) domain B. In other words, 
-    claims made about a user are not easily aggregated and made available 
-    for independent reuse; rather a user’s identity information is fractured 
+  * The user does not get to use the claims made about them by domain B
+    independently of (without interaction with) domain B. In other words,
+    claims made about a user are not easily aggregated and made available
+    for independent reuse; rather a user’s identity information is fractured
     across main domains or “identity providers”.
-  * For public identities, there exists no common correlatable identifier 
-    for claims from different domains. User interaction or published 
+  * For public identities, there exists no common correlatable identifier
+    for claims from different domains. User interaction or published
     correlation maps are required to share public claims.
 
 ## Approach Two: Self-sovereign Identity
@@ -137,19 +138,19 @@ verifiable claim from domain B.
 
 The benefits of this approach include:
   * No interaction with domain B is necessary.
-  * Domain B does not learn about the user’s decision to share information 
+  * Domain B does not learn about the user’s decision to share information
     with domain A.
   * Domain B does not need highly available infrastructure.
-  * Domain A is not dependent on domain B implementing highly available 
+  * Domain A is not dependent on domain B implementing highly available
     infrastructure.
-  * Revocation can be privacy preserving through the use of a highly 
+  * Revocation can be privacy preserving through the use of a highly
     available ledger running on shared infrastructure.
 
 The drawbacks of this approach include:
-  * Privacy-harming correlation is possible with the identifier in the 
-    verifiable claim. This isn’t a problem for a publicly used identifier, 
+  * Privacy-harming correlation is possible with the identifier in the
+    verifiable claim. This isn’t a problem for a publicly used identifier,
     but it is for a private one.
-  * Users may not understand that correlations can be made and need some 
+  * Users may not understand that correlations can be made and need some
     level of assistance to avoid potentially harming themselves.
 
 Option #2: When you visit domain A, you give your pre-digitally signed
@@ -158,26 +159,26 @@ verifies the signature, anonymizes your identifier, and places their own
 signature on the claim before passing it back to you to hand to domain A.
 
 The benefits of this approach include:
-  * There is no way for domain A or domain B to correlate the identifier 
+  * There is no way for domain A or domain B to correlate the identifier
     with anything other than the information it already knows.
   * No interaction with domain B is necessary.
-  * Domain B does not directly learn about the user’s decision to share 
+  * Domain B does not directly learn about the user’s decision to share
     information with domain A.
   * Domain B does not need highly available infrastructure.
-  * Domain A is not dependent on domain B implementing highly available 
+  * Domain A is not dependent on domain B implementing highly available
     infrastructure.
-  * Users that do not understand the complexities of correlating identifiers 
+  * Users that do not understand the complexities of correlating identifiers
     cannot harm themselves.
-  * Revocation can be privacy preserving through the use of a highly 
+  * Revocation can be privacy preserving through the use of a highly
     available ledger running on shared infrastructure.
-  * Third party verifiers can add value to the ecosystem, providing highly 
+  * Third party verifiers can add value to the ecosystem, providing highly
     available infrastructure, privacy protection, and trustworthiness.
 
 The drawbacks of this approach include:
 
-  * Third party verifiable learns of your information and can correlate 
-    identifiers. However, their viability as a service depends on their 
-    trustworthiness and providing a good quality, privacy-preserving 
+  * Third party verifiable learns of your information and can correlate
+    identifiers. However, their viability as a service depends on their
+    trustworthiness and providing a good quality, privacy-preserving
     service is a requirement for people to be interested in using them.
 
 ## Implications of Each Approach
@@ -208,10 +209,10 @@ of as a core assumption of its foundational layer. This approach
 actually enables privacy in a number of additional ways for example:
 
   * Claims Issuers don’t have to be notified each time a credential is used.
-  * Identity Providers can be prevented from knowing where credentials are 
+  * Identity Providers can be prevented from knowing where credentials are
     being used.
-  * Anonymizer services may add value by providing stronger verification 
-    of Subjects while not leaking information that otherwise would have 
+  * Anonymizer services may add value by providing stronger verification
+    of Subjects while not leaking information that otherwise would have
     been leaked to Claims Inspectors.
 
 ## Next Steps
