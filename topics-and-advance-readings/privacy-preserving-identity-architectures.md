@@ -1,7 +1,7 @@
 # Privacy Preserving Web Identity Architectures
 
 ***by Anonymous (no, not that Anonymous, the other one)***
-_-- Dave Longley, Manu Sporny, Christopher Allen, and Drummond Reed_
+_-- Dave Longley, Manu Sporny, Christopher Allen, Drummond Reed, and Marta Piekarska_
 
 *A White Paper from Rebooting the Web of Trust III*
 
