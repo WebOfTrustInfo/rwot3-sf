@@ -23,3 +23,4 @@ The topic papers submitted were:
 * [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar
 * [Taxonomy of Identity Interaction Types](https://github.com/Identitywoman/Writing/blob/master/Taxonomy-of-Identity-Interaction-Types.md) by Kaliya Young
 * [Privacy Preserving Identity Architectures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/privacy-preserving-identity-architectures.md) by Anonymous (no, not that Anonymous, the other one)
+* [A Technlogy-Free Definition of Self-sovereign Identity] (https://github.com/jandrieu/rebooting-the-web-of-trust-fall2016/raw/master/topics-and-advance-readings/a-technology-free-definition-of-self-sovereign-identity.pdf) by Joe Andrieu    
