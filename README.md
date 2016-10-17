@@ -27,5 +27,5 @@ The topic papers submitted were:
 * [Architecture of Proof-of-Stake Blockchain that Doesn’t Have Native Coin and its Applicability to Decentralized Trading] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Proof-of-stake-without-native-coin.md) by Pavel Kravchenko
 * [JXD Examples] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/JXD-Examples.md) by Markus Sabadello
 * [Anonymous Credentials in Sovrin] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/anonymous-credentials-in-sovrin.md) by Jason Law and Daniel Hardman
-
+* [Portable Reputation Toolkit](/topics-and-advance-readings/portable-reputation-toolkit.md) by Noah Thorp and Harlan Wood
 
