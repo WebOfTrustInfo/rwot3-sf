@@ -19,8 +19,13 @@ The topic papers submitted were:
 * [Identity Forking and Federated Reputation](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-forking-and-federated-reputation.md) by Christopher Malon \<malon@groupring.net\>
 * [OpenTimestamps: Scalable, Trustless, Distributed Timestamping with Bitcoin](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/opentimestamps.md) by Peter Todd
 * [Distributed Identity, Distributed Self](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/DistributedIdentityDistributedSelf.md) by Natalie Smolenski \<nsmolenski@learningmachine.com\>
-* [Blockchain Extensions for Linked Data Signatures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) by the Signature Super Friends
-* [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar
+* [Blockchain Extensions for Linked Data Signatures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) by the Signature Super Friends (Manu Sporny, Harlan Wood, Noah Thorp, Wayne Vaughn, Christopher Allen, Jason Bukowski, and Dave Longley)
+* [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar (Manu Sporny, Dave Longley, Dave Lehn, and Adam Lake)
 * [Taxonomy of Identity Interaction Types](https://github.com/Identitywoman/Writing/blob/master/Taxonomy-of-Identity-Interaction-Types.md) by Kaliya Young
 * [Privacy Preserving Identity Architectures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/privacy-preserving-identity-architectures.md) by Anonymous (no, not that Anonymous, the other one)
-* [A Technlogy-Free Definition of Self-sovereign Identity] (https://github.com/jandrieu/rebooting-the-web-of-trust-fall2016/raw/master/topics-and-advance-readings/a-technology-free-definition-of-self-sovereign-identity.pdf) by Joe Andrieu    
+* [A Technlogy-Free Definition of Self-sovereign Identity] (https://github.com/jandrieu/rebooting-the-web-of-trust-fall2016/raw/master/topics-and-advance-readings/a-technology-free-definition-of-self-sovereign-identity.pdf) by Joe Andrieu
+* [Architecture of Proof-of-Stake Blockchain that Doesn’t Have Native Coin and its Applicability to Decentralized Trading] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Proof-of-stake-without-native-coin.md) by Pavel Kravchenko
+* [JXD Examples] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/JXD-Examples.md) by Markus Sabadello
+* [Anonymous Credentials in Sovrin] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/anonymous-credentials-in-sovrin.md) by Jason Law and Daniel Hardman
+
+
