@@ -28,4 +28,4 @@ The topic papers submitted were:
 * [JXD Examples] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/JXD-Examples.md) by Markus Sabadello
 * [Anonymous Credentials in Sovrin] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/anonymous-credentials-in-sovrin.md) by Jason Law and Daniel Hardman
 * [Portable Reputation Toolkit](/topics-and-advance-readings/portable-reputation-toolkit.md) by Noah Thorp and Harlan Wood
-
+* [Blockchain Attestation Taxonomies] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/attestation-taxonomies.md) by Christian Lundkvist
