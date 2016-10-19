@@ -27,7 +27,7 @@ These were the most popular topics based on 5-round voting
 *Table 9:*
 
 22: Self-Sovereign Identity Principles 2.0 + Pledge [later?]
--- 19: Pledge or Manifesto for Self-sovereign identity
+* 19: Pledge or Manifesto for Self-sovereign identity
 
 23: A Rough Outline of Standard Protocol for Blockchains
 
