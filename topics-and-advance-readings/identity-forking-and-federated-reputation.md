@@ -54,7 +54,7 @@ For Bob to confer an attestation upon Alice that she can present separately from
 
 1. Alice generates an additional keypair, called Carol.
 
-2. Alice sends her own public key and Carol&apos;s to Bob.
+2. Alice sends her own public key and Carol&apos;s to Bob.  She signs the message twice, once with Alice&apos;s private key, and once with Carol&apos;s private key.
 
 3. Bob decides that he wants to confer the attestation upon Alice, usually based on some prior knowledge of Alice.
 
@@ -63,6 +63,8 @@ For Bob to confer an attestation upon Alice that she can present separately from
 5. Bob signs a message conferring the attestation upon Diana, and sends it to Alice.
 
 Note that Bob cannot simply issue the attestation to one of Alice&apos;s derived keypairs, per BIP 32 [3], in lieu of this procedure, because derived keys are recognizable based on knowledge of an ancestor public key.
+
+The point of requiring Alice&apos;s private key for every use of Diana&apos;s key is to prevent Alice from giving or selling use of her attestation to some party Eve who could use it without her further participation.  If Alice did not have to sign a message once using Carol&apos;s key, Alice could give her credential to Eve without knowing Eve&apos;s private key and without Eve knowing Alice&apos;s private key, simply by defining Carol = Eve - Alice. 
 
 Verification
 ------------

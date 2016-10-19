@@ -6,6 +6,13 @@ By
 - Trent McConaghy, @trentmc0, \<gtrent@gmail.com, trent@bigchaindb.com\>
 
 
+## Update
+
+We just released a first draft of the [COALA Intellectual Property Specification](https://github.com/COALAIP/specs/blob/master/README.md).
+Additionally, we released a document outlining the [models' schema definitions](https://github.com/COALAIP/specs/blob/master/data-structure/README.md).
+Feedback, comments and questions are welcome!
+
+
 ## Motivation
 
 Content creators on the Web are getting a raw deal. They get a fraction of a cent for an ad played on YouTube, and nothing
