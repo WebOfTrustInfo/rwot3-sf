@@ -29,3 +29,4 @@ The topic papers submitted were:
 * [Anonymous Credentials in Sovrin] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/anonymous-credentials-in-sovrin.md) by Jason Law and Daniel Hardman
 * [Portable Reputation Toolkit](/topics-and-advance-readings/portable-reputation-toolkit.md) by Noah Thorp and Harlan Wood
 * [Blockchain Attestation Taxonomies] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/attestation-taxonomies.md) by Christian Lundkvist
+* [Slepak's Triangle: The fundamental user limit of decentralized consensus systems](topics-and-advance-readings/Slepaks-Triangle.pdf) by Greg Slepak (@taoeffect)
