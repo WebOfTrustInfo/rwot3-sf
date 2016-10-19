@@ -30,3 +30,4 @@ The topic papers submitted were:
 * [Portable Reputation Toolkit](/topics-and-advance-readings/portable-reputation-toolkit.md) by Noah Thorp and Harlan Wood
 * [Blockchain Attestation Taxonomies] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/attestation-taxonomies.md) by Christian Lundkvist
 * [Slepak's Triangle: The fundamental user limit of decentralized consensus systems](topics-and-advance-readings/Slepaks-Triangle.pdf) by Greg Slepak (@taoeffect)
+* [Sovereign Identity Model for Digital Ecologies](topics-and-advance-readings/Sovereign-Identity-Model-for-Digital-Ecologies.md) by Patrick Deegan
