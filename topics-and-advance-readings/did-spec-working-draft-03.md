@@ -1,4 +1,4 @@
-# DID Specification
+# DID (Decentralized Identifier) Specification
 
 Editors:     Drummond Reed, Les Chasen
 
