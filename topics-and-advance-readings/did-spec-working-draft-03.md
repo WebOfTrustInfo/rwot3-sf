@@ -55,7 +55,7 @@ This specification defines the requirements of a conformant DID method specifica
 
 **DID method.** A definition of how a specific **DID scheme** can be implemented on specific DLT or other decentralized network, including the precise method(s) by which DIDs and DDOs can be read, written, and revoked.
 
-**DID method specification**. The specification for a specific **DID scheme** and **DID method** that is conformant with the requirements of this specification.
+**DID method specification.** The specification for a specific **DID scheme** and **DID method** that is conformant with the requirements of this specification.
 
 **DID record.** The combination of a **DID** and a **DDO** that forms the "root identity record" for an identity. From the standpoint of [claims-based identity](https://en.wikipedia.org/wiki/Claims-based_identity), a DID record is the “genesis claim” for an identity.
 
@@ -67,7 +67,7 @@ This specification defines the requirements of a conformant DID method specifica
 
 **DLT.** Acronym for **distributed ledger technology**. 
 
-**Identity owner. **The person, organization, or thing whose identity is represented by a **DID record**. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) Note that the identity owner may not be the director controller of the DID record; for example a parent may control the DID record(s) for a young child, but the child is the identity owner.
+**Identity owner.** The person, organization, or thing whose identity is represented by a **DID record**. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) Note that the identity owner may not be the director controller of the DID record; for example a parent may control the DID record(s) for a young child, but the child is the identity owner.
 
 **Identity record.** Another name for a **DID record**.
 
@@ -578,11 +578,11 @@ This means all Sovrin DIDs are exactly 22 characters representing a [base58Check
 
 It is impossible to tell from a Sovrin DID alone whether it is a CID or NCID. Rather the associated DDO MUST be checked to determine one of three options for the associated verification key (**verkey**).
 
-1. **Empty. **In this case, the DDO does not contain a verkey, and the DID is an NCID. In this case, the creator of the Sovrin identity record (called a trust anchor) controls the identifier, and no independent proof-of-existence is possible until the DDO is updated to contain either an Abbreviated or Full verkey.
+1. **Empty.** In this case, the DDO does not contain a verkey, and the DID is an NCID. In this case, the creator of the Sovrin identity record (called a trust anchor) controls the identifier, and no independent proof-of-existence is possible until the DDO is updated to contain either an Abbreviated or Full verkey.
 
-2. **Abbreviated. **In this case, the DDO contains a verkey starting with a tilde '~' followed by 22 characters. The tilde indicates that the DID itself represents the first 16 bytes of the verkey, and the string following the tilde represent the second 16 bytes of the verkey, both using [base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding).
+2. **Abbreviated.** In this case, the DDO contains a verkey starting with a tilde '~' followed by 22 characters. The tilde indicates that the DID itself represents the first 16 bytes of the verkey, and the string following the tilde represent the second 16 bytes of the verkey, both using [base58 encoding](https://en.wikipedia.org/wiki/Base58) with the Bitcoin alphabet.
 
-3. **Full. **In this case, the DDO contains a full 44 character verkey, representing a [base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) of all 32 bytes of a [Ed25519](https://ed25519.cr.yp.to/) verification key.
+3. **Full.** In this case, the DDO contains a full 44 character verkey, representing a [base58 encoding](https://en.wikipedia.org/wiki/Base58) of all 32 bytes of a [Ed25519](https://ed25519.cr.yp.to/) verification key.
 
 Note that an abbreviated verkey has one security benefit when it is first created: there is a provable binding between the DID and the DDO at the time of registration. However this could also be accomplished by having the Sovrin client signing a nonce, or by some other cryptographic handshake defined by a DID method specification.
 
@@ -609,7 +609,7 @@ In any case, a Sovrin client MUST NOT ever rely on an abbreviated key by itself.
 # Appendix B: Example DDO
 
 This is an example DDO conformant with this specification. The DIDs in this example are defined by the Sovrin DID method in Appendix A.
-
+```
 {
     "@context": "https://example.org/did/v1",
     "id": "did:sov:21tDAKCERh95uGgKbJNHYp",
@@ -638,3 +638,4 @@ This is an example DDO conformant with this specification. The DIDs in this exam
         "signatureValue": "IOmA4R7TfhkYTYW87z640O3GYFldw0yqie9Wl1kZ5OBYNAKOwG5uOsPRK8/2C4STOWF+83cMcbZ3CBMq2/gi25s="
     }
 }
+```
