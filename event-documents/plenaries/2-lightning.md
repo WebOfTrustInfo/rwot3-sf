@@ -34,11 +34,11 @@ There are two camps of thought:
 
 ### Same-Origin Identity
 
-You should never have an identifier that crosses domains because it allows correlation.
+This camp says: _You should never have an identifier that crosses domains because it allows correlation._
 
 ### Self-Sovereign (Cross-Origin) Identity
 
-It's OK to have identifier that crosses domains as long as you have anonymizer.
+This camp says: _It's OK to have identifier that crosses domains as long as you have anonymizer._
 
 _These communities are not talking to each other, and this has led to conflicts and will lead to more in the next couple of years. The goal here is simply to note that there's a conflict and we need to talk!_
 
@@ -52,13 +52,11 @@ There's probably a middle step between enterprise and peer-to-peer attestations 
 
 ## What Does Self-Sovereign Identity Really Mean? (Christopher Allen)
 
-Earlier this year, Christopher put together a paper on Self-Sovereign Identity.
+Earlier this year, Christopher put together a paper on Self-Sovereign Identity. It has been well attempted, including at UN, where a number of ambassadors used it as a term. Now it's time to turn that into a conversation. 
 
-It has been accepted well, including at UN, where a number of ambassadors used it as a term.
+Are there missing principles? Should the principles be categorized?
 
-Now it's time to turn that into a conversation. Are there missing principles? Should they be categorized?
-
-We'd like to create a _pledge_ that agrees we're creating self-sovereign identity system according to their principles.
+We'd like to create a _pledge_ that lets people agree that they're creating their self-sovereign identity system according to their principles.
 
 **Link:** [Path to Self-Sovereign Identity](http://www.lifewithalacrity.com/2016/04/the-path-to-self-soverereign-identity.html)
 [link: Path to Self Sovereign Identity article]
@@ -67,7 +65,7 @@ We'd like to create a _pledge_ that agrees we're creating self-sovereign identit
 
 How do you create identity for children who can't decide for themselves? On the opposite side of the spectrum, what about adults who can no longer control their self-sovereign identity due to accident, etc.?
 
-The question is essentially _when do you step in as a guardian?_ And _what rules do you need to follow?_ This requires _digital guardians_ who look after other peoples' identities. (There are technical ways to do this, but we need something that the rest of the world can use.)
+The question is essentially _when do you step in as a guardian?_ And _what rules do you need to follow?_ This requires _digital guardians_ who look after other peoples' identities. (There are technical ways to do this, such as Shamir secret sharing, but we need something that the rest of the world can use.)
 
 Another question is, _are current models of guardians and godparents and such translateable into the digital world?_
 
@@ -75,13 +73,15 @@ Another question is, _are current models of guardians and godparents and such tr
 
 This is a story.
 
-A child gets separated from his parents during some natural disaster. The child can go to a bank and enter a private room and sing a certain song. Then he gets access to certain funds and hire people to find his parents.
+    A child gets separated from his parents during some natural disaster. To prove his identity, the child can go to a bank and enter a private room and sing a certain song. Then he gets access to certain funds and hire people to find his parents.
 
-IP38 + BIP39 encode information in words.
+How do we do this?
 
-An alternative proof of concept using these ideas. So Christopher and Chris V. came up with a new set of words that _are in iambic pentameter_, so are easier to remember.
+BIP38 + BIP39 encode information in words, but we've expanded this a bit with some other proofs of concept.
 
-Another proof of concept. Encode into poem instead, but not (yet) a rhyming one.
+One proof of concept: Christopher and Chris V. came up with a new set of words that _are in iambic pentameter_, so are easier to remember.
+
+Another proof of concept: They encoded identity proof into poem instead, but not (yet) a rhyming one.
 
 ## Social Authentication (Glenn Willen)
 
