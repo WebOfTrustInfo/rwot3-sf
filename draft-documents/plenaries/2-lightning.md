@@ -69,4 +69,21 @@ How do you create identity for children who can't decide for themselves? On the 
 
 The question is essentially _when do you step in as a guardian?_ And _what rules do you need to follow?_ This requires _digital guardians_ who look after other peoples' identities. (There are technical ways to do this, but we need something that the rest of the world can use.)
 
+Another question is, _are current models of guardians and godparents and such translateable into the digital world?_
 
+## Song of Ashok (Christopher Allen)
+
+This is a story.
+
+A child gets separated from his parents during some natural disaster. The child can go to a bank and enter a private room and sing a certain song. Then he gets access to certain funds and hire people to find his parents.
+
+IP38 + BIP39 encode information in words.
+
+An alternative proof of concept using these ideas. So Christopher and Chris V. came up with a new set of words that _are in iambic pentameter_, so are easier to remember.
+
+Another proof of concept. Encode into poem instead, but not (yet) a rhyming one.
+
+## Social Authentication (Glenn Willen)
+
+
+## (Kaliya Young)
