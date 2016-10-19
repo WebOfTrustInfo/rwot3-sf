@@ -1,10 +1,10 @@
 # DID (Decentralized Identifier) Specification
 
-Editors:     Drummond Reed, Les Chasen
-
-Contributors:    Christopher Allen, Manu Sporny, David Longley, Jason Law, Daniel Hardman
-
 **STATUS: Working Draft 03, 17 October 2016**
+
+**Editors:**     Drummond Reed, Les Chasen
+
+**Contributors:**    Christopher Allen, Manu Sporny, David Longley, Jason Law, Daniel Hardman
 
 *Note: Work on this specification has been funded in part by the United States Department of Homeland Security's Science and Technology Directorate under contract HSHQDC-16-R00012-H-SB2016-1-002. The content of this specification does not necessarily reflect the position or the policy of the U.S. Government and no official endorsement should be inferred.*
 
