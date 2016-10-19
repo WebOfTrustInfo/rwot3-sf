@@ -13,3 +13,15 @@ A good use case:
 There are two ways to think about use cases, as a problem or a solution. Either is incomplete, need them together as action/reaction pair.
 
 [[link to Joe's powerpoint]]
+
+## Identity Lifecycle (Greg Slepak)
+
+Decentralized identity lifecycle management.
+
+There are a lot of related elements:
+* Attestations (and revocations)
+* Namespaces and how to deal with them
+* Thwarting man-in-the-middle atacks
+* Recovering identity
+
+
