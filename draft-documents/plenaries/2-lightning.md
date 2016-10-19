@@ -97,4 +97,34 @@ You need to be able to detect loss of recovery key shards very quickly, else the
 
 May need to tie this to a trust system, so that you can penalize people if they verify a false identity.
 
-## (Kaliya Young)
+## Will Smart Contracts Drive Civilization Over a Cliff (Kaliya Young)
+
+The deeper question is, _what checks and balances are needed in these sorts of systems?_
+
+What do you do when natural disasters _should_ cause delays in smart contracts, or when a stock market crash _should_ cause the stock market to pause? How do smart contract account for this?
+
+How do we _upgrade_ contracts
+
+It's how _Courts of Equity_ emerged for legal system.
+
+This is a conversation.
+
+## Identity in the Eye of Beholder (Joe Andrieu)
+
+Identity is _correlation_. It's fluid, it evolves. Data can change. What's right today can be wrong tomorrow. It's a process, not an object. So identity shouldn't be defined by data. 
+
+We need to talk about identity beyond the bits, and this allows it.
+
+**Link:** [Clearer Identity through Correlation](https://github.com/WebOfTrustInfo/ID2020DesignWorkshop/blob/master/final-documents/identity-crisis.pdf)
+
+## Time Stamps (Peter Todd, Wayne Vaughan)
+
+Open Timestamps, Chainpoint.
+
+Wayne's Chainpoint verifies the content and timestamp of data. 
+
+Peter's Open Timestamps makes proof of data creation easy.
+
+Part of the problem is that you need to know when signatures were created; you need to be able to prove that data was created at a certain time. So then you can know if something was created before or after a compromise, for example.
+
+Timestamps are _additive_ security.
