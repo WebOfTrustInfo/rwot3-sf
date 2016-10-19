@@ -121,10 +121,11 @@ We need to talk about identity beyond the bits, and this allows it.
 
 Open Timestamps, Chainpoint.
 
-Wayne's Chainpoint verifies the content and timestamp of data. 
+Wayne's Chainpoint verifies the content and timestamp of data. It's a proof protocol.
 
 Peter's Open Timestamps makes proof of data creation easy.
 
 Part of the problem is that you need to know when signatures were created; you need to be able to prove that data was created at a certain time. So then you can know if something was created before or after a compromise, for example.
 
 Timestamps are _additive_ security.
+
