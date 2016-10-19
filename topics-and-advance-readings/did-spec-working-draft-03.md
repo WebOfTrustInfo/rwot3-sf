@@ -1,13 +1,14 @@
 # DID Specification
 
 Editors:     Drummond Reed, Les Chasen
+
 Contributors:    Christopher Allen, Manu Sporny, David Longley, Jason Law, Daniel Hardman
 
-STATUS: Working Draft 03, 17 October 2016
+**STATUS: Working Draft 03, 17 October 2016**
 
 *Note: Work on this specification has been funded in part by the United States Department of Homeland Security's Science and Technology Directorate under contract HSHQDC-16-R00012-H-SB2016-1-002. The content of this specification does not necessarily reflect the position or the policy of the U.S. Government and no official endorsement should be inferred.*
 
-*Note: terms in ***_bold_*** are defined in the Terminology section.*
+*Terms in* **bold** *are defined in the Terminology section.*
 
 **Table of Contents**
 
@@ -59,7 +60,7 @@ This specification defines the requirements of a conformant DID method specifica
 
 **DID record.** The combination of a **DID** and a **DDO** that forms the "root identity record" for an identity. From the standpoint of [claims-based identity](https://en.wikipedia.org/wiki/Claims-based_identity), a DID record is the “genesis claim” for an identity.
 
-**DID scheme. **The formal syntax of a DID identifier. The generic DID scheme is defined in this  specification. A specific DID scheme that works with a specific **DID method** is defined in a **DID method specification**.
+**DID scheme.** The formal syntax of a DID identifier. The generic DID scheme is defined in this  specification. A specific DID scheme that works with a specific **DID method** is defined in a **DID method specification**.
 
 **DIDM.** Acronym for **decentralized identity management**.
 
@@ -71,7 +72,7 @@ This specification defines the requirements of a conformant DID method specifica
 
 **Identity record.** Another name for a **DID record**.
 
-**JSON-LD (JSON Linked Data). **A method of encoding [Linked Data](https://en.wikipedia.org/wiki/Linked_data) using JSON. JSON-LD enables object properties in a JSON document to be linked to concepts in an **RDF** [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)).
+**JSON-LD (JSON Linked Data).** A method of encoding [Linked Data](https://en.wikipedia.org/wiki/Linked_data) using JSON. JSON-LD enables object properties in a JSON document to be linked to concepts in an **RDF** [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)).
 
 **Ledger.** In the context of this specification, a shared database of transactions maintained via **distributed ledger technology**.
 
@@ -155,7 +156,7 @@ This is the motivation for DIDs: a new type of decentralized URN that can have o
 
 2. **NCIDs** (non-cryptographic identifiers) do not have any cryptographic properties (a UUID is an example of an NCID).
 
-3. **Aliases **are a subtype of NCIDs created from a hash of a conventional unique identifier, such as a mobile telephone number, email address, URI, etc.
+3. **Aliases** are a subtype of NCIDs created from a hash of a conventional unique identifier, such as a mobile telephone number, email address, URI, etc.
 
 Note that each of these DID types can serve as an index key (not to be confused with a cryptographic key) to a corresponding value, which is the DDO. A DID method specification MAY specify how the same DDO may be located by multiple DID index keys, i.e., multiple CIDs, NCIDs, or aliases.
 
@@ -164,11 +165,11 @@ Note that each of these DID types can serve as an index key (not to be confused 
 The generic DID scheme is a URI scheme conformant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). Due to the limited character set, it also an IRI scheme conformant with [RFC 3987](https://www.ietf.org/rfc/rfc3987.txt). Following is an ABNF definition using the ABNF syntax defined in [RFC 5234](https://tools.ietf.org/html/rfc5234).
 
 ```
-did              = "did:" method ":" method-idstring [ "#" fragment ]
-method-idstring  = idstring *( ":" idstring )
-method           = 1*idchar
-idstring         = 1*idchar
-idchar           = ALPHA / DIGIT / "." / "-"
+did                = "did:" method ":" specific-idstring [ "#" fragment ]
+specific-idstring  = idstring *( ":" idstring )
+method             = 1*idchar
+idstring           = 1*idchar
+idchar             = ALPHA / DIGIT / "." / "-"
 ```
 
 See section 4.3 for the balance of the ABNF rules defining DID fragments.
@@ -179,7 +180,7 @@ A DID method specification MUST define exactly one specific DID scheme identifie
 
 Since the method name is part of the DID, it SHOULD be as short as practical. A method name of four characters or less is RECOMMENDED. The method name MAY reflect the name of the DLT or decentralized network to which the DID method specification applies.
 
-If needed, a specific DID scheme MAY define multiple specific ID formats (the method-idstring rule in section 4.1). It is RECOMMENDED that a specific DID scheme define as few specific ID formats as possible.
+If needed, a specific DID scheme MAY define multiple specific ID formats (the specific-idstring rule in section 4.1). It is RECOMMENDED that a specific DID scheme define as few specific ID formats as possible.
 
 ## 4.3 DID Fragments
 
@@ -292,11 +293,8 @@ Example:
 ```
 {
     "equiv-id": [
-
         "did:sov:33ad7beb1abc4a26b89246",
-
-           "did:sov:f336a645f5a941b7ab8oac"
-
+        "did:sov:f336a645f5a941b7ab8oac"
     ]
 }
 ```
