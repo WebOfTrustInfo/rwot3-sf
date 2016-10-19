@@ -129,3 +129,51 @@ Part of the problem is that you need to know when signatures were created; you n
 
 Timestamps are _additive_ security.
 
+_One-minute round._
+
+## Slepaks' Triangle (Greg Slepak)
+
+Attempts to solve long-running debate of what the blocksize should be. 
+
+At its base, it says a system can only have two of three attributes: decentralized, consensus, mainstream.
+
+## Anonymous Credential for Blockchain-Based Identities (Dmitry KHOVRATOVICH)
+
+Legders are useful, but the question of privacy is missing. 
+
+Anonymous Credentials can solve this problem.
+
+## Standard Protocols for Accessing Blockchains (Manu Sporny)
+
+It would be neat to recreate HTTP for blockchains. We just need to figure out what they're speaking.
+
+## Identity-Standard Data Models (Manu Sporny)
+
+This is verifiable claims.
+
+## How Do We Ensure an ID is Unique? (Jonathan Endersby)
+
+This will eventually happen, and the question is if it's solvable.
+
+## Self-Sovereign Value Chain (Robert)
+
+Self-sovereign identity has no value until you add endorsements and have usage. We need a taxonomy for a value-chain to allow all of this.
+
+## Portable Reputation Toolkit (Noah)
+
+Want to put together a proof of concept in code for a portable reputation toolkit.
+
+## Decentralized Trust Management Network (Pavel)
+## Financial Trust without Centralized Parties or Ledgers (Pavel)
+
+Ideal money is trust, because you can't steal it.
+
+Your balance could be total number of trust lines that all of your friends or creditors give to you, and then you can use that to pay others, transfering through a network of friends (or nodes).
+
+So how do you build this? You _could_ use a centralized entity. Otherwise, you can use blockchain, but you can't scale that. So what do you do instead?
+
+You create a web of connected nodes, a consensus system. You issue IOUs and reach a consensus with a group of friends.
+
+## Identity Containers (Daniel Buchner)
+
+Have container signed with your DID. Going to build a reference implementation out in the next few months. And possibly roll it out to a billion people!
