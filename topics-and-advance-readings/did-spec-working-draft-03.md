@@ -43,7 +43,7 @@ This specification defines the requirements of a conformant DID method specifica
 
 **Cryptonym.** Another name for a **CID**.
 
-**Decentralized identifier (DID). **A globally unique identifier that does not require a centralized registration authority. The generic format of a DID is defined in this specification. A specific **DID scheme** is defined in a **DID method specification**. A DID may be either a **cryptographic identifier** (CID), a **non-cryptographic identifier** (NCID), or an **alias**. 
+**Decentralized identifier (DID).** A globally unique identifier that does not require a centralized registration authority. The generic format of a DID is defined in this specification. A specific **DID scheme** is defined in a **DID method specification**. A DID may be either a **cryptographic identifier** (CID), a **non-cryptographic identifier** (NCID), or an **alias**. 
 
 **Decentralized identity management (DIDM).** [Identity management](https://en.wikipedia.org/wiki/Identity_management) based on decentralized identifiers that do not require centralized authorities such as those required by [X.500 directory services](https://en.wikipedia.org/wiki/X.500), the [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System), national ID systems, etc.
 
@@ -61,11 +61,11 @@ This specification defines the requirements of a conformant DID method specifica
 
 **DID scheme. **The formal syntax of a DID identifier. The generic DID scheme is defined in this  specification. A specific DID scheme that works with a specific **DID method** is defined in a **DID method specification**.
 
-**DIDM. **Acronym for **decentralized identity management**.
+**DIDM.** Acronym for **decentralized identity management**.
 
 **Distributed ledger technology (DLT).** A [distributed database](https://en.wikipedia.org/wiki/Distributed_database) in which the various nodes use a [consensus protocol](https://en.wikipedia.org/wiki/Consensus_(computer_science)) to maintain a shared ledger in which each transaction is cryptographically signed and chained to the previous transaction. See also **blockchain**.
 
-**DLT. **Acronym for **distributed ledger technology**. 
+**DLT.** Acronym for **distributed ledger technology**. 
 
 **Identity owner. **The person, organization, or thing whose identity is represented by a **DID record**. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) Note that the identity owner may not be the director controller of the DID record; for example a parent may control the DID record(s) for a young child, but the child is the identity owner.
 
@@ -73,25 +73,25 @@ This specification defines the requirements of a conformant DID method specifica
 
 **JSON-LD (JSON Linked Data). **A method of encoding [Linked Data](https://en.wikipedia.org/wiki/Linked_data) using JSON. JSON-LD enables object properties in a JSON document to be linked to concepts in an **RDF** [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)).
 
-**Ledger. **In the context of this specification, a shared database of transactions maintained via **distributed ledger technology**.
+**Ledger.** In the context of this specification, a shared database of transactions maintained via **distributed ledger technology**.
 
 **NCID.** Acronym for **non-cryptographic identifier**.
 
-**Non-cryptographic identifier (NCID). **A **DID** that does not have any cryptographic properties. An NCID does not have an associated private key or signing key. A **UUID** is an example of an NCID.
+**Non-cryptographic identifier (NCID).** A **DID** that does not have any cryptographic properties. An NCID does not have an associated private key or signing key. A **UUID** is an example of an NCID.
 
 **RDF.** Acronym for Resource Description Framework—a semantic graph model defined by the [W3C RDF Working Group](https://www.w3.org/2011/rdf-wg/).
 
-**Relying party (RP). **The entity accepting a digital identity asserted by an identity owner.
+**Relying party (RP).** The entity accepting a digital identity asserted by an identity owner.
 
-**RP. **Acronym for **relying party**. 
+**RP.** Acronym for **relying party**. 
 
 **Service endpoint.** A network address at which a service operates on behalf of an identity owner. Examples of specific DIDM services include discovery services, authentication services, authorization services, interaction services, etc. A **DIDM** service endpoint may also be provided by a generalized data interchange protocol such as **XDI**.
 
 **UUID.** Universally Unique Identifier as specified by [RFC 4122](https://www.ietf.org/rfc/rfc4122.txt).
 
-**URI (Uniform Resource Identifier). **The standard identifier in Web architecture defined by IETF [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
+**URI (Uniform Resource Identifier).** The standard identifier in Web architecture defined by IETF [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt).
 
-**URN (Uniform Resource Name). **A URI intended to serve as a persistent, location-independent identifier of a resource, i.e, an identifier that will always represent the same resource (ideally forever).
+**URN (Uniform Resource Name).** A URI intended to serve as a persistent, location-independent identifier of a resource, i.e, an identifier that will always represent the same resource (ideally forever).
 
 **XDI.** Acronym for Extensible Data Interchange (also XRI Data Interchange)—a semantic graph format and semantic data interchange protocol defined by the [OASIS XDI Technical Committee](https://www.oasis-open.org/committees/xdi/).
 
@@ -163,11 +163,13 @@ Note that each of these DID types can serve as an index key (not to be confused 
 
 The generic DID scheme is a URI scheme conformant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). Due to the limited character set, it also an IRI scheme conformant with [RFC 3987](https://www.ietf.org/rfc/rfc3987.txt). Following is an ABNF definition using the ABNF syntax defined in [RFC 5234](https://tools.ietf.org/html/rfc5234).
 
+```
 did              = "did:" method ":" method-idstring [ "#" fragment ]
 method-idstring  = idstring *( ":" idstring )
 method           = 1*idchar
 idstring         = 1*idchar
 idchar           = ALPHA / DIGIT / "." / "-"
+```
 
 See section 4.3 for the balance of the ABNF rules defining DID fragments.
 
@@ -185,12 +187,14 @@ A DID—the decentralized identifier that uniquely represents an identity owner�
 
 Following are the ABNF rules for a DID fragment identifier.
 
+```
 fragment      = *( pchar / "/" / "?" )
 pchar         = unreserved / pct-encoded / sub-delims / ":" / "@"
 unreserved    = ALPHA / DIGIT / "-" / "." / "_" / "~"
 pct-encoded   = "%" HEXDIG HEXDIG
 sub-delims    = "!" / "$" / "&" / "'" / "(" / ")"
                  / "*" / "+" / "," / ";" / "="
+```
 
 Note that these rules are identical to the fragment rules in [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt), i.e., a DID fragment is identical to a URI fragment.
 
@@ -249,13 +253,11 @@ JSON objects in JSON-LD format must include a JSON-LD context statement. The rul
 4. The value of this key MUST be the URL specified in the example below.
 
 Example:
-
+```
 {
-
     "@context": "[TODO-specify-canonical-URL-for-JSON-LD-DDOs]"
-
 }
-
+```
 ## 5.2. Primary DID (Required)
 
 This primary DID is the primary index key for the DDO. The rules for a primary DID are:
@@ -267,13 +269,11 @@ This primary DID is the primary index key for the DDO. The rules for a primary D
 3. The value of this key MUST be a valid DID according to a specific DID scheme as defined in section 4.
 
 Example:
-
+```
 {
-
     "id": "did:sov:21tDAKCERh95uGgKbJNHYp"
-
 }
-
+```
 ## 5.3. Equivalent DIDs (Optional)
 
 An equivalent DID is an additional index key for the DDO. Under the RDF OWL graph model, this is a DID that has [an owl:sameAs relationship](https://www.w3.org/TR/owl-ref/#sameAs-def) with the primary DID. Under the XDI graph model, it is an XDI address that has [an XDI $is identity equivalence relationship](http://docs.oasis-open.org/xdi/xdi-core/v1.0/csd01/xdi-core-v1.0-csd01.xml#idp140693356323016) with the primary DID.
@@ -289,9 +289,8 @@ The rules for equivalent identifiers are:
 4. The values in this array MUST be valid DIDs according as defined in section 4.
 
 Example:
-
+```
 {
-
     "equiv-id": [
 
         "did:sov:33ad7beb1abc4a26b89246",
@@ -299,9 +298,8 @@ Example:
            "did:sov:f336a645f5a941b7ab8oac"
 
     ]
-
 }
-
+```
 [OPEN ISSUE: Should equivalent DIDs be limited to DIDs that use the same method as the primary DID—and thus must registered in the same DLT or network? If not, how do we define the relationship of an equivalent DID to a DID proved with Proof of Publication member per section 5.6?]
 
 ## 5.4. Proof of Ownership (Optional)
@@ -317,13 +315,11 @@ The rules for Proof of Ownership are:
 3. The value of this key MUST be a public key or verification key as defined by the DID method specification for the primary DID.
 
 Example:
-
+```
 {
-
     "verkey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCABMC"
-
 }
-
+```
 [OPEN ISSUE: Should a DDO allow multiple verkeys for Proof of Ownership? If so, is the method for referencing a specific verkey based on using a DID fragment? See an example at [https://authorization.io/dids/did:0768f21b-5371-4726-b784-17707bc8deca](https://authorization.io/dids/did:0768f21b-5371-4726-b784-17707bc8deca). Note that this example actually uses a path and not a fragment.]
 
 [OPEN ISSUE: Should each DID method specification be able to define its own verkey or public key expression format(s)?]
@@ -353,21 +349,15 @@ The rules for Proof of Control using multiple keys are:
 5. If one of the values of this array is "self", then any key in the verkey member specified in section 5.4 MUST be considered valid for Proof of Control.
 
 Example:
-
+```
 {
-
     "control": [
-
         "self",
-
         "did:sov:bsAdB81oHKaCmLTsgajtp9AoAHE9ei4",
-
         "did:sov:21tDAKCERh95uGgKbJNHYpE8WEogrsf"
-
     ]
-
 }
-
+```
 [OPEN ISSUE: Do we define an optional threshold of signatures required if there are multiple keys listed?]
 
 [OPEN ISSUE: How do we want to define multisig?]
@@ -395,19 +385,14 @@ The rules for service endpoints are:
 5. The value of this key MUST be a valid IRI conforming to [RFC 3987](https://www.ietf.org/rfc/rfc3987.txt) that represents the service endpoint.
 
 Example:
-
+```
 {
-
     "service": {
-
         "openid": "https://openid.example.com/456",
-
         "xdi": "https://xdi.example.com/123"
-
     }
-
 }
-
+```
 ## 5.8. Identity Type (Optional)
 
 An identity type is a semantic assertion about the type of resource an identity owner represents (i.e., a person, an organization, a type of thing). 
@@ -425,13 +410,11 @@ The rules for an identity type are:
     2. A valid XDI address conforming to [XDI Core 1.0](http://docs.oasis-open.org/xdi/xdi-core/v1.0/xdi-core-v1.0.html) that represents the identity type.
 
 Example:
-
+```
 {
-
     "type": "http://schema.org/Person"
-
 }
-
+```
 ## 5.9. Creator (Optional Unless No Proof of Ownership)
 
 In certain cases, one identity owner (called the creator) may provision an identity record for another identity owner who is not in a position to hold or control the necessary cryptographic keys (such as a parent creating an identity record for a young child). In this case, there are no verkeys to represent the ultimate identity owner. So the DDO needs to express the identity of the creator.
@@ -445,13 +428,11 @@ The rules for a creator are:
 3. The value of this key MUST be a valid DID as defined in section 4.
 
 Example:
-
+```
 {
-
     "creator": "did:sov:21tDAKCERh95uGgKbJNHYpE8WEogrsf"
-
 }
-
+```
 ## 5.10. Created (Optional)
 
 Standard metadata for identity records includes a timestamp of the original creation. The rules for including a creation timestamp are:
@@ -465,13 +446,11 @@ Standard metadata for identity records includes a timestamp of the original crea
 4. This datetime value MUST be normalized to UTC 00:00 as indicated by the trailing "Z".
 
 Example:
-
+```
 {
-
     "created": "2002-10-10T17:00:00Z"
-
 }
-
+```
 [OPEN ISSUE: Is a "created" timestamp RECOMMENDED?]
 
 ## 5.11. Updated (Optional)
@@ -487,13 +466,11 @@ Standard metadata for identity records includes a timestamp of the most recent c
 4. This datetime value MUST be normalized to UTC 00:00 as indicated by the trailing "Z".
 
 Example:
-
+```
 {
-
     "updated": "2016-10-17T02:41:00Z"
-
 }
-
+```
 [OPEN ISSUE: Is an "updated" timestamp RECOMMENDED?]
 
 ## 5.12. Signature (Required)
@@ -515,23 +492,16 @@ The rules for a signature are:
 [OPEN ISSUE: Need to specify any additional rules for applying an JSON-LD signature.]
 
 Example:
-
+```
 {
-
     "signature": {
-
         "type": "LinkedDataSignature2015",
-
         "created": "2016-02-08T16:02:20Z",
-
         "creator": "did:76d0cdb7-9c75-4be5-8e5a-e2d7a35ce907/keys/1",
-
         "signatureValue": "QNB13Y7Q9oLlDLL6AHyL31OE5fLji9DwJSA8qnv81oRaKonij8m+Jv4XdiEYvJ97iRlzKU/92/0LafSL5JftEgl960DLcbqMFxOtbAmFOIMa7eDcrgTL5ytXeYCYKLjHQG3s8a3UKDKRuEK54qK1G5hGKGoLgAVa6xgcDLjW7M19PEJV/c3HpGA7Eez6VFMoTt4yESjZvOXC97xN3KpshOx2HT/btgUbo0XjA1Oi0QHdgrLcUsQGt6w23RjeSToalrsA1G69OFeN2OiQrz9Jb4561hvKLSyWObwRmS6n5Vgr5xkvUm6MONRq0Vg33kXevoVM64KTBkISul61tzjn4w=="
-
     }
-
 }
-
+```
 # 6. DID Operations
 
 To enable the full functionality of DIDs and DDOs on a particular DLT or decentralized network (called the *target system*), a DID method specification MUST specify how each of the following [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations is performed by a client. Each operation MUST be specified to the level of detail necessary to build and test interoperable client implementations with the target system.
@@ -597,11 +567,11 @@ Sovrin is a public permissioned ledger for self-sovereign identity governed by t
 ## A.1. The Sovrin DID Scheme
 
 The Sovrin DID scheme is defined by the following ABNF:
-
+```
 sovrin-did    = "did:sov:" idstring
 idstring      = 22*22char
 char          = ALPHA / DIGIT
-
+```
 This means all Sovrin DIDs are exactly 22 characters representing a [base58Check encoding](https://en.bitcoin.it/wiki/Base58Check_encoding) of the first 16 bytes of a 256 bit [Ed25519](https://ed25519.cr.yp.to/) verification key (the public portion of the key pair).
 
 ## A.2. Verification Keys
@@ -641,59 +611,30 @@ In any case, a Sovrin client MUST NOT ever rely on an abbreviated key by itself.
 This is an example DDO conformant with this specification. The DIDs in this example are defined by the Sovrin DID method in Appendix A.
 
 {
-
     "@context": "https://example.org/did/v1",
-
     "id": "did:sov:21tDAKCERh95uGgKbJNHYp",
-
     "equiv-id": [
-
         "did:sov:33ad7beb1abc4a26b89246",
-
         "did:sov:f336a645f5a941b7ab8oac"
-
     ],
-
     "verkey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCABMC",
-
     "control": [
-
         "self",
-
         "did:sov:bsAdB81oHKaCmLTsgajtp9AoAHE9ei4",
-
         "did:sov:21tDAKCERh95uGgKbJNHYpE8WEogrsf"
-
     ],
-
     "service": {
-
         "openid": "https://openid.example.com/456",
-
         "xdi": "https://xdi.example.com/123"
-
     },
-
     "type": "[http://schema.org/Person](http://schema.org/Person)",
-
     "creator": "did:sov:21tDAKCERh95uGgKbJNHYpE8WEogrsf",
-
     "created": "2002-10-10T17:00:00Z",
-
     "updated": "2016-10-17T02:41:00Z",
-
     "signature": {
-
         "type": "LinkedDataSignature2015",
-
         "created": "2016-02-08T16:02:20Z",
-
         "Creator": "did:sov:21tDAKCERh95uGgKbJNHYpE8WEogrsf/keys/1",
-
         "signatureValue": "IOmA4R7TfhkYTYW87z640O3GYFldw0yqie9Wl1kZ5OBYNAKOwG5uOsPRK8/2C4STOWF+83cMcbZ3CBMq2/gi25s="
-
-
-
     }
-
 }
