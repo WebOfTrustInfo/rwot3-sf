@@ -25,3 +25,20 @@ There are a lot of related elements:
 * Recovering identity
 
 The lifecycle goes from Registering an identity (in a namespace) to Use of identity and Use of attestations to Recovery of identity to Expiration of identity.
+
+## Conflicts in Privacy Preserving Architure (Manu Sporny)
+
+There are two camps of thought:
+* Self-sovereign identity
+* Same-origin identity
+
+### Same-Origin Identity
+
+You should never have an identifier that crosses domains because it allows correlation.
+
+### Self-Sovereign (Cross-Origin) Identity
+
+It's OK to have identifier that crosses domains as long as you have anonymizer.
+
+_These communities are not talking to each other, and this has led to conflicts and will lead to more in the next couple of years. The goal here is simply to note that there's a conflict and we need to talk!_
+
