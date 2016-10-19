@@ -1,8 +1,6 @@
-# Towards a User Interface for Selectively Revealing Fine-Grained
-Personal Information to Transaction Counterparties
+# Towards a User Interface for Selectively Revealing Fine-Grained Personal Information to Transaction Counterparties
 
-### by Ryan Grant &lt;rgrant@contract.design&gt;, for Web-of-Trust Design
-Workshop (fall2016)
+### by Ryan Grant &lt;rgrant@contract.design&gt;, for Web-of-Trust Design Workshop (fall2016)
 
 In a world where identity is carried with dignity by the participants
 themselves, built through a stored history of social interactions,
@@ -41,8 +39,7 @@ David Longley).
 To successfully deliver products enabling this vision,
 implementations must also develop:
 
-- a protocol of questions, usually asked by a computer to an
-authorizing human; and
+- a protocol of questions, usually asked by a computer to an authorizing human; and
 - clear test scenarios.
 
 Two Test Scenarios in fully collateralized lending
@@ -57,13 +54,13 @@ Collateralized Zero Coupon Bond #1
 
 Description of terms:
 
-&gt; A zero coupon bond, with values measured in USD but transacted in
-&gt; BTC.  Final payment in-kind (as BTC).  borrower will lock up
-&gt; collateral of 3x BTC into multisig contract.  Price oracle required
-&gt; as one signing party, along with at least one of the other parties.
-&gt; Borrower receives BTC worth "discounted price" at bond initiation,
-&gt; and pays about 9% interest.  Deal initiates as an atomic
-&gt; transaction.
+> A zero coupon bond, with values measured in USD but transacted in
+> BTC.  Final payment in-kind (as BTC).  borrower will lock up
+> collateral of 3x BTC into multisig contract.  Price oracle required
+> as one signing party, along with at least one of the other parties.
+> Borrower receives BTC worth "discounted price" at bond initiation,
+> and pays about 9% interest.  Deal initiates as an atomic
+> transaction.
 
         Face Value           : $10,000
         Discounted Price     : $8,000
@@ -84,11 +81,11 @@ Collateralized Zero Coupon Bond #2
 
 Description of terms:
 
-&gt; Exact same numbers and terms as above, except borrower will receive
-&gt; USD at bond initiation, and lender will send fiat money through a
-&gt; standard escrow house.  Once the bond is initiated, the work of the
-&gt; escrow house is completed.  The bond's collateral is held on the
-&gt; Bitcoin blockchain as in the prior example.
+> Exact same numbers and terms as above, except borrower will receive
+> USD at bond initiation, and lender will send fiat money through a
+> standard escrow house.  Once the bond is initiated, the work of the
+> escrow house is completed.  The bond's collateral is held on the
+> Bitcoin blockchain as in the prior example.
 
 Additional wallet user interface requirements (borrower and lender):
 
