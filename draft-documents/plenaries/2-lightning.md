@@ -24,4 +24,4 @@ There are a lot of related elements:
 * Thwarting man-in-the-middle atacks
 * Recovering identity
 
-
+The lifecycle goes from Registering an identity (in a namespace) to Use of identity and Use of attestations to Recovery of identity to Expiration of identity.
