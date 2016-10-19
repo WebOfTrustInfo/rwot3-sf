@@ -85,5 +85,16 @@ Another proof of concept. Encode into poem instead, but not (yet) a rhyming one.
 
 ## Social Authentication (Glenn Willen)
 
+The basic idea is: authentication based on who you know, or better who knows you. 
+
+This is already done at Facebook through Trusted Contacts.
+
+Technically, Shamir secret-sharing scheming allows this type of key recovery.
+
+You want these social authentication to be stronger than your personal key, in case your personal key is compromised.
+
+You need to be able to detect loss of recovery key shards very quickly, else they decay over time.
+
+May need to tie this to a trust system, so that you can penalize people if they verify a false identity.
 
 ## (Kaliya Young)
