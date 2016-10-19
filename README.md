@@ -14,15 +14,12 @@ In advance of the October DesignShop, all participants were requested to post in
 
 The topic papers submitted were:
 
-* [Identity as Linked Data on Immutable Ledgers](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-as-linked-data-on-immutable-ledgers.md) by Tim Daubenschuetz @timdaub \<tim.daubenschuetz@gmail.com, tim@bigchaindb.com\> and Trent McConaghy @trentmc0 \<gtrent@gmail.com, trent@bigchaindb.com\>
-* [EU General Data Protection Regulation & Self-Sovereign Identifier(s)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/EU%20General%20Data%20Protection%20Regulation%20%26%20Self-Sovereign%20Identifier(s)) by David Robert \<david.robert@aeternam.eu\>
-<<<<<<< HEAD
+* [Identity as Linked Data on Immutable Ledgers](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-as-linked-data-on-immutable-ledgers.md) by Tim Daubenschuetz and Trent McConaghy 
+* [EU General Data Protection Regulation & Self-Sovereign Identifier(s)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/EU%20General%20Data%20Protection%20Regulation%20%26%20Self-Sovereign%20Identifier(s)) by David Robert
 * [Identity Forking and Federated Reputation](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-forking-and-federated-reputation.md) by Christopher Malon
-* [OpenTimestamps: Scalable, Trustless, Distributed Timestamping with Bitcoin](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/1bc5b56b72f95a4d1665f148aa1deba581fc580d/topics-and-advance-readings/opentimestamps.md) by Peter Todd
-=======
-* [Identity Forking and Federated Reputation](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-forking-and-federated-reputation.md) by Christopher Malon \<malon@groupring.net\>
+* [Identity Forking and Federated Reputation](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-forking-and-federated-reputation.md) by Christopher Malon
 * [OpenTimestamps: Scalable, Trustless, Distributed Timestamping with Bitcoin](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/opentimestamps.md) by Peter Todd
-* [Distributed Identity, Distributed Self](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/DistributedIdentityDistributedSelf.md) by Natalie Smolenski \<nsmolenski@learningmachine.com\>
+* [Distributed Identity, Distributed Self](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/DistributedIdentityDistributedSelf.md) by Natalie Smolenski
 * [Blockchain Extensions for Linked Data Signatures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) by the Signature Super Friends (Manu Sporny, Harlan Wood, Noah Thorp, Wayne Vaughn, Christopher Allen, Jason Bukowski, and Dave Longley)
 * [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar (Manu Sporny, Dave Longley, Dave Lehn, and Adam Lake)
 * [Taxonomy of Identity Interaction Types](https://github.com/Identitywoman/Writing/blob/master/Taxonomy-of-Identity-Interaction-Types.md) by Kaliya Young
@@ -35,4 +32,7 @@ The topic papers submitted were:
 * [Blockchain Attestation Taxonomies] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/attestation-taxonomies.md) by Christian Lundkvist
 * [Slepak's Triangle: The fundamental user limit of decentralized consensus systems](topics-and-advance-readings/Slepaks-Triangle.pdf) by Greg Slepak (@taoeffect)
 * [Sovereign Identity Model for Digital Ecologies](topics-and-advance-readings/Sovereign-Identity-Model-for-Digital-Ecologies.md) by Patrick Deegan
+* [Alternative Futures: Framework for Identity Scenarios](topics-and-advance-readings/alternative-futures-frameworks.md) by Alessandro Voto
+* [Powering the Physician-Patient Relationship with HIW of One Blockchain Health IT](physician-patient-relationship.pdf) by Adrian Gropper
+
 
