@@ -17,7 +17,7 @@ Shipping it is more important than process!
 
 We want to make a difference in our communities & influence them.
 
-## Agreements & Ground Floors
+## Agreements & Ground Rules
 
 On the site!
 
