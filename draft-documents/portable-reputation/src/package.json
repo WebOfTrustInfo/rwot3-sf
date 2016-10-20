@@ -4,12 +4,14 @@
   "description": "[PRE-ALPHA] Create and retrieve timestamped verifiable claims",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js claim"
+    "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js '+([^.])'"
   },
   "author": "",
   "license": "CC0",
   "dependencies": {
-    "commander": "^2.9.0"
+    "bitcore-lib": "^0.13.19",
+    "commander": "^2.9.0",
+    "jsonld-signatures": "github:digitalbazaar/jsonld-signatures#master"
   },
   "devDependencies": {
     "eslint": "^3.8.1",

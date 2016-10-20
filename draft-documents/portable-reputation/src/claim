@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+
+// Usage -- eg:
+// ./claim \
+//   --target did:bitcoin01:xxx-noah \
+//   --claim:summary 'blockchain expert' \
+//   --creator did:bitcoin01:xxx-me \
+//   --tags Reputation
+
+var bitcore = require('bitcore-lib')
+var jsonldSignatures = require('jsonld-signatures')
+// var program = require('commander')
+//
+// program
+//   .option('-t, --target', 'Add target')
+//   .option('-s, --claim:summary', 'Add claim summary')
+//   .option('-c, --creator', 'Add creator')
+//   .option('-t, --tags <tag1,tag2>', 'Add tags')
+//   .parse(process.argv)
+
+var input = {
+  "@context": "https://web-payments.org/contexts/security-v1.jsonld",
+  "id": "did:xyz123",
+  "type": ["Claim", "Reputation"],
+  "issuer": "https://reputation-toolkit.xyz",
+  "issued": "2016-10-20",
+  "claim": {
+    "id": "did:xxx-noah",
+    "summary": "blockchain expert"
+  }
+}
+
+var privateKey = 'L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw'
+
+jsonldSignatures.promises.sign(input, {
+  privateKeyWif: privateKey,
+  algorithm: 'BitcoinSignature2016',
+  domain: 'example.com',
+  creator: 'sha256-ecdsa-secp256k1-public-key:' + new bitcore.PrivateKey(privateKey).toPublicKey()
+}).then(function (result) {
+  console.log(result)
+  return
+}).catch(function (error) {
+  console.error(error.stack)
+})
