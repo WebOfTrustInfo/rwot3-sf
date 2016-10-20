@@ -22,3 +22,4 @@ The topic papers submitted were:
 * [Blockchain Extensions for Linked Data Signatures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) by the Signature Super Friends
 * [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar
 * [Taxonomy of Identity Interaction Types](https://github.com/Identitywoman/Writing/blob/master/Taxonomy-of-Identity-Interaction-Types.md) by Kaliya Young
+* [Creating a Humanized Internet] (https://github.com/vshen2010/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Creating%20a%20Humanized%20Internet.pdf) by Monique Morrow, et al
