@@ -23,4 +23,5 @@
 
 *Verifiable Claims* (Manu)
    * Where does privacy fall down?
+   * Not including questions of signatures.
    * Do a privacy analysis & fold it into work
