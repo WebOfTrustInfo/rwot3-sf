@@ -33,4 +33,4 @@ Running:
 }
 ```
 
-And then notarize the claim with Open Timesamps or similar.
+And then notarize the claim with Open Timestamps or similar.
