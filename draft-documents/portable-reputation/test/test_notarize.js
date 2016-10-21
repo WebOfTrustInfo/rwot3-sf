@@ -7,7 +7,6 @@ describe('notarize', function () {
   this.timeout(5e3)
 
   it('should notarize the things', function (done) {
-
     var doc = {hello: 'world'}
     var docStr = JSON.stringify(doc)
     notarize(docStr)

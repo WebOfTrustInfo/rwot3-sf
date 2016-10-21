@@ -6,6 +6,9 @@ var config = {
     node: true
   },
   globals: {
+    describe: true,
+    it: true,
+    xit: true
   },
   plugins: [
     'promise'
