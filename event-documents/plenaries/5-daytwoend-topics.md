@@ -28,3 +28,11 @@ Open Issues:
    * Permissioning Rules
    * Recovery
    
+## Joram (Joe A.)
+
+UN SDG 16.9 compatible identity engagement model (and extended use case).
+This is one through-line of a sample experience.
+
+Joram is a Syrian refugee who is washed up on shores of Greece.
+He's then brought in refugee system and identified using a Self-sovereign identity data store.
+
