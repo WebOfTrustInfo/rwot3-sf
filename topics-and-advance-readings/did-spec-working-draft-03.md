@@ -4,7 +4,7 @@
 
 **Editors:**     Drummond Reed, Les Chasen
 
-**Contributors:**    Christopher Allen, Manu Sporny, David Longley, Jason Law, Daniel Hardman
+**Contributors:**    Christopher Allen, Manu Sporny, David Longley, Jason Law, Daniel Hardman, Markus Sabadello
 
 *Note: Work on this specification has been funded in part by the United States Department of Homeland Security's Science and Technology Directorate under contract HSHQDC-16-R00012-H-SB2016-1-002. The content of this specification does not necessarily reflect the position or the policy of the U.S. Government and no official endorsement should be inferred.*
 
@@ -625,7 +625,7 @@ This is an example DDO conformant with this specification. The DIDs in this exam
         "openid": "https://openid.example.com/456",
         "xdi": "https://xdi.example.com/123"
     },
-    "type": "[http://schema.org/Person](http://schema.org/Person)",
+    "type": "http://schema.org/Person",
     "creator": "did:sov:21tDAKCERh95uGgKbJNHYpE8WEogrsf",
     "created": "2002-10-10T17:00:00Z",
     "updated": "2016-10-17T02:41:00Z",
