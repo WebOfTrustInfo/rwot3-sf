@@ -1,7 +1,6 @@
 var chai = require('chai')
 var notarize = require('../src/notarize.js').notarize
 
-var assert = chai.assert
 var expect = chai.expect
 
 describe('notarize', function () {
@@ -17,10 +16,6 @@ describe('notarize', function () {
       // TODO: This assertion is currently not very smart, make it smart.
       expect(otsStr).to.match(/OpenTimestamps/)
       done()
-      // assert(otsStr.indexOf('TimestampsProof') > -1)
-    }).catch(function (err) {
-      // FIXME: TO to throw an error further in nodejs?
-      console.log(err)
-    })
+    }).catch(done)
   })
 })
