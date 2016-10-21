@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var fs = require('fs')
 var bitcore = require('bitcore-lib')
 var jsonldSignatures = require('jsonld-signatures')
 var didio = require('did-io')
@@ -7,6 +8,10 @@ var jsonld = require('jsonld')
 var program = require('commander')
 var moment = require('moment')
 var canonicalJson = require('json-stable-stringify')
+var lightsaber = require('lightsaber')
+
+var run = lightsaber.run
+var d = lightsaber.d
 
 var notarize = require('./notarize.js').notarize
 
@@ -48,7 +53,7 @@ var input = {
   issued:  moment().format(),
   claim: {
     id: opts.target,
-    summary: "blockchain expert"
+    summary: opts.claimSummary
   }
 }
 
@@ -72,6 +77,9 @@ jsonldSignatures.promises.sign(input, {
   result.openTimestamp = openTimestamp
   console.log("\n\nresult:")
   console.log(JSON.stringify(result, null, 4))
+  fs.writeFileSync('claims/xyz', canonicalJson(result))
+  id = run("ipfs add -q claims/xyz").toString().trim()
+  run("open https://ipfs.io/ipfs/" + id)
 }).catch(function (error) {
   console.error(error.stack)
 })
