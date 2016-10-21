@@ -5,7 +5,7 @@
   "issued": "2016-10-20T11:36Z",
   "claim": {
    "id": "did:btc1:xxx-id-this-proposition-refers-to",
-   "proposition": "Competent at cryptography security reviews", // statement, proposition, assertion, description?
+   "proposition": "Competent at cryptography security reviews",
    "evaluation": true,
    "description": "By looking at the git commit comments, penetration test documents they authored, and reviews of their work I have determined they are competent at cryptography security reviews",
    "evidence": ["https://github.com/WebOfTrustInfo/cryptography_foo/xyz",
