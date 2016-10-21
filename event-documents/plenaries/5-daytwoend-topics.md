@@ -78,7 +78,7 @@ Working on proof of concepts:
 
 ## Humanness in Digital Identity (Kaliyah, Matthew, Daniel)
 
-What isn't working in current society
+Listing what isn't working in current society
 and thinking about how to avoid them (or include them) in the digital world
 
    * Shadows
@@ -91,3 +91,5 @@ and thinking about how to avoid them (or include them) in the digital world
    * Orgs
    
 There are real-world consequences with many of the other things being described, because the human factors in an identity ecosystem have real consequences.
+ 
+ **Possibly another paper on shadows (Kaliyah).**
