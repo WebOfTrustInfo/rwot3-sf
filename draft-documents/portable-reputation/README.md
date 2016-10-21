@@ -128,8 +128,9 @@ Note the URL link to the media and the signed evidence hash. This is a compact w
 (TODO: Make installing easier.)
 
 ```
-$ cd ots
-# Create a virtual environment
+$ cd src/ots
+$ git submodule update --init --recursive
+# Optionally create a virtual environment, then:
 $ pip install -r requirements.txt
 # TODO: More?
 ```
