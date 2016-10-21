@@ -1,20 +1,26 @@
-var assert = require('chai').assert
+var chai = require('chai')
+var notarize = require('../src/notarize.js').notarize
 
-function testInvokeNotarize () {
-  var notarize = require('../src/notarize')
+var assert = chai.assert
+var expect = chai.expect
 
-  var doc = {hello: 'world'}
-  var docStr = JSON.stringify(doc)
-  notarize.notarize(docStr)
+describe('notarize', function () {
+  this.timeout(5e3)
+
+  it('should notarize the things', function (done) {
+
+    var doc = {hello: 'world'}
+    var docStr = JSON.stringify(doc)
+    notarize(docStr)
     .then(function (ots) {
       var otsStr = new Buffer(ots, 'base64').toString("ascii")
       // TODO: This assertion is currently not very smart, make it smart.
-      assert(otsStr.indexOf('TimestampsProof') > -1)
-      return
+      expect(otsStr).to.match(/OpenTimestamps/)
+      done()
+      // assert(otsStr.indexOf('TimestampsProof') > -1)
     }).catch(function (err) {
       // FIXME: TO to throw an error further in nodejs?
       console.log(err)
     })
-}
-
-testInvokeNotarize()
+  })
+})
