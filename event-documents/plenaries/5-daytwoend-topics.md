@@ -31,9 +31,11 @@ Open Issues:
 ## Joram (Joe A., Bob)
 
 UN SDG 16.9 compatible identity engagement model (and extended use case).
+
 This is one through-line of a sample experience.
 
 Joram is a Syrian refugee who is washed up on shores of Greece.
+
 He's then brought in refugee system and identified using a Self-sovereign identity data store.
 
 ## Bootstrapping Identity & User Adoption (Matt, 
@@ -49,3 +51,14 @@ Created a few bootrapping models
    * Centralized KYC Holder Distributing Existing Attestations to SSID
    * SSID + Social Media Link
    * P2P + Entity Attestation
+
+## Digital Licensing of Intellectual Properties (Shawn, COALA Co-Author
+
+Co-Sent Receipt & COALA IP 
+   * Looking at their similarities and differences
+   
+About consent mechanism of self-sovereign data
+
+What happens to data after its been shed?
+
+**Spec Out Tomorrow.**
