@@ -1,0 +1,3 @@
+[submodule "ots"]
+	path = draft-documents/portable-reputation/src/ots
+	url = git@github.com:gwillen/opentimestamps-client.git

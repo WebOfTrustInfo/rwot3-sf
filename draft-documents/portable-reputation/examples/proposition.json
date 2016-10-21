@@ -1,0 +1,10 @@
+{
+ "@context": "TODO",
+ "type": ["Claim", "Proposition"],
+ "issuer": "https://portable-reputation-toolkit.xyz",
+ "issued": "2016-10-20T11:36Z",
+ "claim": {
+   "id": "did:btc1:xxx-id-of-the-person-this-proposition-refers-to",
+   "proposition": "Competent at TIG welding"
+ }
+}

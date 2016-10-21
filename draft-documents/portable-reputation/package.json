@@ -3,20 +3,25 @@
   "version": "0.0.0",
   "description": "[PRE-ALPHA] Create and retrieve timestamped verifiable claims",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js '+([^.])'"
+    "test": "mocha",
+    "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js test src 'src/+([^.])'"
   },
   "author": "",
   "license": "CC0",
   "dependencies": {
     "bitcore-lib": "^0.13.19",
     "commander": "^2.9.0",
-    "jsonld-signatures": "github:digitalbazaar/jsonld-signatures#master"
+    "did-io": "^0.6.6",
+    "json-stable-stringify": "^1.0.1",
+    "jsonld-signatures": "github:CoMakery/jsonld-signatures#rename-sig",
+    "moment": "^2.15.1"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.8.1",
     "eslint-config-standard": "^6.2.0",
     "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-standard": "^2.0.1"
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^3.1.2"
   }
 }

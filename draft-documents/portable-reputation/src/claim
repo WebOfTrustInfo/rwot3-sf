@@ -1,45 +1,77 @@
 #!/usr/bin/env node
 
-// Usage -- eg:
-// ./claim \
-//   --target did:bitcoin01:xxx-noah \
-//   --claim:summary 'blockchain expert' \
-//   --creator did:bitcoin01:xxx-me \
-//   --tags Reputation
-
 var bitcore = require('bitcore-lib')
 var jsonldSignatures = require('jsonld-signatures')
-// var program = require('commander')
-//
-// program
-//   .option('-t, --target', 'Add target')
-//   .option('-s, --claim:summary', 'Add claim summary')
-//   .option('-c, --creator', 'Add creator')
-//   .option('-t, --tags <tag1,tag2>', 'Add tags')
-//   .parse(process.argv)
+var didio = require('did-io')
+var jsonld = require('jsonld')
+var program = require('commander')
+var moment = require('moment')
+var canonicalJson = require('json-stable-stringify')
+
+var notarize = require('./notarize.js').notarize
+
+// //////////////////
+
+didio.use("jsonld", jsonld)
+
+var did1 = didio.generateDid()
+// console.log("test did", did1)
+
+var did = "did:17b1d3d8-b581-4273-be84-f043fb6a5aef"
+
+didio.getDidDocument(did, function (err, doc) {
+  // console.log(err, doc)
+})
+
+// //////////////////
+
+function list(val) {
+  return val.split(/,\s*/)
+}
+
+var opts = program
+  .option('-c, --creator <creator>', 'DID or URL of claim creator')
+  .option('-t, --target <target>', 'DID or URI of claim target')
+  .option('-s, --claim-summary <summary>', 'Summary of claim type')
+  .option('-t, --tags <tag1,tag2>', 'Add tags', list)
+  .option('-p, --private-key <key>', 'Bitcoin private key')
+  .parse(process.argv)
+
+console.log(opts.claimSummary)
+opts.tags = opts.tags || []
+opts.tags.push("Claim")
 
 var input = {
-  "@context": "https://web-payments.org/contexts/security-v1.jsonld",
-  "id": "did:xyz123",
-  "type": ["Claim", "Reputation"],
-  "issuer": "https://reputation-toolkit.xyz",
-  "issued": "2016-10-20",
-  "claim": {
-    "id": "did:xxx-noah",
-    "summary": "blockchain expert"
+  "@context": "https://w3id.org/credentials/v1",
+  type: opts.tags,
+  issuer: opts.creator,
+  issued:  moment().format(),
+  claim: {
+    id: opts.target,
+    summary: "blockchain expert"
   }
 }
 
-var privateKey = 'L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw'
+console.log("\ninput:")
+console.log(JSON.stringify(input, null, 4))
 
+// var privateKey = 'L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw'
+var result;
 jsonldSignatures.promises.sign(input, {
-  privateKeyWif: privateKey,
-  algorithm: 'BitcoinSignature2016',
+  privateKeyWif: opts.privateKey,
+  algorithm: 'sha256-ecdsa-secp256k1-2016',
   domain: 'example.com',
-  creator: 'sha256-ecdsa-secp256k1-public-key:' + new bitcore.PrivateKey(privateKey).toPublicKey()
-}).then(function (result) {
-  console.log(result)
-  return
+  creator: 'sha256-ecdsa-secp256k1-public-key:' + new bitcore.PrivateKey(opts.privateKey).toPublicKey()
+}).then(function (_result) {
+  result = _result
+  var json = canonicalJson(result)
+  console.log("\n\njson to timestamp:")
+  console.log(json)
+  return notarize(json)
+}).then(function (openTimestamp) {
+  result.openTimestamp = openTimestamp
+  console.log("\n\nresult:")
+  console.log(JSON.stringify(result, null, 4))
 }).catch(function (error) {
   console.error(error.stack)
 })
