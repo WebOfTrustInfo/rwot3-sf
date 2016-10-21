@@ -1,0 +1,12 @@
+{
+ "@context": "TODO",
+ "id": "did:btc1:xyz-id-of-evidence", // use what did?
+ "type": ["Claim", "SignedEvidence"],
+ "issuer": "https://portable-reputation-toolkit.xyz",
+ "issued": "2016-10-20T11:36Z",
+ "claim": {
+   "id": "http://youtube.com/xyzabc",
+   "description": "Video of TIG welding demonstration",
+   "evidence-hash": "xyz-hash-of-evidence"
+ }
+}
