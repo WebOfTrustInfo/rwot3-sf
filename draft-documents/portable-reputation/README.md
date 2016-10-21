@@ -14,20 +14,31 @@ Stretch goals:
 
 ## JSON-LD Validated Claim Formats
 
-### Statement, Evaluation and Evidence All at Once
+These claims are to be signed by a distributed idenetifier (DID) and notarized with Open Timestamps or similar.
+
+### JSON-LD claim types
+
+- *Assertion* includes a proposition about an identity, an evaluation of that proposition, and an array of evidence.
+
+
+### Assertion = Proposition, Evaluation and Evidence
+The id of the content is not included in the address. There is no way to include an ipfs id based on the hash JSON-LD itself.
 
  ```js
  {
   "@context": "TODO",
-  "id": "did:btc1:xyz-id-of-the-claim",
   "type": ["Claim", "Assertion"],
   "issuer": "https://portable-reputation-toolkit.xyz",
   "issued": "2016-10-20T11:36Z",
   "claim": {
-    "statement": "age over 21", // statement, proposition, assertion, description?
+    "id": "did:btc1:xxx-id-this-proposition-refers-to",
+    "proposition": "Competent at cryptography security reviews", // statement, proposition, assertion, description?
     "evaluation": true, // true, false, null or range?
-    "evidence": ["http://example.com/evidence/1",
-    "http://example.com/evidence/2"]
+    "description": "By looking at the git commit comments, penetration test documents they authored, and reviews of their work I have determined they are competent at cryptography security reviews",
+    "evidence": ["https://github.com/WebOfTrustInfo/cryptography_foo/xyz",
+    "http://example.com/evidence/2",
+    "http://example.com/penetration_test_document/5"
+    "http://example.com/written_statement_by_trusted_person/3"]
   },
   "signature": {
     "type": "sha256-ecdsa-secp256k1-2016",
@@ -36,7 +47,9 @@ Stretch goals:
     "domain": "TODO",
     "nonce": "598c63d6",
     "signatureValue": "H/K6n7KpnxCY6kIkef4wUrLl8QmOKCaLWXXg5YAFM7Z5aOGYVLB0OPxXopnMIsjYqO9WNa5O+JxZT9bxRO6siTc="
-  }
+  },
+  "address": "ipfs-asdfjhasdfhjkahsdflasdf",
+  "proofOfExistence": [""]
 }
 ```
 
@@ -44,19 +57,18 @@ Stretch goals:
 
 #### The Assertion
 
-This assertion delays evaluation until evidence has been provided. It sets `"evaluation" : null` and does not provide evidence. A signature in this case verifies who originated the claim but not that the claim the statement is true. The signature for a statement without an evaluation may be optional in some cases.
+A proposition is neither true or false. It is like an assertion that delays evaluation until evidence has been provided. It implicitly sets `"evaluation" : null` and does not link to evidence. A signature in this case verifies who originated the claim but not that the proposition is true. The signature for a proposition without an evaluation may be optional in some cases.
 
 ```js
 {
  "@context": "TODO",
- "id": "did:btc1:xyz-id-of-the-assertion",
- "type": ["Claim", "Assertion"],
+ "id": "did:btc1:xyz-id-of-the-proposition",
+ "type": ["Claim", "Proposition"],
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
  "claim": {
-   "id": "did:btc1:xxx-id-this-proposition-refers-to",
-   "assertion": "Competent at TIG welding",
-   "evaluation": null
+   "id": "did:btc1:xxx-id-of-the-person-this-proposition-refers-to",
+   "proposition": "Competent at TIG welding"
  },
  "signature": {
    "type": "sha256-ecdsa-secp256k1-2016",
@@ -77,7 +89,7 @@ Note the URL link to the media and the signed evidence hash. This is a compact w
 {
  "@context": "TODO",
  "id": "did:btc1:xyz-id-of-evidence", // use what did?
- "type": ["Claim", "Evidence"],
+ "type": ["Claim", "SignedEvidence"],
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
  "claim": {
@@ -98,6 +110,8 @@ Note the URL link to the media and the signed evidence hash. This is a compact w
 
 #### The Evaluation
 
+Claims in this form can be applied to propositions or assertions that already have evidence.
+
 ```js
 {
  "@context": "TODO",
@@ -106,7 +120,7 @@ Note the URL link to the media and the signed evidence hash. This is a compact w
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
  "claim": {
-   "id": "did:btc1:xyz-id-of-the-assertion",
+   "id": "did:btc1:xyz-id-of-the-proposition",
    "evalution": true,
    "evidence": ["did:btc1:xyz-id-of-evidence",
    "http://example.com/written_statement", "did:btc1:xyz-id-of-signed-evidence"],
