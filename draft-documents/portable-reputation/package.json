@@ -4,7 +4,7 @@
   "description": "[PRE-ALPHA] Create and retrieve timestamped verifiable claims",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js '+([^.])'"
+    "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js src/*.js 'src/+([^.])'"
   },
   "author": "",
   "license": "CC0",
