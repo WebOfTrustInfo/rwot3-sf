@@ -52,9 +52,9 @@ Created a few bootrapping models
    * SSID + Social Media Link
    * P2P + Entity Attestation
 
-## Digital Licensing of Intellectual Properties (Shawn, COALA Co-Author
+## Digital Licensing of Intellectual Properties (Shawn, Tim)
 
-Co-Sent Receipt & COALA IP 
+Consent Receipts & [COALA IP](https://github.com/coalaip/specs)
    * Looking at their similarities and differences
    
 About consent mechanism of self-sovereign data
