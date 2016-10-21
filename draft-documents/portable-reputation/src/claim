@@ -14,14 +14,14 @@ var jsonld = require('jsonld')
 
 didio.use("jsonld", jsonld)
 
-var did1 = didio.generateDid();
-console.log("test did", did1);
+var did1 = didio.generateDid()
+console.log("test did", did1)
 
-var did = "did:17b1d3d8-b581-4273-be84-f043fb6a5aef";
+var did = "did:17b1d3d8-b581-4273-be84-f043fb6a5aef"
 
-didio.getDidDocument(did, function(err, doc) {
-    console.log(err, doc);
-});
+didio.getDidDocument(did, function (err, doc) {
+  console.log(err, doc)
+})
 
 // var program = require('commander')
 //
