@@ -38,13 +38,14 @@ He's then brought in refugee system and identified using a Self-sovereign identi
 
 ## Bootstrapping Identity & User Adoption (Matt, 
 
-Looked at traditional and bitworld records and found problems with each.
-Looked at benefits and value proposition of decentralized identity.
-Looked at challenges of decentralized services
+   * Looked at traditional and bitworld records and found problems with each.
+   * Looked at benefits and value proposition of decentralized identity.
+   * Looked at challenges of decentralized services
 
 How can we actually create _initial_ moment of trust? 
+
 Created a few bootrapping models
-   1 Direct, in-person KYC to SSID
-   2 Centralized KYC Holder Distributing Existing Attestations to SSID
-   3 SSID + Social Media Link
-   4 P2P + Entity Attestation
+   * Direct, in-person KYC to SSID
+   * Centralized KYC Holder Distributing Existing Attestations to SSID
+   * SSID + Social Media Link
+   * P2P + Entity Attestation
