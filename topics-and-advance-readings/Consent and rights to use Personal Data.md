@@ -1,8 +1,9 @@
 ## Consent and Rights of Use for Personal Data
 
-Dr Shaun Conway, Lohan Spies, Jonathan Endersby
+Dr Shaun Conway, Lohan Spies, Jonathan Endersby, Tim Daubenschütz
 
 **Consent**  https://consent.global  @globalconsent
+**COALA IP**  https://coala.global
 
 *Submitted to the 3rd Rebooting the Web of Trust Technical Workshop as a
 discussion paper.*
@@ -18,7 +19,7 @@ complex, as illustrated by the healthcare use-case in this paper.
 We propose that a decentralised protocol can be developed to operationalise
 intellectual property rights over Personal Data. This could merge elements of
 the [COALA-IP
-Specification](https://docs.google.com/presentation/d/1PxLb3iJv1N34HFDTL9GEzhJho3BLS5vVnb7UR63hy3A/edit?ts=576be82e#slide=id.g148fec3f89_0_57)
+Specification](https://github.com/coalaip/specs)
 for Digital Intellectual Property with the specification for [Digital Consent
 Receipts](https://kantarainitiative.org/confluence/display/infosharing/Consent+Receipt+Specification).
 
@@ -163,15 +164,19 @@ value) that cannot be repudiated, on a decentralised public ledger. This
 becomes a powerful reference to the rights of ownership and use of these
 digital assets.
 
+The advantage of expressing Consent Receipts in an RDF schema allows the semantic
+mapping of related but domain-specific concepts. In our case Intellectual Property
+and Personal Data:
+
 As an example:
 
 COALA IP describes a digital right in the following format:
 
 ```json
 {   "@type": { "/": "<hash pointing to RDF-Schema of Right>" },
-    "usages": “all|copy|play|stream|...”,
-    "territory": { “/”: “<hash pointing to a Place>” },
-    "context": “inflight|inpublic|commercialuse…”,
+    "usages": "all|copy|play|stream|...",
+    "territory": { "/": "<hash pointing to the Place>" },
+    "context": "inflight|inpublic|commercialuse…",
     "exclusive": true|false,
      ...
     "manifestation": { "/": "<hash pointing to the Manifestation>" },
@@ -179,20 +184,55 @@ COALA IP describes a digital right in the following format:
 }
 ```
 
-Consent Receipts includes a for the purpose for use for personal data:
+Consent Notice Receipts defines a purpose for use of Personal Data:
 
 ```json
-    "@type": { "/": "<hash pointing to RDF-Schema of Right>" },
-    "purposes": {
-        "consentType": "",
-        "purposeCategory": "",
-        "piiCategory": [...],
-        "nonCorePurpose": true | false,
-        "purposeTermination": "",
-        "thirdPartyDisclosure": true | false,
-        "thirdPartyName": "",
-    }
+{
+    "jurisdiction": { "/": "<hash pointing to a Place>" },
+    "iat": "2007-12-24T18:21Z",
+    "moc": "tbd",
+    "dataController": {
+        "onBehalf": true | false,
+        "controller": {
+            "contact": { "/": "<hash pointing to a ContactPoint>" },
+            "address": { "/": "<hash pointing to a PostalAddress>" },
+            "email": "email@example.com",
+            "phone": "+123456789",
+    },
+    "policyUri": { "/": "<hash pointing to a Policy>" },
+    "services": {
+        "serviceName": "Transactional Banking",
+        "purposes": {
+            "consentType": "Required | Explicit, Opt-in | ...",
+            "purposeCategory": "tbd: commercial, research, compliance, ...",
+            "piiCategory": ["Marketing", "Personalized Experience", "..."],
+            "nonCorePurpose": true | false,
+            "thirdPartyDisclosure": true | false,
+            "thirdPartyName": "Example Inc.",
+        }
+    },
+    "sensitive": true | false,
+    "sub": { "/": "<hash pointing to a Person or Organization>" },
+    "spiCat": "religious believe | criminal convictions | ..."
+}
 ```
+
+Note that both the COALA IP Right model, as well as the Consent
+Receipt both include documents intended to be read by humans. In respective
+cases `license`, pointing to a license document outlining the terms and
+conditions under which a work is distributed and `policyUri` a legal document
+that describes the organizations privacy policy.
+
+Additional similarities include:
+
+|*COALA IP Right*|*Consent Receipt*|*Comment*|
+|---|---|---|
+|territory|juristiction|The geographical the agreement is valid.|
+|usage & context|purpose|Define the context under which the agreement is valid and for what purposes the information will be used.|
+
+As COALA IP assumes putting all data on immutable ledgers, `jti`, the Consent
+Receipt's timestamp and `publicKey` can be omitted as they're represented in
+the ledger's transaction that creates the records.
 
 The Consent Notice Receipt could be extended to include a digital right,
 related to a specific purpose. For instance, if the primary purpose is to make
@@ -200,17 +240,6 @@ a clinical diagnosis and the non-core purpose is to use the personal data for
 clinical research (no charge for academic research, compensation for commercial
 pharmaceutical research), the Consent Notice Receipt could include:
 
-```json
-{   "@type": { "/": "<hash pointing to RDF-Schema of Right>" },
-    "usages": “clinical research”,
-    "territory": { “/”: “<hash pointing to a Place>” },
-    "context": “academic|commercial”,
-    "exclusive": true|false,
-     ...
-    "manifestation": { "/": "<hash pointing to the Manifestation>" },
-    "license": { "/": "<hash pointing to the License>" }
-}
-```
 
 ### Technical specifications
 
@@ -236,6 +265,19 @@ assets from this (including verified claims), could be fairly and transparently
 compensated. This should increase trust and promote growth in the personal data
 economy.
 
+
+### Unresolved issues
+
+Currently, Consent Receipts are designed to be mutable models (e.g.
+`purposeTermination`, defining the revocation of a consent). This makes a
+transformation in some cases difficult. However, concepts of revocation on
+immutable ledgers are under development by various influential organizations
+(e.g. W3C, WOT, ...).
+
+Further work needs to be done in standardizing the Consent Notice Receipt
+Specification vocabulary to achieve greater alignment.
+
+
 ### Next Steps
 
 This paper was drafted after brief discussions with Trent McConaghy (COALA IP
@@ -252,14 +294,8 @@ specification for Digital Consent Receipts.
 
 References:
 
-* [How Blockchains can support, complement, or supplement Intellectual
-* Property. Working Group on Intellectual Property, COALA IP (May
-* 2016)](https://docs.google.com/viewer?url=http%3A%2F%2Fcoala.global%2Fwp-content%2Fuploads%2F2016%2F06%2FCOALA-IP-Report-May-2016.pdf)
-
-* [Consent Notice Receipt Specfication (Version 0.9.1). Kantara Initiative,
-* Consent and Information Sharing Working Group, 2 October
-* 201](https://docs.google.com/document/d/1-n06avXzwdYM6SeF1siUwNyhQIONreYMglXm9CZ7J0c/edit)6
-
-* [Personal Data: The emergence of a new asset class. World Economic forum,
-* 2011](https://docs.google.com/viewer?url=http%3A%2F%2Fwww3.weforum.org%2Fdocs%2FWEF_ITTC_PersonalDataNewAsset_Report_2011.pdf)
+* [COALA IP Specification](https://github.com/coalaip/specs)
+* [How Blockchains can support, complement, or supplement Intellectual Property. Working Group on Intellectual Property, COALA IP (May 2016)](https://docs.google.com/viewer?url=http%3A%2F%2Fcoala.global%2Fwp-content%2Fuploads%2F2016%2F06%2FCOALA-IP-Report-May-2016.pdf)
+* [Consent Notice Receipt Specfication (Version 0.9.1). Kantara Initiative, Consent and Information Sharing Working Group, 2 October 201](https://docs.google.com/document/d/1-n06avXzwdYM6SeF1siUwNyhQIONreYMglXm9CZ7J0c/edit)6
+* [Personal Data: The emergence of a new asset class. World Economic forum, 2011](https://docs.google.com/viewer?url=http%3A%2F%2Fwww3.weforum.org%2Fdocs%2FWEF_ITTC_PersonalDataNewAsset_Report_2011.pdf)
 
