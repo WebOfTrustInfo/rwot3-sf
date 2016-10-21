@@ -34,7 +34,6 @@ didio.getDidDocument(did, function (err, doc) {
 
 var input = {
   "@context": "https://w3id.org/credentials/v1",
-  "id": "did:xyz123",
   "type": ["Claim", "Reputation"],
   "issuer": "https://reputation-toolkit.xyz",
   "issued": "2016-10-20",

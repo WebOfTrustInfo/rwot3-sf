@@ -1,6 +1,5 @@
 {
  "@context": "TODO",
- "id": "did:btc1:xyz-id-of-evidence",
  "type": ["Claim", "SignedEvidence"],
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
