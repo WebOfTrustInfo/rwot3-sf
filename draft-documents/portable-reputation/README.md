@@ -17,11 +17,12 @@ Stretch goals:
 (TODO: Make installing easier.)
 
 ```
-$ cd src/ots
-$ git submodule update --init --recursive
+cd src
+npm install
+cd ots
+git submodule update --init --recursive
 # Optionally create a virtual environment, then:
-$ pip install -r requirements.txt
-# TODO: More?
+pip install -r requirements.txt
 ```
 
 ## Usage
