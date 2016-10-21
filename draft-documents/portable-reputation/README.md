@@ -12,6 +12,30 @@ Stretch goals:
 - Allow a user to request a claim
 - Search and filtering when retrieving claims
 
+## Installation
+
+(TODO: Make installing easier.)
+
+```
+$ cd src/ots
+$ git submodule update --init --recursive
+# Optionally create a virtual environment, then:
+$ pip install -r requirements.txt
+# TODO: More?
+```
+
+## Usage
+
+This does not yet work! But usage will be something like:
+
+```sh
+./claim \
+  --target did:btc1:xxx-noah \
+  --claim:summary 'blockchain expert' \
+  --creator did:bitcoin01:xxx-me \
+  --tags Reputation,
+ ```
+
 ## JSON-LD Validated Claim Formats
 
 These claims are to be signed by a distributed idenetifier (DID) and notarized with Open Timestamps or similar.
@@ -136,26 +160,3 @@ Claims in this form can be applied to propositions or assertions that already ha
  }
 }
 ```
-
-## Installation
-
-(TODO: Make installing easier.)
-
-```
-$ cd ots
-# Create a virtual environment
-$ pip install -r requirements.txt
-# TODO: More?
-```
-
-## Usage
-
-This does not yet work! But usage will be something like:
-
-```sh
-./claim \
-  --target did:btc1:xxx-noah \
-  --claim:summary 'blockchain expert' \
-  --creator did:bitcoin01:xxx-me \
-  --tags Reputation,
- ```
