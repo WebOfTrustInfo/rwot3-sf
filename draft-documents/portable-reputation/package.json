@@ -11,6 +11,7 @@
   "dependencies": {
     "bitcore-lib": "^0.13.19",
     "commander": "^2.9.0",
+    "did-io": "^0.6.6",
     "jsonld-signatures": "github:digitalbazaar/jsonld-signatures#master"
   },
   "devDependencies": {
