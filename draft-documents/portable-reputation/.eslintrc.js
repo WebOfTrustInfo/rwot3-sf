@@ -16,7 +16,7 @@ var config = {
     'no-nested-ternary': 2,
     // 'no-unused-vars': [2, { 'varsIgnorePattern': '^(' + unusedVars.join('|') + ')$' }],
     'object-property-newline': 0,
-    'promise/always-return': 1,
+    'promise/always-return': 0,
     'quotes': 0,
     'strict': [2, 'safe']
   }
