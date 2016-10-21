@@ -6,6 +6,9 @@ var didio = require('did-io')
 var jsonld = require('jsonld')
 var program = require('commander')
 var moment = require('moment')
+var canonicalJson = require('json-stable-stringify')
+
+var notarize = require('./notarize.js').notarize
 
 // //////////////////
 
@@ -53,16 +56,22 @@ console.log("\ninput:")
 console.log(JSON.stringify(input, null, 4))
 
 // var privateKey = 'L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw'
-
+var result;
 jsonldSignatures.promises.sign(input, {
   privateKeyWif: opts.privateKey,
   algorithm: 'sha256-ecdsa-secp256k1-2016',
   domain: 'example.com',
   creator: 'sha256-ecdsa-secp256k1-public-key:' + new bitcore.PrivateKey(opts.privateKey).toPublicKey()
-}).then(function (result) {
+}).then(function (_result) {
+  result = _result
+  var json = canonicalJson(result)
+  console.log("\n\njson to timestamp:")
+  console.log(json)
+  return notarize(json)
+}).then(function (openTimestamp) {
+  result.openTimestamp = openTimestamp
   console.log("\n\nresult:")
   console.log(JSON.stringify(result, null, 4))
-  return
 }).catch(function (error) {
   console.error(error.stack)
 })

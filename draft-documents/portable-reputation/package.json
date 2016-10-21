@@ -12,6 +12,7 @@
     "bitcore-lib": "^0.13.19",
     "commander": "^2.9.0",
     "did-io": "^0.6.6",
+    "json-stable-stringify": "^1.0.1",
     "jsonld-signatures": "github:CoMakery/jsonld-signatures#rename-sig",
     "moment": "^2.15.1"
   },
