@@ -69,6 +69,8 @@ Creating schema for: reputation + DID + timestamp + signature
 
 Breaking apart assertion and evaluation and evidence
 
+Working on proof of concepts:
+
 1. Get DID
 2. Make Signed claims with timestamps
 3. Query claims
