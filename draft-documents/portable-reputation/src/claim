@@ -19,7 +19,7 @@ var jsonldSignatures = require('jsonld-signatures')
 //   .parse(process.argv)
 
 var input = {
-  "@context": "https://web-payments.org/contexts/security-v1.jsonld",
+  "@context": "https://w3id.org/credentials/v1",
   "id": "did:xyz123",
   "type": ["Claim", "Reputation"],
   "issuer": "https://reputation-toolkit.xyz",
