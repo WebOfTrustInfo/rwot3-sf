@@ -23,7 +23,8 @@ Running:
   "claim": {
     "statement": "age over 21", // statement, proposition, assertion, description?
     "evaluation": true, // true, false, null or range?
-    "evidence": ["http://example.com/evidence/1","http://example.com/evidence/2"]
+    "evidence": ["http://example.com/evidence/1",
+    "http://example.com/evidence/2"]
   },
   "signature": {
     "type": "sha256-ecdsa-secp256k1-2016",
@@ -45,7 +46,7 @@ This assertion delays evaluation until evidence has been provided. It sets `"eva
 ```js
 {
  "@context": "TODO",
- "id": "did:btc1:xyz-id-of-the-proposition",
+ "id": "did:btc1:xyz-id-of-the-assertion",
  "type": ["Claim", "Assertion"],
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
@@ -72,7 +73,7 @@ Note the URL link to the media and the signed evidence hash. This is a compact w
 ```js
 {
  "@context": "TODO",
- "id": "did:btc1:xyz-id-of-the-claim-3",
+ "id": "did:btc1:xyz-id-of-evidence", // use what did?
  "type": ["Claim", "Evidence"],
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
@@ -97,15 +98,16 @@ Note the URL link to the media and the signed evidence hash. This is a compact w
 ```js
 {
  "@context": "TODO",
- "id": "did:btc1:xyz-id-of-the-claim-1",
- "type": ["Claim", "Assertion"],
+ "id": "did:btc1:xyz-id-of-the-evaluation",
+ "type": ["Claim", "Evaluation"],
  "issuer": "https://portable-reputation-toolkit.xyz",
  "issued": "2016-10-20T11:36Z",
  "claim": {
-   "id": "did:btc1:xyz-id-of-the-proposition",
+   "id": "did:btc1:xyz-id-of-the-assertion",
    "evalution": true,
-   "evidence": ["http://example.com/evidence/1","http://example.com/evidence/2", "did:btc1:xyz-id-of-signed-evidence"],
-   "description": "Has competently reviewed "
+   "evidence": ["did:btc1:xyz-id-of-evidence",
+   "http://example.com/written_statement", "did:btc1:xyz-id-of-signed-evidence"],
+   "description": "I attest that this person is a competent TIG welder based on my review of the video and their written statement."
  },
  "signature": {
    "type": "sha256-ecdsa-secp256k1-2016",
