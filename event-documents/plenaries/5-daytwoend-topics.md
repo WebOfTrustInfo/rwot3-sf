@@ -62,3 +62,14 @@ About consent mechanism of self-sovereign data
 What happens to data after its been shed?
 
 **Spec Out Tomorrow.**
+
+## Portable Reputation Toolkit
+
+Creating schema for: reputation + DID + timestamp + signature 
+
+Breaking apart assertion and evaluation and evidence
+
+1. Get DID
+2. Make Signed claims with timestamps
+3. Query claims
+4. Evaluate claims with evidence
