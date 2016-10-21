@@ -4,4 +4,6 @@ var notarize = require('./notarize.js').notarize
 
 var doc = {hello: 'world'}
 var docStr = JSON.stringify(doc)
-notarize(docStr)
+notarize(docStr).then(function (ots) {
+  console.log(ots)
+})
