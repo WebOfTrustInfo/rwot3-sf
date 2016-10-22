@@ -27,14 +27,31 @@ pip install -r requirements.txt
 
 ## Usage
 
-This does not yet work! But usage will be something like:
+Use `--help` to see available options:
 
 ```sh
-./claim \
-  --target did:btc1:xxx-noah \
-  --claim:summary 'blockchain expert' \
-  --creator did:bitcoin01:xxx-me \
-  --tags Reputation,
+src/claim --help
+
+  Usage: claim [options]
+
+  Options:
+
+    -c, --creator <creator>        DID or URL of claim creator
+    -t, --target <target>          DID or URI of claim target
+    -p, --private-key <key>        Bitcoin private key
+    -s, --claim-summary <summary>  Summary of claim type
+    -t, --tags <tag1,tag2>         Add tags
+```
+
+For example:
+
+```sh
+src/claim \
+  --creator did:00a65b11-593c-4a46-bf64-8b83f3ef698f \
+  --target did:59f269a0-0847-4f00-8c4c-26d84e6714c4 \
+  --private-key L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw \
+  --claim-summary 'Awesome paper!!!' \
+  --tags 'Reputation, Professional'
  ```
 
 ## JSON-LD Validated Claim Formats
