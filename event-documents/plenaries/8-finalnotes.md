@@ -1,7 +1,11 @@
 *Commitments*
    * Christopher A. has committed to working on a next Web of Trust, maybe in Paris, and possibility of another next year.
-   * Marta is going to write about revocation in blockchain.
-      * Drummond says that such a paper would be very useful for DIDs, which are to include revocation.
+   * We'll be looking into creating a Kantera workgroup at IIW (Joe, Christopher, Drummond)
+   * We'll also host a session on self-sovereign identity at IIW (Joe)
+   * We'll have DID working draft for IIW (Drummond)
+   * Drummond will be working on Trust Framework for Sovereign Foundation
+   * Uport Team will be implementing Verifiable Claims and DID Specification in UPort
+   * 
    
 There was some discussion of single-person papers that came out of these conferences, and we're proposing that we include them in our final papers if they get some casual peer review.
 
