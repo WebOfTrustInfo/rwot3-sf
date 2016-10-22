@@ -37,4 +37,8 @@
    
 *Update to Chainpoint for Time Stamps.* 
 
-   * Deliverable: Update to  (Wayne T.)
+   * Deliverable: Update to Chainpoint Spec (Wayne T.)
+
+*Identity Graphs.*
+
+   * Deliverable: Possible Paper (Marcus)
