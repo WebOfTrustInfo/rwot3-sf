@@ -15,7 +15,26 @@ We then updated on our projects.
 
    * Deliverable: Engagement Model (Joe)
 
-*Specifications for Smart Consent.* Looked at COALA and Consent Receiptss
+*Specifications for Smart Consent.* Looked at COALA IP and Consent Receipts, created a specification for "smart consent" by mapping Consent Receipts onto COALA IP.
 
-   * Deliverable: Paper (Shaun, Tim)
+   * Deliverable: Spec, by end of November (Shaun, Tim)
 
+*Identity Containers.* Took ideas and figured out some best ways to do things and some agreements.
+
+   * Deliverable: v0.1 Standard in next couple of months (Daniel)
+   
+*Portable Reputation Toolkit.* Made visual use case and were able to demo code on the live internet.
+
+   * Deliverable: Use Cases, Code (Noah)
+   
+*Verifiable Claims, Privacy and Security Concerns.* Took privacy and security concerns.
+
+   * Deliverable: Added privacy and security concerns to W3C Verifiable Claims spec, moving into IIW (Manu)
+
+*Technology that Can Improve Veriable Claims.* We can often create a false sense of security, particularly in ledgers. Creating a position paper to talk about how problems can arise in verifiable claims and how to avoid them.
+
+   * Deliverable: Position Paper (Jason, Greg)
+   
+*Greg's Triangle.* Working on paper.
+
+   * Deliverable: Paper (Greg)
