@@ -1,6 +1,6 @@
-# Portable Reputation
-Scripts to bring together a _Portable Reputation Toolkit_ proof of concept.
-The scripts:
+# Portable Reputation Toolkit
+Simple scripts to bring together a proof of concept _Portable Reputation Toolkit_.
+They currently:
 
 - Generate DIDs using [did-io](https://github.com/digitalbazaar/did-io)
 - Create [JSON-LD claims](http://opencreds.org/specs/source/claims-data-model/#expressing-entity-credentials-in-json)
