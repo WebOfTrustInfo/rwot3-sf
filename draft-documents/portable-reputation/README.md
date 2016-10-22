@@ -1,15 +1,17 @@
 # Portable Reputation
-We are writing proof of concept scripts to bring together a _Portable
-Reputation Toolkit_ proof of concept.  The scripts should:
+Scripts to bring together a _Portable Reputation Toolkit_ proof of concept.
+The scripts:
 
 - Generate DIDs
-- Create signed verifiable claims
-- Create proof of existence for these claims on a blockchain
-- Retrieve existing claims
+- Create claims
+- Sign the claims with a Bitcoin private key
+- Create proof of existence for these claims using
+  [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement)
 
-Stretch goals:
+Future goals:
 
 - Allow a user to request a claim
+- Retrieve existing claims
 - Search and filtering when retrieving claims
 
 ## Installation
@@ -38,7 +40,7 @@ src/claim --help
     -t, --tags <tag1,tag2>         Add tags
 ```
 
-For example:
+For example, running:
 
 ```sh
 src/claim \
@@ -49,17 +51,43 @@ src/claim \
   --tags 'Reputation, Professional'
  ```
 
+ will generate a JSON-LD verifiable claim something like:
+
+ ```json
+ {
+    "@context": "https://w3id.org/credentials/v1",
+    "type": [
+        "Reputation",
+        "Professional",
+        "Claim"
+    ],
+    "issuer": "did:00a65b11-593c-4a46-bf64-8b83f3ef698f",
+    "issued": "2016-10-22T01:21:44-07:00",
+    "claim": {
+        "id": "did:59f269a0-0847-4f00-8c4c-26d84e6714c4",
+        "summary": "Awesome paper!!!"
+    },
+    "signature": {
+        "type": "sha256-ecdsa-secp256k1-2016",
+        "created": "2016-10-22T08:21:44Z",
+        "creator": "sha256-ecdsa-secp256k1-public-key:020d79074ef137d4f338c2e6bef2a49c618109eccf1cd01ccc3286634789baef4b",
+        "domain": "example.com",
+        "signatureValue": "H7tsv5rpXGXr5XLi7KvWVyYhDzO+ODC5g5ZOuhPx04vZYRW1omE7c104BoQUT6PdZjo/RRoZiFkCfsYEjs+qsIg="
+    },
+    "openTimestamp": "AE9wZW5UaW1lc3RhbXBzAABQcm9vZgC/ieLohOiSlAEI7wrxwSIVAIJ9pU2GXw2ONcyQxr/wn2XfHhg+7siJRsrwEOlyrF1dR91SCAX1Bj2AGdYI//AQZ0mReqKHaS6C9Y6maBLl2gjxBFgLIZvwCAwzlodWl0BeAIPf4w0u+QyOLi1odHRwczovL2FsaWNlLmJ0Yy5jYWxlbmRhci5vcGVudGltZXN0YW1wcy5vcmfwEHDNg8S8EFKhOM4MF71sTeMI8QRYCyGb8AgSRweqKUbulACD3+MNLvkMjiwraHR0cHM6Ly9ib2IuYnRjLmNhbGVuZGFyLm9wZW50aW1lc3RhbXBzLm9yZw=="
+}
+```
+
 ## JSON-LD Validated Claim Formats
 
-These claims are to be signed by a distributed idenetifier (DID) and notarized with Open Timestamps or similar.
+These claims are to be signed by a distributed identifier (DID) and notarized with Open Timestamps or similar.
 
 ### JSON-LD claim types
 
 - *Assertion* includes a proposition about an identity, an evaluation of that proposition, and an array of evidence.
 
-
 ### Assertion = Proposition, Evaluation and Evidence
-The id of the content is not included in the address. There is no way to include an ipfs id based on the hash JSON-LD itself.
+The id of the content is not included in the address. There is no way to include an IPFS id based on the hash JSON-LD itself.
 
  ```js
  {
