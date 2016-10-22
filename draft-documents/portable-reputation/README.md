@@ -14,15 +14,10 @@ Stretch goals:
 
 ## Installation
 
-(TODO: Make installing easier.)
-
 ```
-cd src
+git clone https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016.git
+cd rebooting-the-web-of-trust-fall2016/draft-documents/portable-reputation
 npm install
-cd ots
-git submodule update --init --recursive
-# Optionally create a virtual environment, then:
-pip install -r requirements.txt
 ```
 
 ## Usage
