@@ -20,15 +20,15 @@ function list (val) {
 var opts = program
   .option('-c, --creator <creator>', 'DID or URL of claim creator')
   .option('-t, --target <target>', 'DID or URI of claim target')
+  .option('-p, --private-key <key>', 'Bitcoin private key')
   .option('-s, --claim-summary <summary>', 'Summary of claim type')
   .option('-t, --tags <tag1,tag2>', 'Add tags', list)
-  .option('-p, --private-key <key>', 'Bitcoin private key')
   .parse(process.argv)
 
 opts.tags = opts.tags || []
 opts.tags.push("Claim")
 
-var input = {
+var claim = {
   "@context": "https://w3id.org/credentials/v1",
   type: opts.tags,
   issuer: opts.creator,
@@ -40,11 +40,10 @@ var input = {
 }
 
 console.log("\ninput:")
-console.log(JSON.stringify(input, null, 4))
+console.log(JSON.stringify(claim, null, 4))
 
-// var privateKey = 'L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw'
 var result
-jsonldSignatures.promises.sign(input, {
+jsonldSignatures.promises.sign(claim, {
   privateKeyWif: opts.privateKey,
   algorithm: 'sha256-ecdsa-secp256k1-2016',
   domain: 'example.com',
@@ -62,7 +61,7 @@ jsonldSignatures.promises.sign(input, {
   fs.writeFileSync('claims/xyz', canonicalJson(result))
   var id = run("ipfs add -q claims/xyz").toString().trim()
   console.log("open https://ipfs.io/ipfs/" + id)
-  console.log("open http://localhost:7777/" + id)
 }).catch(function (error) {
   console.error(error.stack)
+  process.exit(1)
 })
