@@ -4,7 +4,7 @@ var OTS_LOGS = [
   'Submitting to remote calendar'
 ]
 
-exports.notarize = function (doc, next) {
+exports.notarize = function (doc) {
   return new Promise(function (resolve, reject) {
     var child = spawn('./src/ots/ots', ['stamp'])
 

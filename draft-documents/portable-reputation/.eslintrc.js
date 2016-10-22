@@ -1,3 +1,7 @@
+var unusedVars = [
+  'd'
+]
+
 var config = {
   extends: [
     'standard'
@@ -17,7 +21,7 @@ var config = {
     'linebreak-style': [2, 'unix'],
     'no-console': 0,
     'no-nested-ternary': 2,
-    // 'no-unused-vars': [2, { 'varsIgnorePattern': '^(' + unusedVars.join('|') + ')$' }],
+    'no-unused-vars': [2, { 'varsIgnorePattern': '^(' + unusedVars.join('|') + ')$' }],
     'object-property-newline': 0,
     'promise/always-return': 0,
     'quotes': 0,

@@ -13,7 +13,7 @@ var d = lightsaber.d
 
 var notarize = require('./notarize.js').notarize
 
-function list(val) {
+function list (val) {
   return val.split(/,\s*/)
 }
 
@@ -32,7 +32,7 @@ var input = {
   "@context": "https://w3id.org/credentials/v1",
   type: opts.tags,
   issuer: opts.creator,
-  issued:  moment().format(),
+  issued: moment().format(),
   claim: {
     id: opts.target,
     summary: opts.claimSummary
@@ -43,7 +43,7 @@ console.log("\ninput:")
 console.log(JSON.stringify(input, null, 4))
 
 // var privateKey = 'L4mEi7eEdTNNFQEWaa7JhUKAbtHdVvByGAqvpJKC53mfiqunjBjw'
-var result;
+var result
 jsonldSignatures.promises.sign(input, {
   privateKeyWif: opts.privateKey,
   algorithm: 'sha256-ecdsa-secp256k1-2016',
@@ -60,7 +60,7 @@ jsonldSignatures.promises.sign(input, {
   console.log("\n\nresult:")
   console.log(JSON.stringify(result, null, 4))
   fs.writeFileSync('claims/xyz', canonicalJson(result))
-  id = run("ipfs add -q claims/xyz").toString().trim()
+  var id = run("ipfs add -q claims/xyz").toString().trim()
   console.log("open https://ipfs.io/ipfs/" + id)
   console.log("open http://localhost:7777/" + id)
 }).catch(function (error) {
