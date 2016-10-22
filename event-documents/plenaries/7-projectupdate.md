@@ -1,8 +1,4 @@
 
-We had some individual discussions of how our groups appreciated our work.
-
-We then updated on our projects.
-
 *Bootstrapping Models for Digital Identity.* Put together six models for bootstrapping a usable system. Next steps are trust models. 
  
    * Deliverable: Paper, by end of November 
