@@ -31,6 +31,10 @@
 
    * Deliverable: Position Paper (Jason, Greg)
    
-*Greg's Triangle.* Working on paper.
+*Greg's Triangle.* Working on paper. The object is to show how decentralized consensus systems just can't scale as well as a centralized system!
 
    * Deliverable: Paper (Greg)
+   
+*Update to Chainpoint for Time Stamps.* 
+
+   * Deliverable: Update to  (Wayne T.)
