@@ -2,11 +2,13 @@
 Scripts to bring together a _Portable Reputation Toolkit_ proof of concept.
 The scripts:
 
-- Generate DIDs
-- Create claims
-- Sign the claims with a Bitcoin private key
+- Generate DIDs using [did-io](https://github.com/digitalbazaar/did-io)
+- Create [JSON-LD claims](http://opencreds.org/specs/source/claims-data-model/#expressing-entity-credentials-in-json)
+- Sign the claims with a Bitcoin private key using
+  [jsonld-signatures](https://github.com/digitalbazaar/jsonld-signatures)
 - Create proof of existence for these claims using
   [OpenTimestamps](https://petertodd.org/2016/opentimestamps-announcement)
+- Upload the signed, timestamped claim to [IPFS](https://ipfs.io)
 
 Future goals:
 
