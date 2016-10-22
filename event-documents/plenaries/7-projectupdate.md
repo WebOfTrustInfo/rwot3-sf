@@ -42,3 +42,7 @@
 *Identity Graphs.*
 
    * Deliverable: Possible Paper (Marcus)
+
+*Revocation in Blockchain*
+  
+   * Deliverable: Paper (Marta)
