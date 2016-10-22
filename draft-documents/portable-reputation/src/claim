@@ -3,8 +3,6 @@
 var fs = require('fs')
 var bitcore = require('bitcore-lib')
 var jsonldSignatures = require('jsonld-signatures')
-var didio = require('did-io')
-var jsonld = require('jsonld')
 var program = require('commander')
 var moment = require('moment')
 var canonicalJson = require('json-stable-stringify')
@@ -14,21 +12,6 @@ var run = lightsaber.run
 var d = lightsaber.d
 
 var notarize = require('./notarize.js').notarize
-
-// //////////////////
-
-didio.use("jsonld", jsonld)
-
-var did1 = didio.generateDid()
-// console.log("test did", did1)
-
-var did = "did:17b1d3d8-b581-4273-be84-f043fb6a5aef"
-
-didio.getDidDocument(did, function (err, doc) {
-  // console.log(err, doc)
-})
-
-// //////////////////
 
 function list(val) {
   return val.split(/,\s*/)
