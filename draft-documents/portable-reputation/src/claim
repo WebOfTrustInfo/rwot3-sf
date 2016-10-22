@@ -42,7 +42,6 @@ var opts = program
   .option('-p, --private-key <key>', 'Bitcoin private key')
   .parse(process.argv)
 
-console.log(opts.claimSummary)
 opts.tags = opts.tags || []
 opts.tags.push("Claim")
 
@@ -79,7 +78,8 @@ jsonldSignatures.promises.sign(input, {
   console.log(JSON.stringify(result, null, 4))
   fs.writeFileSync('claims/xyz', canonicalJson(result))
   id = run("ipfs add -q claims/xyz").toString().trim()
-  run("open https://ipfs.io/ipfs/" + id)
+  console.log("open https://ipfs.io/ipfs/" + id)
+  console.log("open http://localhost:7777/" + id)
 }).catch(function (error) {
   console.error(error.stack)
 })
