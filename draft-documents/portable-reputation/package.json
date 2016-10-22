@@ -6,7 +6,13 @@
     "test": "mocha",
     "lint": "eslint --ignore-pattern '!.eslintrc.js' .eslintrc.js test src 'src/+([^.])'"
   },
-  "author": "",
+  "author": "Team Toolkit",
+  "contributors": [
+    "Harlan T Wood (https://github.com/harlantwood)",
+    "gwillen (https://github.com/gwillen)",
+    "Tim Daubenschütz (https://github.com/TimDaub)",
+    "Noah Thorp (https://github.com/aquabu)"
+  ],
   "license": "CC0",
   "dependencies": {
     "bitcore-lib": "^0.13.19",
