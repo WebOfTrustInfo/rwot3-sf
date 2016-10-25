@@ -1,4 +1,4 @@
-Here's the papers that may be coming out of the concert:
+Here's the papers that may be coming out of the workshop:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
