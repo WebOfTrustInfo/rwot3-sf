@@ -8,7 +8,7 @@ Here's the papers that may be coming out of the workshop:
 | Identity Containers | Daniel B. | Queried | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Queried | |
 | Privacy on Distributed Ledgers | Jason L. | Queried | |
-| Portable Reputation Kit | Noah T. | Queried | |
+| Portable Reputation Kit | Noah T. | Queried | [portable-reputation](Code) |
 
 These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
 
@@ -18,7 +18,7 @@ These are more likely to be single-person papers, but hopefully with some group 
 | Slepak's Triangle | Greg S. | Queried | |
 | Identity Graphs | Markus S. | Queried | |
 
-These are more focused on updating existing protocols, but may generate some summaries or other explanations:
+These are more focused on updating existing protocols, but may generate sumaries, discussions, or even full papers:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
