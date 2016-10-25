@@ -8,7 +8,7 @@ Here's the papers that may be coming out of the workshop:
 | Identity Containers | Daniel B. | Queried | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Queried | |
 | Privacy on Distributed Ledgers | Jason L. | Queried | |
-| Portable Reputation Kit | Noah T. | Queried | [portable-reputation](Code) |
+| Portable Reputation Kit | Noah T. | Queried | [Code](portable-reputation) |
 
 These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
 
