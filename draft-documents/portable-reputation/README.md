@@ -28,7 +28,7 @@ npm install
 
 Use `--help` to see available options:
 
-```sh
+```
 src/claim --help
 
   Usage: claim [options]
@@ -44,7 +44,7 @@ src/claim --help
 
 For example, running:
 
-```sh
+```
 src/claim \
   --creator did:00a65b11-593c-4a46-bf64-8b83f3ef698f \
   --target did:59f269a0-0847-4f00-8c4c-26d84e6714c4 \
