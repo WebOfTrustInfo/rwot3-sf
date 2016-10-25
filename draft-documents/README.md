@@ -4,7 +4,7 @@ Here's the papers that may be coming out of the workshop:
 |-----------|----------|------------|----------|
 | Refugee Engagement Model | Joe A. | Queried | Full Draft Offsite (Google Docs)|
 | Humanness in Digital Identity | Kaliya Y. | Queried | Full Draft Offsite |
-| DID Spec v4 | Drummond R. | Planned: November 15 | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
+| DID Spec v4 | Drummond R. | Planned: 11/15 | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
 | Identity Containers | Daniel B. | Queried | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Queried | |
 | Privacy on Distributed Ledgers | Jason L. | Queried | |
@@ -24,5 +24,5 @@ These are more focused on updating existing protocols, but may generate sumaries
 |-----------|----------|------------|----------|
 | COALA + Consent Receipts | Shaun C. | Queried | |
 | Verifiable Claims Synopsis | Manu S. | Queried | |
-| Chainpoint Update Synopsis | Wayne V. | Planned: Week of Oct. 31 | |
+| Chainpoint Update Synopsis | Wayne V. | Planned: Week of 10/31| |
 
