@@ -9,5 +9,20 @@ Here's the papers that may be coming out of the workshop:
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Queried | |
 | Privacy on Distributed Ledgers | Jason L. | Queried | |
 | Portable Reputation Kit | Noah T. | Queried | |
+
+These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
+
+| **Paper** | **Lead** | **Status** | **Link** |
+|-----------|----------|------------|----------|
+| "Shadows" | Kaliya Y. | Queried | |
 | Slepak's Triangle | Greg S. | Queried | |
+| Identity Graphs | Markus S. | Queried | |
+
+These are more focused on updating existing protocols, but may generate some summaries or other explanations:
+
+| **Paper** | **Lead** | **Status** | **Link** |
+|-----------|----------|------------|----------|
 | COALA + Consent Receipts | Shaun C. | Queried | |
+| Verifiable Claims Synopsis | Manu S. | Queried | |
+| Chainpoint Update Synopsis | Wayne V. | Queried | |
+
