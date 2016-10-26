@@ -22,7 +22,7 @@ These are more focused on updating existing protocols, but may generate sumaries
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| COALA + Consent Receipts | Shaun C. | Queried | Planned: Mid-Nov |
+| COALA + Consent Receipts | Shaun C. | Planned: Mid-Nov |  |
 | Verifiable Claims Synopsis | Manu S. | Queried | |
 | Chainpoint Update Synopsis | Wayne V. | Planned: Week of 10/31| |
 
