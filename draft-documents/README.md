@@ -16,7 +16,7 @@ These are more likely to be single-person papers, but hopefully with some group 
 |-----------|----------|------------|----------|
 | "Shadows" | Kaliya Y. | Queried | |
 | Slepak's Triangle | Greg S. | Queried | |
-| Identity Graphs | Markus S. | Queried | |
+| Identity Graphs | Markus S. | Re-Query: Mid-Nov | |
 
 These are more focused on updating existing protocols, but may generate sumaries, discussions, or even full papers:
 
