@@ -23,6 +23,6 @@ These are more focused on updating existing protocols, but may generate sumaries
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
 | COALA + Consent Receipts | Shaun C. | Planned: Mid-Nov |  |
-| Verifiable Claims Synopsis | Manu S. | Queried | |
+| Verifiable Claims Synopsis | Manu S. | Planned: by Mid-Nov | |
 | Chainpoint Update Synopsis | Wayne V. | Planned: Week of 10/31| |
 
