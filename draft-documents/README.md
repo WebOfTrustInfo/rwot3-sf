@@ -2,7 +2,7 @@ Here's the papers that may be coming out of the workshop:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| Refugee Engagement Model | Joe A. | Queried | Full Draft Offsite (Google Docs)|
+| Refugee Engagement Model | Joe A. | Queried | Full Draft Offsite |
 | Humanness in Digital Identity | Kaliya Y. | Queried | Full Draft Offsite |
 | DID Spec v4 | Drummond R. | Planned: 11/15 | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
 | Identity Containers | Daniel B. | Queried | |
@@ -22,7 +22,7 @@ These are more focused on updating existing protocols, but may generate sumaries
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| COALA + Consent Receipts | Shaun C. | Queried | |
+| COALA + Consent Receipts | Shaun C. | Queried | Planned: Mid-Nov |
 | Verifiable Claims Synopsis | Manu S. | Queried | |
 | Chainpoint Update Synopsis | Wayne V. | Planned: Week of 10/31| |
 
