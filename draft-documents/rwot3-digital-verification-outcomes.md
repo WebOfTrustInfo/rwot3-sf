@@ -23,7 +23,7 @@ Group to the Digital Verification Community Group:
   * Koblitz 2016 Linked Data Signature Suite
   * Pseudonymous 2016 Linked Data Signature Suite
 
-## Verifiable Claims Privacy and Security Section
+## Authoring the Verifiable Claims Specification Privacy and Security Section
 
 A group was convened to discuss the privacy and security considerations
 for the Verifiable Claims Data Model and Representations specification.
@@ -32,7 +32,7 @@ specification, which can be found at the following link:
 
 http://opencreds.org/specs/source/claims-data-model/#privacy-considerations
 
-## Creation of Koblitz 2016 Signature Suite
+## Creation of Koblitz 2016 Signature Suite Specification
 
 The Koblitz 2016 Signature Suite was discussed, implemented, and formalized
 in a Signature Suite specification designed as an extension to the
@@ -40,7 +40,7 @@ Linked Data Signatures specification:
 
 http://w3c.github.com/lds-koblitz2016/
 
-## Creation of Pseudonymous 2016 Signature Suite
+## Creation of Pseudonymous 2016 Signature Suite Specification
 
 A pseudonymous signature suite based on the Camenish-Lysyanskaya signature
 mechanism was discussed and formalized in a Signature Suite specification
