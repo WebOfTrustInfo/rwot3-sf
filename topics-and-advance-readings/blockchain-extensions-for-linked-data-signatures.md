@@ -89,6 +89,39 @@ Web of Trust:
    to a verified claim or DID? If to the later, what field can the pubkey be
    put in?
 
+## Support for CamLys
+
+Support for Camenisch-Lysyanskaya style signatures would result in a signature
+block that looks like the following:
+
+    {
+      "@context": "https://w3id.org/anoncreds/v1",
+      "homeState": "Virginia",
+      "signature": {
+        "type": "CamLys2016",
+        "created": "2016-09-22T22:38:03Z",
+        "creator": "https://blue.example.com/keys/1",
+        "claimDefinition": "https://blue.example.com/definitions/drivers-license",
+        "revocationTails": "https://blue.example.com/tails/set-32893",
+        "revocationTailsHash": "urn:sha256:43903bab3b4b2b3b4b4b2bb2b8384ad457",
+        "accumulator": "https://blue.example.com/accumulator/set-32893",
+        "domain": "example.com",
+        "signatureValue": "IKwTJ...E37UsLgs="
+      }
+    }
+
+This signature would require the creation of a new
+[Linked Data Signature Suite](https://web-payments.org/specs/source/lds2016/)
+specification defining the following parameters:
+
+ - canonicalizationAlgorithm - https://w3id.org/security#NCA (no
+   canonicalization algoirthm)
+ - digestAlgorithm - https://w3id.org/security#sha256 defined in
+   [RFC6234](https://tools.ietf.org/html/rfc6234)
+ - signatureAlgorithm - http://w3id.org/security#camlys defined in
+   [CAMLYS](http://groups.csail.mit.edu/cis/pubs/lysyanskaya/cl02b.pdf)
+
+
 ## Blockchain Anchoring
 
 Blockchain anchoring techniques are used to prove that data existed at a
