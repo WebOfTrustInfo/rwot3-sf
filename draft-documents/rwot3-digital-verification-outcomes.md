@@ -47,3 +47,12 @@ mechanism was discussed and formalized in a Signature Suite specification
 designed as an extension to the Linked Data Signatures specification:
 
 http://w3c.github.com/lds-pseudonymous2016/
+
+## Addition of Multi Signature and Chained Signature Support
+
+A number of hallway discussions led to the general requirements and
+finalization of the design for multi-signature and chained signature
+support in the Linked Data Signatures specification:
+
+http://w3c.github.com/ld-signatures/#multiple-signatures
+
