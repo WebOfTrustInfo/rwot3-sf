@@ -1,5 +1,7 @@
 # Digital Verification Advancements at RWoT III
 
+***by Manu Sporny, Christopher Allen, Harlan Wood, Jason Law, and ...(add other participants)***
+
 There were a number of enhancements made to Digital Verification at the
 3rd Rebooting Web of Trust event. The following document summarises the
 advancements made as a direct result of participation from the workshop
