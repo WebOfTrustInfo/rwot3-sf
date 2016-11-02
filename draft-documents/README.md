@@ -6,9 +6,9 @@ Here's the papers that may be coming out of the workshop:
 | Humanness in Digital Identity | Kaliya Y. | Queried | Full Draft Offsite |
 | DID Spec v4 | Drummond R. | Planned: 11/15 | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
 | Identity Containers | Daniel B. | Queried | |
-| Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Queried | |
+| Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Planned: Nov. End | |
 | Privacy on Distributed Ledgers | Jason L. | Queried | |
-| Portable Reputation Kit | Noah T. | Queried | [Code](portable-reputation) |
+| Portable Reputation Kit | Noah T. | Planned: 11/21 | [Code](portable-reputation) |
 
 These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
 
@@ -23,5 +23,5 @@ These are more focused on updating existing protocols, but may generate sumaries
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
 | COALA + Consent Receipts | Shaun C. | Planned: Mid-Nov |  |
-| Digital Verification Advancements at RWoT3 | Manu S. | Planned: by Mid-Nov | |
+| Digital Verification Advancements at RWoT3 | Manu S. | Submitted | [Draft](rwot3-digital-verification-outcomes.md) |
 | Chainpoint Update Synopsis | Wayne V. | Planned: Week of 10/31| |
