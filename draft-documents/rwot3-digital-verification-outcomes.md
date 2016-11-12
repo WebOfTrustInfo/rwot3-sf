@@ -40,7 +40,7 @@ The Koblitz 2016 Signature Suite was discussed, implemented, and formalized
 in a Signature Suite specification designed as an extension to the
 Linked Data Signatures specification:
 
-http://w3c.github.com/lds-koblitz2016/
+http://w3c-dvcg.github.com/lds-koblitz2016/
 
 ## Creation of Pseudonymous 2016 Signature Suite Specification
 
@@ -48,7 +48,7 @@ A pseudonymous signature suite based on the Camenish-Lysyanskaya signature
 mechanism was discussed and formalized in a Signature Suite specification
 designed as an extension to the Linked Data Signatures specification:
 
-http://w3c.github.com/lds-pseudonymous2016/
+http://w3c-dvcg.github.com/lds-pseudonymous2016/
 
 ## Addition of Multi Signature and Chained Signature Support
 
@@ -56,5 +56,5 @@ A number of hallway discussions led to the general requirements and
 finalization of the design for multi-signature and chained signature
 support in the Linked Data Signatures specification:
 
-http://w3c.github.com/ld-signatures/#multiple-signatures
+http://w3c-dvcg.github.com/ld-signatures/#multiple-signatures
 
