@@ -15,8 +15,8 @@ These are more likely to be single-person papers, but hopefully with some group 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
 | "Shadows" | Kaliya Y. | Queried | |
-| Slepak's Triangle | Greg S. | Queried | |
 | Identity Graphs | Markus S. | Re-Query: Mid-Nov | |
+| ~~Slepak's Triangle~~ | Greg S. | CANCELLED (RWOT4?) | |
 
 These are more focused on updating existing protocols, but may generate sumaries, discussions, or even full papers:
 
