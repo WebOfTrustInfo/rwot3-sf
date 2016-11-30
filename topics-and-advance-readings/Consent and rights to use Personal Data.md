@@ -90,8 +90,7 @@ COALA IP describes a digital right in this JSON-LD format:
     "usages": "all|copy|play|stream|...",
     "territory": { "/": "<hash pointing to the Place>" },
     "context": "inflight|inpublic|commercialuse…",
-    "exclusive": true|false,
-     ...
+    "exclusive": "true|false:,
     "manifestation": { "/": "<hash pointing to the Manifestation>" },
     "license": { "/": "<hash pointing to the License>" }
 }
@@ -105,7 +104,7 @@ Consent Receipts describe an agreement for the use of Personal Data in the JSON 
     "iat": "2007-12-24T18:21Z",
     "moc": "tbd",
     "dataController": {
-        "onBehalf": true | false,
+        "onBehalf": "true | false",
         "controller": {
             "contact": { "/": "<hash pointing to a ContactPoint>" },
             "address": { "/": "<hash pointing to a PostalAddress>" },
@@ -119,12 +118,12 @@ Consent Receipts describe an agreement for the use of Personal Data in the JSON 
             "consentType": "Required | Explicit, Opt-in | ...",
             "purposeCategory": "tbd: commercial, research, compliance, ...",
             "piiCategory": ["Marketing", "Personalized Experience", "..."],
-            "nonCorePurpose": true | false,
-            "thirdPartyDisclosure": true | false,
+            "nonCorePurpose": "true | false",
+            "thirdPartyDisclosure": "true | false",
             "thirdPartyName": "Example Inc.",
         }
     },
-    "sensitive": true | false,
+    "sensitive": "true | false",
     "sub": { "/": "<hash pointing to a Person or Organization>" },
     "spiCat": "religious believe | criminal convictions | ..."
 }
