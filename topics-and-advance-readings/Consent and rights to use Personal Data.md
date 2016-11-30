@@ -138,13 +138,12 @@ Additional similarities include:
 
 |*COALA IP Right*|*Consent Receipt*|*Comment*|
 |---|---|---|
-|territory|juristiction|The geographical the agreement is valid.|
-|usage & context|purpose|Define the context under which the agreement is valid and for what purposes the information will be used.|
+|territory|jurisdiction|The geographical agreement is valid.|
+|usage & context|purpose|Context in which the agreement is valid and purposes for which the information will be used.|
 
-COALA IP assumes that license data will be recorded in transactions on immutable ledgers. Using this method for recording Smart Consent makes it unnecessary to declare a `jti` timestamp and `publicKey`as part of the Consent Notice Receipt.
+COALA IP assumes that license data will be recorded in transactions on immutable ledgers. Using this method for recording Smart Consent makes it unnecessary to declare a `jti` timestamp and `publicKey`as part of the Consent Receipt.
 
-The Consent Notice Receipt can be extended to include a digital right, related to a specific purpose. For instance, if the primary purpose is to make a clinical diagnosis and the non-core purpose is to use the personal data for clinical research (no charge for academic research, compensation for commercial
-pharmaceutical research), the Consent Notice Receipt could include:
+The Consent Receipt can be extended to include a digital right, related to a specific purpose. For instance, if the primary purpose is to make a clinical diagnosis and the non-core purpose is to use the personal data for clinical research (no charge for academic research, compensation for commercial pharmaceutical research), the Consent Notice Receipt could include:
 
 "usages": "all|diagnostic|research|commercial|..."
 
