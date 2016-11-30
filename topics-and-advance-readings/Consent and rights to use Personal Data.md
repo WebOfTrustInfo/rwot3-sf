@@ -90,7 +90,7 @@ COALA IP describes a digital right in this JSON-LD format:
     "usages": "all|copy|play|stream|...",
     "territory": { "/": "<hash pointing to the Place>" },
     "context": "inflight|inpublic|commercialuse…",
-    "exclusive": "true|false:,
+    "exclusive": "true|false",
     "manifestation": { "/": "<hash pointing to the Manifestation>" },
     "license": { "/": "<hash pointing to the License>" }
 }
