@@ -2,10 +2,10 @@ Here's the papers that may be coming out of the workshop:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| Refugee Engagement Model | Joe A. | Planned: 11/18-12/2ish | Full Draft Offsite |
-| Humanness in Digital Identity | Kaliya Y. | Queried | Full Draft Offsite |
-| DID Spec v4 | Drummond R. | Planned: 11/15 | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
-| Identity Containers | Daniel B. | Queried | |
+| Refugee Engagement Model | Joe A. | Re-Queried | Full Draft Offsite |
+| Humanness in Digital Identity | Kaliya Y. | Re-Queried | Full Draft Offsite |
+| DID Spec v4 | Drummond R. | Re-Queried | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
+| Identity Containers | Daniel B. | Re-Queried | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Planned: Nov. End | |
 | Privacy on Distributed Ledgers | Jason L. | Queried | |
 | Portable Reputation Kit | Noah T. | Planned: 11/21 | [Code](portable-reputation) |
@@ -14,7 +14,7 @@ These are more likely to be single-person papers, but hopefully with some group 
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| "Shadows" | Kaliya Y. | Queried | |
+| "Shadows" | Kaliya Y. | Re-Queried | |
 | Identity Graphs | Markus S. | Re-Query: Mid-Nov | |
 | ~~Slepak's Triangle~~ | Greg S. | CANCELLED (RWOT4?) | |
 
