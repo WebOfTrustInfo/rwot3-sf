@@ -145,15 +145,16 @@ COALA IP assumes that license data will be recorded in transactions on immutable
 
 The Consent Receipt can be extended to include a digital right, related to a specific purpose. For instance, if the primary purpose is to make a clinical diagnosis and the non-core purpose is to use the personal data for clinical research (no charge for academic research, compensation for commercial pharmaceutical research), the Consent Receipt could include:
   
- ```json
- {   "@type": { "/": "<hash pointing to RDF-Schema of Right>" },
-    "usages": “clinical research”,
-    "territory": { “/”: “<hash pointing to a Place>” },
-    "context": “academic|commercial”,
+ ```javascript
+{   
+    "@type": { "/": "<hash pointing to RDF-Schema of Right>" },
+    "usages": "clinical research",
+    "territory": { "/": "<hash pointing to a Place>" },
+    "context": "academic|commercial",
     "exclusive": "true|false",
-      ...
-     "manifestation": { "/": "<hash pointing to the Manifestation>" },
-     "license": { "/": "<hash pointing to the License>" }
+    //  ...
+    "manifestation": { "/": "<hash pointing to the Manifestation>" },
+    "license": { "/": "<hash pointing to the License>" }
  }
  ```
 
