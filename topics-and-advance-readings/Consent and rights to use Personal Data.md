@@ -1,4 +1,4 @@
-## Smart Consent
+## Smart Consent Protocol
 
 Dr Shaun Conway, Lohan Spies, Jonathan Endersby, Tim Daubenschütz
 
@@ -57,6 +57,7 @@ amount and scope of digitized personal information grows, it will become even mo
 having a persistent record of their rights to use, process, hold and store each personal data assets. 
 
 The most logical solution would be for a form of digital certificate to be encoded with each personal data asset, referenced against a public record.
+
 ---
 
 ### A Rights way forward
