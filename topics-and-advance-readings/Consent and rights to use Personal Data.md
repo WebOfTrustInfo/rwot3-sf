@@ -32,7 +32,8 @@ A significant part of the problem is lack of effective control over who owns the
 How businesses are currently using our personal data is creating enormous trust deficits in society, which has broader economic consequences. 
 
 Without addressing rights of ownership and use of personal data, the potential for this to be a valuable resource will continue to be compromised. But it seems implausible that this situation will be resolved by central authorities
-or regulatory controls. 
+or regulatory controls.
+
 ---
 
 ### The case of Benjamin  
