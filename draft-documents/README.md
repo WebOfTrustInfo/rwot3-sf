@@ -7,7 +7,7 @@ Here's the papers that may be coming out of the workshop:
 | DID Spec v4 | Drummond R. | Re-Queried | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
 | Identity Containers | Daniel B. | Re-Queried | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Re-Queried | |
-| Privacy on Distributed Ledgers | Jason L. | Re-Queried | |
+| Privacy on Distributed Ledgers | Jason L. | 90%: December 12-16 | |
 | Portable Reputation Kit | Noah T. | Re-Queried | [Code](portable-reputation) |
 
 These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
