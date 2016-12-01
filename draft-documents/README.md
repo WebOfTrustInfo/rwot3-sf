@@ -22,6 +22,6 @@ These are more focused on updating existing protocols, but may generate sumaries
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| COALA + Consent Receipts | Shaun C. | Planned: Mid-Nov |  |
+| COALA + Consent Receipts | Shaun C. | Re-Queried|  |
 | Digital Verification Advancements at RWoT3 | Manu S. | Edited | [Draft](rwot3-digital-verification-outcomes.md) |
-| Chainpoint Update Synopsis | Wayne V. | Planned: Week of 10/31| |
+| Chainpoint Update Synopsis | Wayne V. | Re-Queried| |
