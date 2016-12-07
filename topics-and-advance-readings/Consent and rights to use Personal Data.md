@@ -13,7 +13,7 @@ October 2016 (Updated November 2016). Version 0.8
 ### Personal Data as Digital Intellectual Property
 
 Personal Data are valuable resources for creating digital intellectual property (IP). Rights over this IP have generally been unclear, resulting in systematic abuse or unfair use of people's personal data by third parties. But new regulations are changing this - most notably, the European Union General Data Protection Regulation (EU GDPR). Third parties must now obtain explicit and documented consent from people (data subjects) to collect, process, store or disclose their personal data. 
-A specification for operationalising these regulatory requirements, using digital Consent Receipts, is being developed through the Consent and Information-Sharing Working Group of the Kantara Initiative. In a parallel effort, COALA-IP has developed a blockchain-ready, community-driven generic protocol for intellectual property licensing. 
+A specification for operationalising these regulatory requirements, using digital Consent Receipts, is being developed through the Consent and Information-Sharing Working Group of the Kantara Initiative. In a parallel effort, COALA-IP has developed a blockchain-ready, community-driven generic protocol for intellectual property licensing that applies the Linked Content Coalition (LCC) framework to "unify digital rights data management".
 This paper proposes a decentralised Smart Consent protocol for managing personal data as intellectual property, that combines elements of the [COALA-IP Specification](https://github.com/coalaip/specs) for Digital Intellectual Property with the specification for [Digital Consent Receipts](https://kantarainitiative.org/confluence/display/infosharing/Consent+Receipt+Specification).  
 
 ### Rights and wrongs
@@ -61,8 +61,6 @@ The most logical solution would be for a form of digital certificate to be encod
 ---
 
 ### A Rights way forward
-
-Combining elements of COALA IP and Consent Receipts is worth exploring further.
 
 COALA IP (Coalition Of Automated Legal Applications, Intellectual Property) was formed to design and implement a free and open specification for handling digital licensing of intellectual property. Its goals are to establish open,free, and easy ways to claim attribution, add metadata, license works, mediate IP disputes, and authenticate claims of others. The group believes that there should be global agreement at the data level without the need for centralised control. COALA IP extends the LCC Framework to represent IP Rights digitally with a standardised data model. For instance, this uses the RDF (Resource
 Description Framework) standard to record assertions in a JSON-LD format.
