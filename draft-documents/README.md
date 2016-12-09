@@ -4,8 +4,8 @@ Here's the papers that may be coming out of the workshop:
 |-----------|----------|------------|----------|
 | Refugee Engagement Model | Joe A. | Re-Queried | Full Draft Offsite |
 | Humanness in Digital Identity | Kaliya Y. | Re-Queried | Full Draft Offsite |
-| DID Spec v4 | Drummond R. | Re-Queried | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
-| Identity Containers | Daniel B. | Re-Queried | |
+| DID Spec v4 | Drummond R. | Draft Ready? | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
+| Identity Containers | Daniel B. | Draft Ready? | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Re-Queried | |
 | Privacy on Distributed Ledgers | Jason L. | 90%: December 12-16 | |
 | Portable Reputation Kit | Noah T. | Re-Queried | [Code](portable-reputation) |
