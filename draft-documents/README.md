@@ -8,7 +8,7 @@ Here's the papers that may be coming out of the workshop:
 | Identity Containers | Daniel B. | Draft Ready? | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Re-Queried | |
 | Privacy on Distributed Ledgers | Jason L. | 90%: December 12-16 | |
-| Portable Reputation Kit | Noah T. | Drafty Ready? | [Code](portable-reputation) |
+| Portable Reputation Kit | Noah T. | Edited | [Code](portable-reputation) |
 
 These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
 
@@ -22,6 +22,6 @@ These are more focused on updating existing protocols, but may generate sumaries
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| COALA + Consent Receipts | Shaun C. | Planned: Dec. 4-8 |  |
+| COALA + Consent Receipts | Shaun C. | Draft Ready |  |
 | Digital Verification Advancements at RWoT3 | Manu S. | Edited | [Draft](rwot3-digital-verification-outcomes.md) |
 | Chainpoint Update Synopsis | Wayne V. | Re-Queried| |
