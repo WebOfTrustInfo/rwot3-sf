@@ -1,4 +1,4 @@
-DID (Decentralized Identifier) Data Model and Generic Syntax 1.0
+DID (Decentralized Identifier) Data Model and Generic Syntax 1.0 Implementer’s Draft 01
 =====
 
 **Editors:** Drummond Reed, Les Chasen, Christopher Allen, Ryan Grant
