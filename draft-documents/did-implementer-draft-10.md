@@ -1,9 +1,9 @@
 DID (Decentralized Identifier) Data Model and Generic Syntax 1.0
 =====
 
-Editors: 	Drummond Reed, Les Chasen, Christopher Allen, Ryan Grant
-Contributors:	Manu Sporny, David Longley, Jason Law, Daniel Hardman, Markus Sabadello,
-		Christian Lundkvist, Jonathan Endersby
+**Editors:** Drummond Reed, Les Chasen, Christopher Allen, Ryan Grant
+
+**Contributors:** Manu Sporny, David Longley, Jason Law, Daniel Hardman, Markus Sabadello, Christian Lundkvist, Jonathan Endersby
 
 **STATUS: Implementer’s Draft 01, 21 November 2016**
 
@@ -15,7 +15,7 @@ Note: terms in **bold** are defined in the Terminology section.
 
 **ABSTRACT**
 
-**DIDs** (decentralized identifiers) are a new type of identifier intended for verifiable digital identity that is "self-sovereign", i.e, fully under the control of the **identity owner** and not dependent on a centralized registry, identity provider, or certificate authority. DIDs resolve to **DDOs** (DID descriptor objects)—simple JSON documents that contain all the metadata needed to prove ownership and control of a DID. Specifically, a DDO contains a set of **key descriptions**— machine-readable descriptions of the identity owner’s public keys—and a set of **service endpoints**—resource pointers necessary to initiate trusted interactions with the identity owner. Each DID uses a specific **DID method**, defined in a separate **DID method specification**, to define how the DID is registered, resolved, updated, and revoked on a specific distributed ledger or network.
+**DIDs** (decentralized identifiers) are a new type of identifier intended for verifiable digital identity that is "self-sovereign", i.e, fully under the control of the **identity owner** and not dependent on a centralized registry, identity provider, or certificate authority. DIDs resolve to **DDOs** (DID descriptor objects)—simple JSON documents that contain all the metadata needed to prove ownership and control of a DID. Specifically, a DDO contains a set of **key descriptions**—machine-readable descriptions of the identity owner’s public keys—and a set of **service endpoints**—resource pointers necessary to initiate trusted interactions with the identity owner. Each DID uses a specific **DID method**, defined in a separate **DID method specification**, to define how the DID is registered, resolved, updated, and revoked on a specific distributed ledger or network.
 
 **Table of Contents**
 
