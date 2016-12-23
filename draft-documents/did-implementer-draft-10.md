@@ -9,9 +9,9 @@ Contributors:	Manu Sporny, David Longley, Jason Law, Daniel Hardman, Markus Saba
 
 *ACKNOWLEDGMENTS: Work on this specification has been funded in part by the United States Department of Homeland Security's Science and Technology Directorate under contract HSHQDC-16-R00012-H-SB2016-1-002. The content of this specification does not necessarily reflect the position or the policy of the U.S. Government and no official endorsement should be inferred.*
 
-*Work on this specification has also been supported by the **[Rebooting the Web of Trus*t](http://www.weboftrust.info/)* group facilitated by Christopher Allen, Brian Weller, Kiara Robles, and Shannon Appelcline.*
+*Work on this specification has also been supported by the [Rebooting the Web of Trust](http://www.weboftrust.info/) group facilitated by Christopher Allen, Brian Weller, Kiara Robles, and Shannon Appelcline.*
 
-*Note: terms in ***_bold_*** are defined in the Terminology section.*
+Note: terms in **bold** are defined in the Terminology section.
 
 **ABSTRACT**
 
@@ -27,7 +27,7 @@ Contributors:	Manu Sporny, David Longley, Jason Law, Daniel Hardman, Markus Saba
 
 Conventional [identity management](https://en.wikipedia.org/wiki/Identity_management) systems are based on centralized authorities such as corporate [directory services](https://en.wikipedia.org/wiki/Directory_service), [certificate authorities](https://en.wikipedia.org/wiki/Certificate_authority), or [domain name registries](https://en.wikipedia.org/wiki/Domain_name_registry). From the standpoint of cryptographic trust verification, each of these centralized authorities serves as its own [root of trust](https://en.wikipedia.org/wiki/Trust_anchor). To make identity management work across these systems requires implementing [federated identity management](https://en.wikipedia.org/wiki/Federated_identity).
 
-The emergence of **distributed ledger technology** (DLT), sometimes referred to as **blockchain** technology, provides the opportunity to implement fully **decentralized identity management**. In this ecosystem, all participants with identities (called **identity**** owners**) share a common root of trust in the form of a globally distributed ledger (or a decentralized P2P network that provides similar capabilities).
+The emergence of **distributed ledger technology** (DLT), sometimes referred to as **blockchain** technology, provides the opportunity to implement fully **decentralized identity management**. In this ecosystem, all participants with identities (called **identity owners**) share a common root of trust in the form of a globally distributed ledger (or a decentralized P2P network that provides similar capabilities).
 
 Each identity owner can be identified on a ledger with a [key-value pair](https://en.wikipedia.org/wiki/Attribute%E2%80%93value_pair). The index key is a **DID** (**decentralized identifier**) and the value is its associated **DDO** (**DID description object**). Together these form a **DID record**. Each DID record is cryptographically secured by private keys under the control of an identity owner (in the case of an owner-managed identity) or a **guardian** (in the case of a guardian-managed identity). A corresponding public key is published in the DDO using a **key description**. A DDO may also contain a set of **service endpoints** for interacting with the identity owner. Following the dictums of [Privacy by Design](https://en.wikipedia.org/wiki/Privacy_by_design), each identity owner may have as many DID records as necessary to respect the identity owner’s desired separation of identities, personas, and contexts.
 
@@ -51,7 +51,7 @@ In September 2001, the W3C issued [a note clarifying](https://www.w3.org/TR/uri-
 
 The growing need for decentralized identity has produced three specific requirements for a new type of URI that fits within the URI/URL/URN architecture, albeit in a less than traditional way: 
 
-1. **A URI that is ****persistent like a URN**** yet can be resolved or de-referenced to locate a resource like a URL.** In essence, a DID is a URI that serves both functions.
+1. **A URI that is persistent like a URN yet can be resolved or de-referenced to locate a resource like a URL.** In essence, a DID is a URI that serves both functions.
 
 2. **A URI that does not require a centralized authority to register, resolve, update, or revoke.** The overwhelming majority of URIs today are based on DNS names or IP addresses that depend on centralized authorities for registration and ultimate control. DIDs can be created and managed without any such authority.
 
@@ -203,11 +203,11 @@ All other terms used in this specification are defined in this glossary.
 
 **Blockchain.** A specific type of **distributed ledger technology** (DLT) that stores ledger entries in blocks of transactions that are grouped together and hashed into a cryptographic chain. Because this type of DLT was introduced by [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin), the term "blockchain" is sometimes used to refer specifically to the Bitcoin ledger.
 
-**Decentralized identifier (DID). **A globally unique identifier that does not require a centralized registration authority because it is registered with **distributed ledger technology** or other form of decentralized network. The generic format of a DID is defined in this specification. A specific **DID scheme** is defined in a **DID method specification**.
+**Decentralized identifier (DID).** A globally unique identifier that does not require a centralized registration authority because it is registered with **distributed ledger technology** or other form of decentralized network. The generic format of a DID is defined in this specification. A specific **DID scheme** is defined in a **DID method specification**.
 
 **Decentralized identity management (DIDM).** [Identity management](https://en.wikipedia.org/wiki/Identity_management) based on decentralized identifiers.  DIDM extends identifier creation authority beyond the traditional roots of trust required by [X.500 directory services](https://en.wikipedia.org/wiki/X.500), the [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System), national ID systems, etc.
 
-**Decentralized PKI (DPKI). **Public key infrastructure based on decentralized identifiers and identity records (e.g., **DDOs**) containing verifiable public key descriptions.
+**Decentralized PKI (DPKI).** Public key infrastructure based on decentralized identifiers and identity records (e.g., **DDOs**) containing verifiable public key descriptions.
 
 **DDO.** Acronym for **DID descriptor object**.
 
@@ -231,27 +231,27 @@ All other terms used in this specification are defined in this glossary.
 
 **DID reference**. A **DID** plus an optional **DID path** or **DID fragment**.
 
-**DID scheme. **The formal syntax of a DID identifier. The generic DID scheme is defined in this  specification. A **DID method specification** defines a specific DID scheme that works with a specific **DID method**.
+**DID scheme.** The formal syntax of a DID identifier. The generic DID scheme is defined in this specification. A **DID method specification** defines a specific DID scheme that works with a specific **DID method**.
 
-**DIDM. **Acronym for **decentralized identity management**.
+**DIDM.** Acronym for **decentralized identity management**.
 
 **Distributed ledger technology (DLT).** A [distributed database](https://en.wikipedia.org/wiki/Distributed_database) in which the various nodes use a [consensus protocol](https://en.wikipedia.org/wiki/Consensus_(computer_science)) to maintain a shared ledger in which each transaction is cryptographically signed and chained to the previous transaction. See also **blockchain**.
 
-**DLT. **Acronym for **distributed ledger technology**. 
+**DLT.** Acronym for **distributed ledger technology**. 
 
 **DPKI**. Acronym for **decentralized PKI**.
 
 **Guardian.** An identity owner who creates a **DID record** for a **dependent** who does not yet have the capacity to control the private keys. The dependent must rely on the guardian to safeguard the private keys until the dependent can assume control and become an **identity owner**.
 
-**Identity owner. **The natural person, party, organization, or thing whose identity is represented by a **DID record** and who directly controls the private keys to control that record. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) 
+**Identity owner.** The natural person, party, organization, or thing whose identity is represented by a **DID record** and who directly controls the private keys to control that record. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) 
 
 **Identity record.** Another name for a **DID record**.
 
-**JSON-LD (JSON Linked Data). **A method of encoding [Linked Data](https://en.wikipedia.org/wiki/Linked_data) using JSON. The [W3C JSON-LD 1.0 specification](https://www.w3.org/TR/json-ld/) enables object properties in a JSON document to be linked to concepts in an **RDF** [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)).
+**JSON-LD (JSON Linked Data).** A method of encoding [Linked Data](https://en.wikipedia.org/wiki/Linked_data) using JSON. The [W3C JSON-LD 1.0 specification](https://www.w3.org/TR/json-ld/) enables object properties in a JSON document to be linked to concepts in an **RDF** [ontology](https://en.wikipedia.org/wiki/Ontology_(information_science)).
 
 **Key description.** A JSON object contained inside a **DDO** that contains all the metadata necessary to use a public key or verification key. A list of standard key descriptions is included in Appendix C.
 
-**Ledger. **In the context of this specification, a shared database of transactions maintained via **distributed ledger technology**.
+**Ledger.** In the context of this specification, a shared database of transactions maintained via **distributed ledger technology**.
 
 **PKI**. Acronym for **[public key infrastructur**e](https://en.wikipedia.org/wiki/Public_key_infrastructure). 
 
@@ -261,11 +261,11 @@ All other terms used in this specification are defined in this glossary.
 
 **UUID.** Universally Unique Identifier as specified by [RFC 4122](https://www.ietf.org/rfc/rfc4122.txt).
 
-**URI (Uniform Resource Identifier). **The official name for all Web identifiers as defined by IETF [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). See section 1.2.
+**URI (Uniform Resource Identifier).** The official name for all Web identifiers as defined by IETF [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). See section 1.2.
 
 **URL (Uniform Resource Locator). **Any **URI** that can be resolved or de-referenced to locate a specific resource on the Web. See section 1.2.
 
-**URN (Uniform Resource Name). **A **URI** intended to serve as a persistent, location-independent identifier of a resource, i.e, an identifier that will always represent the same resource and never change (ideally forever). URN syntax is defined by IETF [RFC 2141](https://www.ietf.org/rfc/rfc2141.txt). In general URNs cannot directly be resolved or de-referenced to locate the resource they identify. See section 1.2.
+**URN (Uniform Resource Name).** A **URI** intended to serve as a persistent, location-independent identifier of a resource, i.e, an identifier that will always represent the same resource and never change (ideally forever). URN syntax is defined by IETF [RFC 2141](https://www.ietf.org/rfc/rfc2141.txt). In general URNs cannot directly be resolved or de-referenced to locate the resource they identify. See section 1.2.
 
 **XDI (Extensible Data Interchange)** (also XRI Data Interchange)—a semantic graph format and semantic data interchange protocol defined by the [OASIS XDI Technical Committee](https://www.oasis-open.org/committees/xdi/).
 
@@ -343,7 +343,7 @@ A DID is similar to a UUID except: (a) it can be resolved or dereferenced to a s
 The generic DID scheme is a URI scheme conformant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). It consists of a DID followed by an optional path and/or fragment. The term **DID** refers only to the identifier conforming to the did rule in the ABNF below—when used alone, it does not include a path or fragment. A DID that may optionally include a path and/or fragment is called a **DID reference**.
 
 Following is the ABNF definition using the syntax in [RFC 5234](https://tools.ietf.org/html/rfc5234) (which defines ALPHA as upper or lowercase A-Z).
-
+```
 did-reference      = did [ "/" did-path ] [ "#" did-fragment ]
 did                = "did:" method ":" specific-idstring                  
 method             = 1*methodchar
@@ -351,7 +351,7 @@ methodchar         = %x61-7A / DIGIT
 specific-idstring  = idstring *( ":" idstring )
 idstring           = 1*idchar
 idchar             = ALPHA / DIGIT / "." / "-"
-
+```
 See sections 5.3 and 5.4 for the ABNF rules defining DID paths and fragments.
 
 ## 5.2. Specific DID Method Schemes
@@ -853,7 +853,7 @@ In the case of a DID, where there is no intermediary registrar or account provid
 
 1. **Subscriptions.** If the ledger or network on which the DID is registered directly supports change notifications, this service can be offered to DID owners. Notifications may be sent directly to the relevant service endpoints listed in an existing DID.
 
-2. **Self-monitoring. **An identity owner may employ its own local or online agent to periodically monitor for changes to a DDO.
+2. **Self-monitoring.** An identity owner may employ its own local or online agent to periodically monitor for changes to a DDO.
 
 3. **Third-party monitoring.** An identity owner may rely on a third party monitoring service, however this introduces another vector of attack.
 
