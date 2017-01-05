@@ -22,6 +22,6 @@ These are more focused on updating existing protocols, but may generate sumaries
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| COALA + Consent Receipts | Shaun C. | Draft Ready |  |
+| Smart Consent Protocol | Shaun C. | Editing | [Draft](smart-consent-protocol.md) |
 | Digital Verification Advancements at RWoT3 | Manu S. | Edited | [Draft](rwot3-digital-verification-outcomes.md) |
 | Chainpoint Update Synopsis | Wayne V. | Re-Queried| |
