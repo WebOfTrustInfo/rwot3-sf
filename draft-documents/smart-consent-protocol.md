@@ -39,7 +39,7 @@ Now a pharmaceutical company that is developing a candidate CRISPR gene therapy 
 
 Unresolvable assumptions and uncertainties about the ownership and rights of use of Benjamin’s data are likely to diminish its potential commercial, academic and personal value. 
 
-There are many incongruent and deficient laws, regulations and technologies relevant to how personal data gets processed and used. This does not currently serve the interests of the people generating or using Personal Data. As the amount and scope of digitized personal information grows, it will become even more difficult for multiple entities to responsibly hold significant parts of this information and comply with personal data protection regulations, without having a persistent record of their rights to use, process, hold and store each personal data assets. 
+There are many incongruent and deficient laws, regulations and technologies relevant to how personal data gets processed and used. This does not currently serve the interests of the people generating or using Personal Data. As the amount and scope of digitized personal information grows, it will become even more difficult for multiple entities to responsibly hold significant parts of this information and comply with personal data protection regulations, without having a persistent record of their rights to use, process, hold and store each personal data asset. 
 
 The most logical solution would be for a form of digital certificate to be encoded with each personal data asset, referenced against a public record.
 
