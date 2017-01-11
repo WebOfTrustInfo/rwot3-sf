@@ -2,7 +2,7 @@ Here's the papers that may be coming out of the workshop:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| Refugee Engagement Model | Joe A. | Re-Queried | Full Draft Offsite |
+| Refugee Engagement Model | Joe A. | Feb. 15 |  |
 | Humanness in Digital Identity | Kaliya Y. | Editing | [Draft](WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.md) |
 | DID Spec v4 | Drummond R. | Draft Ready? | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
 | Identity Containers | Daniel B. | Draft Ready? | |
