@@ -35,7 +35,7 @@ To use a DID with a particular distributed ledger or network requires defining a
 
 This design eliminates dependence on centralized registries for identifiers as well as centralized certificate authorities for key management—the standard pattern in hierarchical [PKI (public key infrastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure)). Because DID records are on a distributed ledger, each identity owner may serve as its own root authority—an architecture referred to as [DPKI (decentralized PKI)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust/blob/master/final-documents/dpki.pdf).
 
-Note that DID methods may also be developed for identities registered in federated identity management systems. For their part, federated identity systems may add support for DIDs. This creates an interoperability bridge between the worlds of centralized and decentralized identity.
+Note that DID methods may also be developed for identities registered in federated identity management systems. For their part, federated identity systems may add support for DIDs. This creates an interoperability bridge between the worlds of centralized, federated, and decentralized identity.
 
 ## 1.2. URIs, URLs, and URNs
 
@@ -49,7 +49,7 @@ DIDs have a foundation in URIs, so it's important to understand how the W3C [cla
 
 ## 1.3. Motivations for DIDs
 
-The growing need for decentralized identity has produced three specific requirements, which require that DIDs be a new type of URI that fits within the URI/URL/URN architecture, but in a less than traditional way: 
+The growing need for decentralized identity has produced three specific requirements for a new type of URI that still fits within URI/URL/URN architecture but in a less than traditional way: 
 
 1. **A URI that is persistent like a URN yet can be resolved or de-referenced to locate a resource like a URL.** In essence, a DID is a URI that serves both functions.
 
@@ -275,9 +275,9 @@ This section summarizes the design goals and principles of DID architecture.
 
 <table>
   <tr>
-    <td>#</td>
-    <td>Principle</td>
-    <td>Description</td>
+  <td>#</td>
+  <td>Principle</td>
+  <td>Description</td>
   </tr>
   <tr>
     <td>1</td>
