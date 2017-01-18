@@ -1,10 +1,10 @@
-Portable Reputation Toolkit Use Cases
+# Portable Reputation Toolkit Use Cases
 
 **By Christopher Allen, Tim Daubenschütz, Manu Sporny, Noah Thorp, Harlan Wood, Glenn Willen, Alessandro Voto**
 
 *This paper was created as part of a collaborative working group at the Rebooting The Web of Trust DesignShop. The proof of concept technical implementation is **[her*e](https://github.com/WebOfTrustInfo/portable-reputation-toolkit)*.*
 
-# The Goal: Decentralized Verification
+## The Goal: Decentralized Verification
 
 In social networks and markets and on value chains we have a hard time determining what is true and who to trust. Verified information is critical for the functioning of a networked democratic society. The portable reputation toolkit is intended to address these issues by using cryptographic signatures and decentralized technology such as decentralized identifiers, blockchain, and distributed data storage.
 
@@ -22,7 +22,7 @@ The process for each of these use cases is to:
 
 Although perfect knowledge is fictional, we can decrease the costs of verification and increase the costs of lying. 
 
-# Use Case: Decentralized Social Media Fact Checking For Political Campaign Journalism
+## Use Case: Decentralized Social Media Fact Checking For Political Campaign Journalism
 
 **Goal: **Bob wants to know if Alice’s assertion about politician Charles is backed up by reliable evidence.
 
@@ -34,7 +34,7 @@ Juan is a trusted news source who is has been certified for his skills using a D
 
 **Journalist** Elon searches for many assertions, evaluations, and signed evidence sources about politician Charles. Elon writes an article detailing the abuse of power by politician Charles. The article carefully references the assertions that have been verified through decentralized methods. 
 
-# Use Case: Decentralized Skill Certification For A Security Reviewer
+## Use Case: Decentralized Skill Certification For A Security Reviewer
 
 **Goal:** Bob wants to evaluate if he should hire Alice for a cryptographic security code review.
 
@@ -42,7 +42,7 @@ Juan is a trusted news source who is has been certified for his skills using a D
 
 **Worker** Alice is a security reviewer in the crypto community. **Employer** Bob wants to know if he should hire Alice for a code review of cryptography related code. Alice makes the proposition that she is "competent at crypto code reviews". She signs the proposition with her DID at a specific time. **Skill Evaluator** Charlie evaluates code and pen test reports by Alice as well as a video review of a former collaborator. He records his evaluation with references to the evidence affirming Alice’s proposition that she is “competent at crypto reviews”. Bob reviews Charlie’s evaluation and hires Alice for a crypto review.
 
-# Use Case: Decentralized Fair Trade Supply Chain Certification
+## Use Case: Decentralized Fair Trade Supply Chain Certification
 
 **Goal:** A Shopper wants to know if her coffee is Fair Trade based on Evidence provided by a supply chain of multiple companies and individuals
 
@@ -66,7 +66,7 @@ At the register the **Shopper** complains to the **Retailer **that the Fair Blen
 
 The **Shopper** returns to the **Retailer** and waves their phone over the NFC tag, which brings up their Fair Trade Association filter app. The app presents a "Verifed" rating for the **Fair Trade Assertion**. The **Shopper** purchases the Fair Blend coffee, confident that it has been produced ethically.
 
-**General Use Case**
+## General Use Case
 
 A user creates a **Distributed Identifier** (DID). They get an accompanying private key that they use to sign assertions.
 
