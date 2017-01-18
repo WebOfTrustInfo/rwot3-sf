@@ -3,12 +3,12 @@ Here's the papers that may be coming out of the workshop:
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
 | Refugee Engagement Model | Joe A. | Feb. 15 |  |
-| Humanness in Digital Identity | Kaliya Y. | Editing | [Draft](WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.md) |
-| DID Spec v4 | Drummond R. | Draft Ready? | [v4 Draft](DIDSpecificationWorkingDraft04.pdf) |
+| Humanness in Digital Identity | Kaliya Y. | Awaiting OK | [Draft](WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.md) |
+| DID Spec v4 | Drummond R. | Awaiting Layout | [Draft](did-implementer-draft-10.md) |
 | Identity Containers | Daniel B. | Draft Ready? | |
-| Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Re-Queried | |
+| Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | In Process | |
 | Privacy on Distributed Ledgers | Jason L. | 90%: December 12-16 | |
-| Portable Reputation Kit | Noah T. | Edited | [Code](portable-reputation) |
+| Portable Reputation Kit | Noah T. | Awaiting Formatting | [Draft](reputation-toolkit.md) [Code](portable-reputation) |
 
 These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
 
@@ -22,6 +22,6 @@ These are more focused on updating existing protocols, but may generate sumaries
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| Smart Consent Protocol | Shaun C. | Editing | [Draft](smart-consent-protocol.md) |
-| Digital Verification Advancements at RWoT3 | Manu S. | Edited | [Draft](rwot3-digital-verification-outcomes.md) |
+| Smart Consent Protocol | Shaun C. | Awaiting Layout | [Draft](smart-consent-protocol.md) |
+| Digital Verification Advancements at RWoT3 | Manu S. | Awaiting Final Layout | [Draft](rwot3-digital-verification-outcomes.md) |
 | Chainpoint Update Synopsis | Wayne V. | Re-Queried| |
