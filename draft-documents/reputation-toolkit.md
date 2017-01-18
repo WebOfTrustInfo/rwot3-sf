@@ -81,8 +81,8 @@ The end user validates the truthfulness of an assertion by querying evaluations 
 ## Appendix: Example Workflow For Decentralized Certification
 
 ![First Image](/supporting-files/rtk/image_0.png?raw=true)
+![Second Image](/supporting-files/rtk/image_1.png?raw=true)
+![Third Image](/supporting-files/rtk/image_2.png?raw=true)
+![Fourth Image](/supporting-files/rtk/image_3.png?raw=true)
 
-# ![image alt text](image_1.png)
-
-![image alt text](image_2.png)![image alt text](image_3.png)
 
