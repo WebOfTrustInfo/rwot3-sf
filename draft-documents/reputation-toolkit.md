@@ -56,7 +56,7 @@ Juan is a trusted news source who is has been certified for his skills using a D
 
 The **Product Owner** for a coffee company creates a distributed identifier (DID) and a corresponding private key. The **Product Owner** publishes an _assertion_ that their Fair Blend coffee product is Fair Trade and signs it with their DID private key. The _assertion_ is timestamped and made available to **Suppliers** and **Workers**. Initially there is no _evidence_ to evaluate if the _assertion_ is true or false, so it is considered "Not Verified".
 
-The **Product Owner **purchases coffee from a **Supplier**. The **Supplier** posts _evidence_ of their transaction and signs it with their DID. This _evidence_ is initially independent of any _assertion_. The **Supplier** then posts an _evaluation_ that supports the **Product Owner's** _Fair Trade assertion_.
+The **Product Owner** purchases coffee from a **Supplier**. The **Supplier** posts _evidence_ of their transaction and signs it with their DID. This _evidence_ is initially independent of any _assertion_. The **Supplier** then posts an _evaluation_ that supports the **Product Owner's** _Fair Trade assertion_.
 
 The **Product Owner** places a physical tag on all products from this batch of coffee, linking the physical good to the _Fair Trade assertion_. This could be a smart tag, as Chronicled has done for counterfeit sneaker checking on a blockchain.
 
