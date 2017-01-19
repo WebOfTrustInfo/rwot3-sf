@@ -30,7 +30,7 @@ Although perfect knowledge is fictional, we can decrease the costs of verificati
 
 **Claim Types:** Assertion, Evidence, Evaluation
 
-Alice the **Assertion Maker** posts the _assertion_ in her social media timeline that the politician Charles is responsible for violently intimidating journalists that are writing unfavorable articles. As evidence to support her _evaluation_ she includes links to **Evidence Provider** Juan’s videos of police officers physically harassing journalists at several political rallies and to leaked emails that are relevant. 
+Alice the **Assertion Maker** posts the _assertion_ in her social media timeline that the politician Charles is responsible for violently intimidating journalists that are writing unfavorable articles. As _evidence_ to support her _evaluation_ she includes links to **Evidence Provider** Juan’s videos of police officers physically harassing journalists at several political rallies and to leaked emails that are relevant. 
 
 Juan is a trusted news source who is has been certified for his skills using a Decentralized Certification (see below). The videos are signed by Juan’s private key associated with a distributed identifier (DID). **Reader** Bob can now more accurately _evaluate_ if the _assertion_ is true based on Juan’s _evidence_.
 
