@@ -2,7 +2,7 @@
 
 **By Christopher Allen, Tim Daubenschütz, Manu Sporny, Noah Thorp, Harlan Wood, Glenn Willen, Alessandro Voto**
 
-*This paper was created as part of a collaborative working group at the Rebooting The Web of Trust DesignShop. The proof of concept technical implementation is **[her*e](https://github.com/WebOfTrustInfo/portable-reputation-toolkit)*.*
+*This paper was created as part of a collaborative working group at the Rebooting The Web of Trust DesignShop. The proof of concept technical implementation is **[here](https://github.com/WebOfTrustInfo/portable-reputation-toolkit)**.*
 
 ## The Goal: Decentralized Verification
 
@@ -24,47 +24,51 @@ Although perfect knowledge is fictional, we can decrease the costs of verificati
 
 ## Use Case: Decentralized Social Media Fact Checking For Political Campaign Journalism
 
-**Goal: **Bob wants to know if Alice’s assertion about politician Charles is backed up by reliable evidence.
+**Goal:** Bob wants to know if Alice’s assertion about politician Charles is backed up by reliable evidence.
 
-**Roles: **Assertion Maker, Evidence Provider, Reader, Journalist
+**Roles:** Assertion Maker, Evidence Provider, Reader, Journalist
 
-Alice the **Assertion Make**r posts the assertion in her social media timeline that the politician Charles is responsible for violently intimidating journalists that are writing unfavorable articles. As evidence to support her evaluation she includes links to** Evidence Provider** Juan’s videos of police officers physically harassing journalists at several political rallies and to leaked emails that are relevant. 
+**Claim Types:** Assertion, Evidence, Evaluation
 
-Juan is a trusted news source who is has been certified for his skills using a Decentralized Certification (see below). The videos are signed by Juan’s private key associated with a distributed identifier (DID). **Reader** Bob can now more accurately evaluate if the assertion is true based on Juan’s evidence.
+Alice the **Assertion Maker** posts the _assertion_ in her social media timeline that the politician Charles is responsible for violently intimidating journalists that are writing unfavorable articles. As evidence to support her _evaluation_ she includes links to **Evidence Provider** Juan’s videos of police officers physically harassing journalists at several political rallies and to leaked emails that are relevant. 
 
-**Journalist** Elon searches for many assertions, evaluations, and signed evidence sources about politician Charles. Elon writes an article detailing the abuse of power by politician Charles. The article carefully references the assertions that have been verified through decentralized methods. 
+Juan is a trusted news source who is has been certified for his skills using a Decentralized Certification (see below). The videos are signed by Juan’s private key associated with a distributed identifier (DID). **Reader** Bob can now more accurately _evaluate_ if the _assertion_ is true based on Juan’s _evidence_.
+
+**Journalist** Elon searches for many _assertions_, _evaluations_, and signed _evidence_ sources about politician Charles. Elon writes an article detailing the abuse of power by politician Charles. The article carefully references the _assertions_ that have been verified through decentralized methods. 
 
 ## Use Case: Decentralized Skill Certification For A Security Reviewer
 
 **Goal:** Bob wants to evaluate if he should hire Alice for a cryptographic security code review.
 
-**Roles: **Employer, Worker, Skill Evaluator
+**Roles:** Employer, Worker, Skill Evaluator
 
-**Worker** Alice is a security reviewer in the crypto community. **Employer** Bob wants to know if he should hire Alice for a code review of cryptography related code. Alice makes the proposition that she is "competent at crypto code reviews". She signs the proposition with her DID at a specific time. **Skill Evaluator** Charlie evaluates code and pen test reports by Alice as well as a video review of a former collaborator. He records his evaluation with references to the evidence affirming Alice’s proposition that she is “competent at crypto reviews”. Bob reviews Charlie’s evaluation and hires Alice for a crypto review.
+**Claim Types:** Assertion, Evaluation, Evidence
+
+**Worker** Alice is a security reviewer in the crypto community. **Employer** Bob wants to know if he should hire Alice for a code review of cryptography related code. Alice makes the _assertion_ that she is "competent at crypto code reviews". She signs the _assertion_ with her DID at a specific time. **Skill Evaluator** Charlie _evaluates_ code and pen test reports by Alice as well as a video review of a former collaborator. He records his _evaluation_ with references to the _evidence_ affirming Alice’s proposition that she is “competent at crypto reviews”. Bob reviews Charlie’s _evaluation_ and hires Alice for a crypto review.
 
 ## Use Case: Decentralized Fair Trade Supply Chain Certification
 
 **Goal:** A Shopper wants to know if her coffee is Fair Trade based on Evidence provided by a supply chain of multiple companies and individuals
 
-**Roles: **Product Owner, Supplier, Worker, Retailer, Shopper
+**Roles:** Product Owner, Supplier, Worker, Retailer, Shopper
 
-**Claim Types: **Assertion, Evaluation, Evidence
+**Claim Types:** Assertion, Evaluation, Evidence
 
-The **Product Owner**** **for a coffee company creates a distributed identifier (DID) and a corresponding private key. The **Product Owner** publishes an **Assertion** that their Fair Blend coffee product is Fair Trade and signs it with their DID private key. The assertion is timestamped and made available to **Suppliers** and **Workers**. Initially there is no **Evidence** to evaluate if the assertion is true or false - so it is considered "Not Verified".
+The **Product Owner** for a coffee company creates a distributed identifier (DID) and a corresponding private key. The **Product Owner** publishes an _assertion_ that their Fair Blend coffee product is Fair Trade and signs it with their DID private key. The _assertion_ is timestamped and made available to **Suppliers** and **Workers**. Initially there is no _evidence_ to evaluate if the _assertion_ is true or false, so it is considered "Not Verified".
 
-The **Product Owner **purchases coffee from a **Supplier**. The **Supplier** posts **Evidence** of their transaction and signs it with their DID. This **Evidence** is initially independent of any **Assertion**. The **Supplier** then posts an **Evaluation** that supports the **Product Owner**’s **Fair Trade Assertion**.
+The **Product Owner **purchases coffee from a **Supplier**. The **Supplier** posts _evidence_ of their transaction and signs it with their DID. This _evidence_ is initially independent of any _assertion_. The **Supplier** then posts an _evaluation_ that supports the **Product Owner's** _Fair Trade assertion_.
 
-The** Product Owner **places a physical tag on all products from this batch of coffee, linking the physical good to the **Fair Trade** **Assertion**. This could be a smart tag, as Chronicled has done for counterfeit sneaker checking on a blockchain.
+The **Product Owner** places a physical tag on all products from this batch of coffee, linking the physical good to the _Fair Trade assertion_. This could be a smart tag, as Chronicled has done for counterfeit sneaker checking on a blockchain.
 
-The **Retailer** buys the Fair Blend Coffee from the **Product Owner**. The **Retailer** has a standard filter for **Fair Trade Assertions**. A list of trusted keys is maintained, with weightings for each source. An algorithm crunches through the relevant Evaluations and Evidence to determine a Rating for the Assertion that the Fair Blend product is Fair Trade. The assertion Rating can evaluate to "Verified", “Not Verified”, or “Contested”. At the time the Retailer purchase the coffee for their store the Fair Trade Assertion evaluates to “Verified”.
+The **Retailer** buys the Fair Blend Coffee from the **Product Owner**. The **Retailer** has a standard filter for _Fair Trade assertions_. A list of trusted keys is maintained, with weightings for each source. An algorithm crunches through the relevant _evaluations_ and _evidence_ to determine a Rating for the _assertion_ that the Fair Blend product is Fair Trade. The _assertion_ Rating can evaluate to "Verified", “Not Verified”, or “Contested”. At the time the **Retailer** purchase the coffee for their store the _Fair Trade assertion_ evaluates to “Verified”.
 
-Several **Workers** challenge the **Fair Trade Assertion**. They post Evidence on their employment and wages and documentation of a market price snapshot from a trusted ticker oracle. They post an **Evaluation** that compares their personal information to the **Fair Trade Assertion**’s timestamp to show the price was under market rates. They use their DID to sign their Evaluation of the **Evidence** that challenges the **Fair Trade Assertion**.
+Several **Workers** challenge the **Fair Trade Assertion**. They post _evidence_ on their employment and wages and documentation of a market price snapshot from a trusted ticker oracle. They post an _evaluation_ that compares their personal information to the _Fair Trade assertion’s_ timestamp to show the price was under market rates. They use their DID to sign their _evaluation_ of the _evidence_ that challenges the _Fair Trade assertion_.
 
-In the retail store, a **Shopper** waves their phone over the NFC tag, which brings up their Fair Trade Association filter app. A filter in their app determines a challenge to the **Fair Trade Assertion** came from the DIDs of workers who participated in producing Fair Blend coffee. The app presents a "Contested" claim message, noting both the **Supplier**’s supporting **Evaluation**, the **Worker**’s challenge and the associated **Evidence**. The shopper chooses another filter to get a second opinion. They choose to buy a different coffee that has a “Verified” **Fair Trade Assertion** from a different **Product Owner**.
+In the retail store, a **Shopper** waves their phone over the NFC tag, which brings up their Fair Trade Association filter app. A filter in their app determines a challenge to the _Fair Trade assertion_ came from the DIDs of workers who participated in producing Fair Blend coffee. The app presents a "Contested" claim message, noting both the **Supplier's** supporting _evaluation_, the **Worker's** challenge and the associated _evidence_. The shopper chooses another filter to get a second opinion. They decide to buy a different coffee that has a “Verified” _Fair Trade assertion_ from a different **Product Owner**.
 
-At the register the **Shopper** complains to the **Retailer **that the Fair Blend coffee is no longer Fair Trade. The **Shopper** contacts the **Product Owner **and puts pressure to remediate the payment issue with the **Workers**. Once remediated the** Product Owner** and **Workers** provide new **Evidence** and **Evaluations** of the **Fair Trade Assertion**.
+At the register the **Shopper** complains to the **Retailer** that the Fair Blend coffee is no longer Fair Trade. The **Shopper** contacts the **Product Owner** and puts pressure to remediate the payment issue with the **Workers**. Once remediated the **Product Owner** and **Workers** provide new _evidence_ and _evaluations_ of the _Fair Trade assertion_.
 
-The **Shopper** returns to the **Retailer** and waves their phone over the NFC tag, which brings up their Fair Trade Association filter app. The app presents a "Verifed" rating for the **Fair Trade Assertion**. The **Shopper** purchases the Fair Blend coffee, confident that it has been produced ethically.
+The **Shopper** returns to the **Retailer** and waves their phone over the NFC tag, which brings up their Fair Trade Association filter app. The app presents a "Verifed" rating for the _Fair Trade assertion_. The **Shopper** purchases the Fair Blend coffee, confident that it has been produced ethically.
 
 ## General Use Case
 
