@@ -99,9 +99,9 @@ Following is an example of a DDO that describes the DID above. This example assu
 
 		"expires": "2017-02-08T16:02:20Z",
 
-"publicKeyBase64": "lji9qTtkCydxtez/bt1zdLxVMMbz4SzWvlqgOBmURoM="
+		"publicKeyBase64": "lji9qTtkCydxtez/bt1zdLxVMMbz4SzWvlqgOBmURoM="
 
-          }, {
+	}, {
 
 		"id": "did:sov:21tDAKCERh95uGgKbJNHYp#key-2",
 
@@ -109,7 +109,7 @@ Following is an example of a DDO that describes the DID above. This example assu
 
 		"expires": "2017-03-22T00:00:00Z",
 
-"publicKeyPem": "----BEGIN PUBLIC KEY-----\r\nMIIBOgIBAAJBAKkbSUT9/Q2uBfGRau6/XJyZhcF5abo7b37I5hr3EmwGykdzyk8GSyJK3TOrjyl0sdJsGbFmgQaRyV\r\n-----END PUBLIC KEY-----"
+		"publicKeyPem": "----BEGIN PUBLIC KEY-----\r\nMIIBOgIBAAJBAKkbSUT9/Q2uBfGRau6/XJyZhcF5abo7b37I5hr3EmwGykdzyk8GSyJK3TOrjyl0sdJsGbFmgQaRyV\r\n-----END PUBLIC KEY-----"
 
 	}],
 
