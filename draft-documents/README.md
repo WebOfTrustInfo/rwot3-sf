@@ -3,7 +3,7 @@ Here's the papers that may be coming out of the workshop:
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
 | Refugee Engagement Model | Joe A. | Feb. 15 |  |
-| Humanness in Digital Identity | Kaliya Y. | Awaiting OK | [Draft](WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.md) |
+| Humanness in Digital Identity | Kaliya Y. | Published | [Final](../final-documents/WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.pdf) |
 | DID Spec v4 | Drummond R. | Awaiting Layout | [Draft](did-implementer-draft-10.md) |
 | Identity Containers | Daniel B. | Draft Ready? | |
 | Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | In Process | |
