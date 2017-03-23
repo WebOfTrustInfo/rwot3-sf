@@ -1,27 +1,23 @@
-Here's the papers that may be coming out of the workshop:
+Here are the completed papers from RWOT3:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| Refugee Engagement Model | Joe A. | Feb. 15 |  |
-| Humanness in Digital Identity | Kaliya Y. | Published | [Final](../final-documents/WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.pdf) |
-| DID Spec v4 | Drummond R. | Awaiting Layout | [Draft](did-implementer-draft-10.md) |
-| Identity Containers | Daniel B. | Draft Ready? | |
-| Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | In Process | |
-| Privacy on Distributed Ledgers | Jason L. | 90%: December 12-16 | |
-| Portable Reputation Kit | Noah T. | Awaiting Formatting | [Draft](reputation-toolkit.md) [Code](portable-reputation) |
+Tomorrow.pdf) |
+| DID Spec v4 | Drummond R. | Published | [Implementers Draft](../final-documents/did-implementer-draft-10.pdf) |
+| Digital Verification Advancements at RWoT3 | Manu S. | Published | [Final](../final-documents/digital-verification-advancements.pdf) |
+| Humanness in Digital Identity | Kaliya Y. | Published | [Final](../final-documents/WisdomEmbedding-Human-Wisdom-in-Our-Digital-
+| Portable Reputation Kit | Noah T. | Published | [Final](../final-documents/reputation-toolkit.pdf) [Code](portable-reputation) |
+| Smart Consent Protocol | Shaun C. | Published | [Final](../final-documents/smart-consent-protocol.pdf) |
 
-These are more likely to be single-person papers, but hopefully with some group consensus and feedback:
-
-| **Paper** | **Lead** | **Status** | **Link** |
-|-----------|----------|------------|----------|
-| "Shadows" | Kaliya Y. | Re-Queried | |
-| Identity Graphs | Markus S. | Re-Queried | |
-| ~~Slepak's Triangle~~ | Greg S. | CANCELLED (RWOT4?) | |
-
-These are more focused on updating existing protocols, but may generate sumaries, discussions, or even full papers:
+These other papers may still appear in the future, but aren't currentlypart of the RWOT3 bundle:
 
 | **Paper** | **Lead** | **Status** | **Link** |
 |-----------|----------|------------|----------|
-| Smart Consent Protocol | Shaun C. | Awaiting Layout | [Draft](smart-consent-protocol.md) |
-| Digital Verification Advancements at RWoT3 | Manu S. | Awaiting Final Layout | [Draft](rwot3-digital-verification-outcomes.md) |
-| Chainpoint Update Synopsis | Wayne V. | Re-Queried| |
+| Privacy on Distributed Ledgers | Jason L. | Last Call | |
+| Refugee Engagement Model | Joe A. | Last Call |  |
+| Bootstrapping & User Adoption | Lohan S., Thessy M., Matt D. | Last Call | |
+| Identity Containers | Daniel B. | Last Call | |
+| "Shadows" | Kaliya Y. | | |
+| Identity Graphs | Markus S. |  | |
+| Chainpoint Update Synopsis | Wayne V. | | |
+| Slepak's Triangle | Greg S. |  | |
