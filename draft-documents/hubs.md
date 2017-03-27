@@ -1,5 +1,7 @@
 # Hubs
 
+## by Daniel Buchner, Wayne Vaughan, and Ryan Shea
+
 Hubs let you securely store and share data. A Hub is a datastore containing semantic data objects at well-known locations.  Each object in a Hub is signed by an identity and accessible via a globally recognized API format that explicitly maps to semantic data objects.  Hubs are addressable via a unique identifiers maintained in a global namespace.
 
 ## Single Address for Multiple Hub Instances
