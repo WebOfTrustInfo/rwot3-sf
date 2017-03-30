@@ -2,19 +2,19 @@
 
 ## by Daniel Buchner, Wayne Vaughan, and Ryan Shea
 
-Hubs let you securely store and share data. A Hub is a datastore containing semantic data objects at well-known locations.  Each object in a Hub is signed by an identity and accessible via a globally recognized API format that explicitly maps to semantic data objects.  Hubs are addressable via a unique identifiers maintained in a global namespace.
+Hubs let you securely store and share data. A Hub is a datastore containing semantic data objects at well-known locations.  Each object in a Hub is signed by an identity and accessible via a globally recognized API format that explicitly maps to semantic data objects.  Hubs are addressable via unique identifiers maintained in a global namespace.
 
 ## Single Address for Multiple Hub Instances
 
-A single entity may have one or more instances of a Hub, all of which are addressable via a URI routing mechanism linked to the entity’s identifier.  Hub instances sync state changes, ensuring the owner can access data and attestations from anywhere, even when offline.
+A single entity may have one or more instances of a Hub, all of which are addressable via a URI-routing mechanism linked to the entity’s identifier.  Hub instances sync state changes, ensuring the owner can access data and attestations from anywhere, even when offline.
 
 ## Syncing Data to Multiple Hubs
 
-Hub instances must sync data without requiring master-slave relationships or forcing a single implementation for storage or application logic.  This requires a shared replication protocol for broadcasting and resolving changes. [CouchDB](http://docs.couchdb.org/en/2.0.0/replication/protocol.html), an open source Apache project, will be the data syncing protocol Hubs must implement. It features an eventually consistent, master-master replication protocol that can be decoupled from the default storage layer provided by CouchDB. 
+Hub instances must sync data without requiring master-slave relationships or forcing a single implementation for storage or application logic.  This requires a shared replication protocol for broadcasting and resolving changes. [CouchDB](http://docs.couchdb.org/en/2.0.0/replication/protocol.html), an open source Apache project, will be the data-syncing protocol Hubs must implement. It features an eventually consistent, master-master replication protocol that can be decoupled from the default storage layer provided by CouchDB. 
 
 ## Well-Known URIs
 
-Existing web servers need to interact with Hubs.  We are using the IETF convention for globally defined resources that predictably reside at well know locations as detailed in [RFC 5785 well-known URIs][13f07ee0] and the [well-known URI directory][6cc282d2]. Hubs are accessible via the path: /.well-known/identity/:id, wherein the last segment of the path is the target ID for the identity you wish to interact with.
+Existing web servers need to interact with Hubs.  We are using the IETF convention for globally defined resources that predictably reside at well-known locations as detailed in [RFC 5785 well-known URIs][13f07ee0] and the [well-known URI directory][6cc282d2]. Hubs are accessible via the path: /.well-known/identity/:id, wherein the last segment of the path is the target ID for the identity you wish to interact with.
 
 ## API Routes
 
@@ -32,7 +32,7 @@ Each Hub has a set of top-level API routes:
 
 #### Hub Profile Objects
 
-Each Hub has a `profile` object that describes the owning entity.  The profile object should use the format of the schema object best represents the entity. Here is an example of using the Schema.org `Person` schema to express that a hub belongs to a person:
+Each Hub has a `profile` object that describes the owning entity.  The profile object should use the format of the schema object that best represents the entity. Here is an example of using the Schema.org `Person` schema to express that a hub belongs to a person:
 
 ```json
 {
@@ -53,8 +53,6 @@ Each Hub has a `profile` object that describes the owning entity.  The profile o
 }
 ```
 
-#### Data Portability
-All Hub data associated with the identity must be portable. Transfer of a hub’s contents and settings between environments should be seamless, without loss of data or operational state, including the permissions that govern access to identity data.
 #### Permissions
 
 Agents are external parties that can access and modify Hub data. Hub owners can set permissions in a ACL JSON document, which you can learn more about via the ACL documentation and [examples](https://github.com/decentralized-identity/acl/blob/master/examples/basic.json). This access control document designates:
@@ -85,7 +83,7 @@ If the intent of your message is to prompt the receiving Hub to perform a certai
 
 #### Stores
 
-Stores are collections of identity-scoped data storage. Stores are addressable via the `/stores` top-level path, and keyed on the entity's decentralize identifier. Here's an example of the path format:
+Stores are collections of identity-scoped data storage. Stores are addressable via the `/stores` top-level path, and keyed on the entity's decentralized identifier. Here's an example of the path format:
 
 `/.well-known/identity/:id/stores/`*`ENTITY_ID`*
 
@@ -103,9 +101,13 @@ Collections provide a known path for accessing standardized, semantic objects ac
 
 `/.well-known/identity/:id/collections/schema.org:Photograph` ➜ http://schema.org/Photograph
 
+#### Data Portability
+
+All Hub data associated with the identity must be portable. Transfer of a hub’s contents and settings between environments should be seamless, without loss of data or operational state, including the permissions that govern access to identity data.
+
 ## Request/Response Format
 
-The REST API uses [JSON API's specification][2773b365 for request, response, and query formats, and leverages standard schemas for encoding stored data and response objects.  Given the nature of the responses, only the Top Level properties are in scope for this utilization. Requests should be formatted in accordance with the JSON API documentation: http://jsonapi.org/format/#fetching. The `Content-Type` and `Accept` header parameters must be set to `application/vnd.api+json`.  This approach maximizes the use of existing standards and open source projects.
+The REST API uses [JSON API's specification][2773b365 for request, response, and query formats, and leverages standard schemas for encoding stored data and response objects.  Given the nature of the responses, only the Top-Level properties are in scope for this utilization. Requests should be formatted in accordance with the JSON API documentation: http://jsonapi.org/format/#fetching. The `Content-Type` and `Accept` header parameters must be set to `application/vnd.api+json`.  This approach maximizes the use of existing standards and open source projects.
 
 #### Authentication
 
@@ -170,7 +172,7 @@ Requests will always return an array of all objects - *the user has given you ac
 
 #### POST Requests
 
-POSTs are verified to ensure two things about the requesting party: 1) They are the decentralized identity they claim to be, and 2) They are authorized (as specified in the ACL JSON document) to write data to a specified route.
+POSTs are verified to ensure two things about the requesting party: 1) They are the decentralized identity they claim to be; and 2) They are authorized (as specified in the ACL JSON document) to write data to a specified route.
 
 Addition of new data objects into a collection must follow a process for handling and insertion into storage:
 
@@ -189,7 +191,6 @@ The Hub spec does not mandate specific storage and search implementations.  For 
 To avoid the introduction of a new syntax, we feel [Apache Lucene's query filtering syntax](http://www.lucenetutorial.com/lucene-query-syntax.html) balances the desire to select an option with broad, existing support, and the flexibility and expressiveness developers demand.
 
 Filters can be applied via the `filter` parameter of your queries. Additionally, filters are used to enable more granular permissioning - see the ACL spec document for more info.
-
 
   [13f07ee0]: https://tools.ietf.org/html/rfc5785 "IETF well-know URIs"
   [6cc282d2]: https://www.ietf.org/assignments/well-known-uris/well-known-uris.xml "well-known URI Directory"
