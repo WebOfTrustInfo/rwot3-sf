@@ -5,7 +5,7 @@
 
 > The complete draft of the Decentralized IDentifier (DID) model and syntac, a project that has run through the RWOT workshops to date.
 
-## [*Digital Verification Advancementsat RWoT III*](digital-verification-advancements.pdf)
+## [*Digital Verification Advancements at RWoT III*](digital-verification-advancements.pdf)
 #### by Manu Sporny with Christopher Allen, Harlan Wood, and Jason Law
 
 > A short overview of enhancements to Digital Verification that came out of RWOT III.
