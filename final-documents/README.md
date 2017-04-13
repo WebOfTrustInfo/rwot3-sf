@@ -3,7 +3,7 @@
 ## [*DID (Decentralized Identifier) Data Model and Generic Syntax 1.0 Implementer’s Draft 01*](did-implementer-draft-10.pdf)
 #### by Drummond Reed, Les Chasen, Christopher Allen, and Ryan Grant
 
-The complete draft of the Decentralized IDentifier (DID) model and syntac, a project that has run through the RWOT workshops to date.
+> The complete draft of the Decentralized IDentifier (DID) model and syntac, a project that has run through the RWOT workshops to date.
 
 ## [*Digital Verification Advancementsat RWoT III*](digital-verification-advancements.pdf)
 #### by Manu Sporny with Christopher Allen, Harlan Wood, and Jason Law
