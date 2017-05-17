@@ -2,7 +2,7 @@
 
 This repository contains documents related to RWOT3, the third Rebooting the Web of Trust design workshop, which ran in San Francisco, CA, on October 19th-21st, 2016. The goal of the workshop was to generate five technical white papers and/or proposals on topics decided by the group that would have the greatest impact on the future.
 
-### Topics & Advance Readings
+## Topics & Advance Readings
 
 In advance of the design workshop, all participants produced a one-or-two page topic paper to be shared with the other attendees on either:
 
