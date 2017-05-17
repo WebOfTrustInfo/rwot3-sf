@@ -1,36 +1,65 @@
-# Rebooting the Web-of-Trust
+## Rebooting the Web of Trust III: San Francisco (October 2016)
 
-This repository contains documents related to the "Rebooting the Web-of-Trust" series of events in the fall of 2016.
-
-## DesignShop October 19th - 21st, 2016
-
-The third DesignShop event, to be held in the San Francisco Bay Area on October 19th, 20th, & the 21st 2016, is a facilitated, invite-only event focused on creating the next generation of decentralized web-of-trust based identity systems. The goal of this initial DesignShop is to generate 5 technical white papers and/or proposals on topics decided by the group that will have the greatest impact on the future.
+This repository contains documents related to RWOT3, the third Rebooting the Web of Trust design workshop, which ran in San Francisco, CA, on October 19th-21st, 2016. The goal of the workshop was to generate five technical white papers and/or proposals on topics decided by the group that would have the greatest impact on the future.
 
 ### Topics & Advance Readings
 
-In advance of the October DesignShop, all participants were requested to post in the [Topics and Advanced Readings](topics-and-advance-readings) folder a 1 or 2 page topics paper to be shared with other attendees on either:
-* A specific problem that you'd like to solve with a web-of-trust solution, and why current solutions (pgp or ca-based pki) can't address the problem?
+In advance of the design workshop, all participants produced a one-or-two page topic paper to be shared with the other attendees on either:
+
+* A specific problem that they wanted to solve with a web-of-trust solution, and why current solutions (PGP or CA-based PKI) can't address the problem?
 *  A specific solution related to the web-of-trust that you'd like others to use or contribute to?
 
-The topic papers submitted were:
+Please see the [Advance Readings README](topics-and-advance-readings/README.md) for a listing of all of the papers.
 
-* [Identity as Linked Data on Immutable Ledgers](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-as-linked-data-on-immutable-ledgers.md) by Tim Daubenschuetz and Trent McConaghy 
-* [EU General Data Protection Regulation & Self-Sovereign Identifier(s)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/EU%20General%20Data%20Protection%20Regulation%20%26%20Self-Sovereign%20Identifier(s)) by David Robert
-* [Identity Forking and Federated Reputation](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-forking-and-federated-reputation.md) by Christopher Malon
-* [OpenTimestamps: Scalable, Trustless, Distributed Timestamping with Bitcoin](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/opentimestamps.md) by Peter Todd
-* [Distributed Identity, Distributed Self](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/DistributedIdentityDistributedSelf.md) by Natalie Smolenski
-* [Blockchain Extensions for Linked Data Signatures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/blockchain-extensions-for-linked-data-signatures.md) by the Signature Super Friends (Manu Sporny, Harlan Wood, Noah Thorp, Wayne Vaughn, Christopher Allen, Jason Bukowski, and Dave Longley)
-* [Fit for Purpose Blockchains](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/fit-for-purpose-blockchains.md) by Digital Bazaar (Manu Sporny, Dave Longley, Dave Lehn, and Adam Lake)
-* [Taxonomy of Identity Interaction Types](https://github.com/Identitywoman/Writing/blob/master/Taxonomy-of-Identity-Interaction-Types.md) by Kaliya Young
-* [Privacy Preserving Identity Architectures](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/privacy-preserving-identity-architectures.md) by Anonymous (no, not that Anonymous, the other one)
-* [A Technlogy-Free Definition of Self-Sovereign Identity] (https://github.com/jandrieu/rebooting-the-web-of-trust-fall2016/raw/master/topics-and-advance-readings/a-technology-free-definition-of-self-sovereign-identity.pdf) by Joe Andrieu
-* [Architecture of Proof-of-Stake Blockchain that Doesn’t Have Native Coin and its Applicability to Decentralized Trading] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Proof-of-stake-without-native-coin.md) by Pavel Kravchenko
-* [JXD Examples] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/JXD-Examples.md) by Markus Sabadello
-* [Anonymous Credentials in Sovrin] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/anonymous-credentials-in-sovrin.md) by Jason Law and Daniel Hardman
-* [Portable Reputation Toolkit](/topics-and-advance-readings/portable-reputation-toolkit.md) by Noah Thorp and Harlan Wood
-* [Blockchain Attestation Taxonomies] (https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/attestation-taxonomies.md) by Christian Lundkvist
-* [Slepak's Triangle: The fundamental user limit of decentralized consensus systems](topics-and-advance-readings/Slepaks-Triangle.pdf) by Greg Slepak (@taoeffect)
-* [Sovereign Identity Model for Digital Ecologies](topics-and-advance-readings/Sovereign-Identity-Model-for-Digital-Ecologies.md) by Patrick Deegan
-* [Alternative Futures: Framework for Identity Scenarios](topics-and-advance-readings/alternative-futures-frameworks.md) by Alessandro Voto
-* [Powering the Physician-Patient Relationship with HIW of One Blockchain Health IT](physician-patient-relationship.pdf) by Adrian Gropper
-* [Creating a Humanized Internet] (https://github.com/vshen2010/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Creating%20a%20Humanized%20Internet.pdf) by Monique Morrow, et al
+## Completed Papers
+
+The design workshop exceeded its mandate by producing seven papers, which are now all available online:
+
+## [*DID (Decentralized Identifier) Data Model and Generic Syntax 1.0 Implementer’s Draft 01*](did-implementer-draft-10.pdf)
+#### by Drummond Reed, Les Chasen, Christopher Allen, and Ryan Grant
+
+> The complete draft of the Decentralized IDentifier (DID) model and syntac, a project that has run through the RWOT workshops to date.
+
+## [*Digital Verification Advancements at RWoT III*](digital-verification-advancements.pdf)
+#### by Manu Sporny with Christopher Allen, Harlan Wood, and Jason Law
+
+> A short overview of enhancements to Digital Verification that came out of RWOT III.
+
+## [*Embedding Human Wisdom in Our Digital Tomorrow*](WisdomEmbedding-Human-Wisdom-in-Our-Digital-Tomorrow.pdf)
+#### by Daniel Hardman, Kaliya “Identity Woman” Young, and Matthew Schutte
+
+> A discussion of the dangers of transferring wisdom into the digital world, seen through the lenses of vulnerability, shadows, healing, tensions, complexity and gestalt, and organizational choices.
+
+## [*Hubs*](hubs.pdf)
+#### by Daniel Buchner, Wayne Vaughan, and Ryan Shea
+
+> An overview of the hubs datastore system.
+
+## [*Joram 1.0.0*](joram-engagement-model.pdf)
+#### by Joe Andrieu and Bob Clint
+
+> An Information Lifecycle Engagement Model that offers a use case for a Syrian refugee.
+
+## [*Portable Reputation Toolkit Use Cases*](reputation-toolkit.pdf)
+#### by Christopher Allen, Tim Daubenschütz, Manu Sporny, Noah Thorp, Harlan Wood, Glenn Willen, and Alessandro Voto
+
+> A model and proof-of-concept implementation for decentralized verification.
+
+## [*Smart Consent Protocol*](smart-consent-protocol.pdf)
+#### by Dr. Shaun Conway, Lohan Spies, Jonathan Endersby, and Tim Daubenschütz
+
+> Bringing together COALA IP and Consent to deal with digital intellectual property.
+
+## Complete Rebooting the Web of Trust Listing
+
+A different repository is available for each of the Rebooting the Web of Trust design workshops:
+
+* [Rebooting the Web of Trust I: San Francisco (November 2015)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust)
+* [Rebooting the Web of Trust II: ID2020 (May 2016)](https://github.com/WebOfTrustInfo/ID2020DesignWorkshop)
+* [Rebooting the Web of Trust III: San Francisco (October 2016)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016)
+* [Rebooting the Web of Trust IV: Paris (April 2017)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017)
+* [Rebooting the Web of Trust V: Boston (October 2017)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-spring2017)
+
+## License
+
+All of the contents of this directory are licensed [Creative Commons CC-BY](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust/blob/master/final-documents/LICENSE-CC-BY-4.0.md) their contributors.
