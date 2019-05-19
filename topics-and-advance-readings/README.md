@@ -7,7 +7,7 @@ In advance of the October DesignShop, all participants were requested to post in
 The topic papers submitted were:
 
 * [Identity as Linked Data on Immutable Ledgers](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-as-linked-data-on-immutable-ledgers.md) by Tim Daubenschuetz and Trent McConaghy 
-* [EU General Data Protection Regulation & Self-Sovereign Identifier(s)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/EU%20General%20Data%20Protection%20Regulation%20%26%20Self-Sovereign%20Identifier(s)) by David Robert
+* [EU General Data Protection Regulation & Self-Sovereign Identifier(s)](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/EU-General-Data-Protection-Regulation-%26-Self-Sovereign-Identifier(s)) by David Robert
 * [Identity Forking and Federated Reputation](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/identity-forking-and-federated-reputation.md) by Christopher Malon
 * [OpenTimestamps: Scalable, Trustless, Distributed Timestamping with Bitcoin](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/opentimestamps.md) by Peter Todd
 * [Distributed Identity, Distributed Self](https://github.com/WebOfTrustInfo/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/DistributedIdentityDistributedSelf.md) by Natalie Smolenski
@@ -25,4 +25,4 @@ The topic papers submitted were:
 * [Sovereign Identity Model for Digital Ecologies](topics-and-advance-readings/Sovereign-Identity-Model-for-Digital-Ecologies.md) by Patrick Deegan
 * [Alternative Futures: Framework for Identity Scenarios](topics-and-advance-readings/alternative-futures-frameworks.md) by Alessandro Voto
 * [Powering the Physician-Patient Relationship with HIW of One Blockchain Health IT](physician-patient-relationship.pdf) by Adrian Gropper
-* [Creating a Humanized Internet] (https://github.com/vshen2010/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Creating%20a%20Humanized%20Internet.pdf) by Monique Morrow, et al
+* [Creating a Humanized Internet] (https://github.com/vshen2010/rebooting-the-web-of-trust-fall2016/blob/master/topics-and-advance-readings/Creating-a-Humanized-Internet.pdf) by Monique Morrow, et al
