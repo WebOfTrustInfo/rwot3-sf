@@ -68,7 +68,7 @@ This specification defines the requirements of a conformant DID method specifica
 
 **DLT.** Acronym for **distributed ledger technology**. 
 
-**Identity owner.** The person, organization, or thing whose identity is represented by a **DID record**. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) Note that the identity owner may not be the director controller of the DID record; for example a parent may control the DID record(s) for a young child, but the child is the identity owner.
+**Identity owner.** The person, organization, or thing whose identity is represented by a **DID record**. (Note: this specification avoids the term "user" since an identity owner is not always an individual person.) Note that the identity owner may not be the direct controller of the DID record; for example a parent may control the DID record(s) for a young child, but the child is the identity owner.
 
 **Identity record.** Another name for a **DID record**.
 
@@ -162,7 +162,7 @@ Note that each of these DID types can serve as an index key (not to be confused 
 
 ## 4.1. The Generic DID Scheme
 
-The generic DID scheme is a URI scheme conformant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). Due to the limited character set, it also an IRI scheme conformant with [RFC 3987](https://www.ietf.org/rfc/rfc3987.txt). Following is an ABNF definition using the ABNF syntax defined in [RFC 5234](https://tools.ietf.org/html/rfc5234).
+The generic DID scheme is a URI scheme conformant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). Due to the limited character set, it is also an IRI scheme conformant with [RFC 3987](https://www.ietf.org/rfc/rfc3987.txt). Following is an ABNF definition using the ABNF syntax defined in [RFC 5234](https://tools.ietf.org/html/rfc5234).
 
 ```
 did                = "did:" method ":" specific-idstring [ "#" fragment ]
